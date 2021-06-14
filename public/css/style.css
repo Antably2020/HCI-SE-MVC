@@ -30,7 +30,13 @@ border: 1px solid #000000;
 }
 
 
-
+.navhr {
+  /* margin-top: 20px; */
+  /* margin-bottom: 20px; */
+  border: 0;
+  border-top: 6px solid #FF7A00;
+  margin-top: 100px;
+}
 
 hr{
 
@@ -65,6 +71,22 @@ border-radius: 15px;
 }
 
 /* Header */
+.carousel {
+  margin-top: 20px;
+}
+.item .thumb {
+width: 25%;
+cursor: pointer;
+float: left;
+}
+.item .thumb img {
+width: 100%;
+margin: 2px;
+}
+.item img {
+width: 100%;	
+}
+
 
 .smallbox{
   
@@ -220,7 +242,6 @@ i {
 }
 
 
-.
 
 .product article .price {
   display: flex;
