@@ -13,7 +13,6 @@ class cart extends view{
     <table class="cart-table" cellspacing="0">
     <thead>
 			<tr>
-                
                 <th class="product-image">&nbsp;</th>
 				<th class="cart-description">description</th>
 				<th class="cart-price">Price</th>
@@ -21,25 +20,18 @@ class cart extends view{
 				<th class="cart-total">Subtotal</th>
                 <th class="cart-delete">&nbsp;</th>
 			</tr>
-
             <tbody>
-			
-            
 								<tr class=" cart_item">
-
 						<td class="product-thumbnail">
 						<a href="" class="no-lightbox"><img height="60" src="<?php echo URLROOT . 'images/car.jpg'; ?>"></a></td>
-
 						<td class="product-name" data-title="cart-description">
 						<a href="">this is a super car</a>
 			<dt>Sold By:</dt>
 	<p><a href="" title="L">item seller</a></p>
-
 						</td>
-
 						<td  data-title="Price">
-							<span ><bdi>610.00&nbsp;<span>EGP</span></bdi></span>						</td>
-
+							<span ><bdi>610.00&nbsp;<span>EGP</span></bdi></span>						
+						</td>
 						<td  data-title="Quantity">
 						1 <input type="hidden" name="" value=""></td>
 
@@ -51,13 +43,10 @@ class cart extends view{
 							<button class="btn btn-warning" id="delete" name="delete" viewBox="0 0 10 16">Remove item</button>	</td>
 
                         </tr>
-					
-			
 			<tr>
 				<td colspan="6" >
-
 											<div>
-							<label >Coupon:</label> <input type="text" name="" class="coupon-input"  value="" placeholder="Coupon code"> <button type="submit" class="btn btn-warning" value="Apply coupon">Apply coupon</button>
+							<label >Coupon:</label> <input type="text" name="" class="coupon-input"  value="" placeholder="Coupon code"> <button type="submit" class="btn btn-warning" name="Applycoupon">Apply coupon</button>
 													</div>	
 			</tr>
 					</tbody>   

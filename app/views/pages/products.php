@@ -31,7 +31,7 @@ class products extends view{
                       </article>
                   </div>
                 </div>
-                                                                        <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                                 <div class="col-6 col-sm-6 col-md-4 col-lg-3">
                   <!-- categories -->
                   <div class="product">
                       <article>
