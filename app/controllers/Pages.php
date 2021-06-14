@@ -26,6 +26,13 @@ class Pages extends Controller
         $productView->output();
     }
 
+    public function errorr()
+    {
+        $viewPath = VIEWS_PATH . 'pages/Errorr.php';
+        require_once $viewPath;
+        $errorrView = new Errorr($this->getModel(), $this);
+        $errorrView->output();
+    }
 
     public function contact(){
         $contactModel = $this->getModel();
