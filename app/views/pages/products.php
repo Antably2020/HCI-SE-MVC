@@ -167,48 +167,171 @@ class products extends view{
   <div class="row">
 
 
+ <!-- Product -->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+       <br><br><br><div class="product">
+    <article>
+        <div class="thumb">
+          <img class="img-fluid" src="<?php echo URLROOT . 'images/car.jpg'; ?>" alt="Genuine Air Mass Sensor Seal, Ring O MAZDA 3 BL / ZL01-13-214">
+        </div>
+          
+      <span class="tag">,,</span>
+      <h2 class="title text-center"><a href="">Honda CBR1000RR 2010 F-18-1 AIR INTAKE DUCT & SOLENOID VALVE</a></h2>
+      <div class="price">
+                EGP&nbsp;1200&nbsp;
+      </div>
+      <div class="product-hover d-none d-lg-block d-xl-block">
+       
+        <div class="buttons">
+                                                                   
+         <button type="button" class="btn btn-block btn-danger" >Add to cart</button>
+        </div>
+      </div>
+
+  </article>
+        </div>
+            </div>
+      
+       
+
+
+
 
             <div class="col-12 col-sm-12 col-md-6 col-lg-3">
-      <!-- Product -->
        <br><br><br><div class="product">
     <article>
         <div class="thumb">
-          <div class="icons mobile-icons d-lg-none d-xl-none">
-              <div class="icon-liked">
-                <a class="icon active is_liked" products_id="8373">
-                  <i class="fas fa-heart"></i>
-                  <span class="badge badge-secondary counter">0</span>
-                </a>
-              </div>
-              <div class="icon"><i class="fas fa-eye"></i></div>
-              <a href="" class="icon"><i class="fas fa-align-right" data-fa-transform="rotate-90"></i></a>
-            </div>
-
           <img class="img-fluid" src="<?php echo URLROOT . 'images/car.jpg'; ?>" alt="Genuine Air Mass Sensor Seal, Ring O MAZDA 3 BL / ZL01-13-214">
-       </div>
-              
-              
-      <span class="tag">
-                    ,                     ,                                    </span>
+        </div>
+          
+      <span class="tag">,,</span>
       <h2 class="title text-center"><a href="">Honda CBR1000RR 2010 F-18-1 AIR INTAKE DUCT & SOLENOID VALVE</a></h2>
       <div class="price">
                 EGP&nbsp;1200&nbsp;
-              </div>
+      </div>
       <div class="product-hover d-none d-lg-block d-xl-block">
-        <div class="icons">
-            
-          <div class="icon modal_show" data-toggle="modal" data-target="#myModal" ><i class="fas fa-eye"></i></div>
-           
        
         <div class="buttons">
                                                                    
-                              <button type="button" class="btn btn-block btn-danger" >Add to cart</button>
-                                                                                </div>
+         <button type="button" class="btn btn-block btn-danger" >Add to cart</button>
+        </div>
       </div>
 
   </article>
-</div>
-     </div>
+        </div>
+            </div>
+      
+       
+
+
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+       <br><br><br><div class="product">
+    <article>
+        <div class="thumb">
+          <img class="img-fluid" src="<?php echo URLROOT . 'images/car.jpg'; ?>" alt="Genuine Air Mass Sensor Seal, Ring O MAZDA 3 BL / ZL01-13-214">
+        </div>
+          
+      <span class="tag">,,</span>
+      <h2 class="title text-center"><a href="">Honda CBR1000RR 2010 F-18-1 AIR INTAKE DUCT & SOLENOID VALVE</a></h2>
+      <div class="price">
+                EGP&nbsp;1200&nbsp;
+      </div>
+      <div class="product-hover d-none d-lg-block d-xl-block">
+       
+        <div class="buttons">
+                                                                   
+         <button type="button" class="btn btn-block btn-danger" >Add to cart</button>
+        </div>
+      </div>
+
+  </article>
+        </div>
+            </div>
+      
+       
+
+
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+       <br><br><br><div class="product">
+    <article>
+        <div class="thumb">
+          <img class="img-fluid" src="<?php echo URLROOT . 'images/car.jpg'; ?>" alt="Genuine Air Mass Sensor Seal, Ring O MAZDA 3 BL / ZL01-13-214">
+        </div>
+          
+      <span class="tag">,,</span>
+      <h2 class="title text-center"><a href="">Honda CBR1000RR 2010 F-18-1 AIR INTAKE DUCT & SOLENOID VALVE</a></h2>
+      <div class="price">
+                EGP&nbsp;1200&nbsp;
+      </div>
+      <div class="product-hover d-none d-lg-block d-xl-block">
+       
+        <div class="buttons">
+                                                                   
+         <button type="button" class="btn btn-block btn-danger" >Add to cart</button>
+        </div>
+      </div>
+
+  </article>
+        </div>
+            </div>
+      
+       
+
+
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+       <br><br><br><div class="product">
+    <article>
+        <div class="thumb">
+          <img class="img-fluid" src="<?php echo URLROOT . 'images/car.jpg'; ?>" alt="Genuine Air Mass Sensor Seal, Ring O MAZDA 3 BL / ZL01-13-214">
+        </div>
+          
+      <span class="tag">,,</span>
+      <h2 class="title text-center"><a href="">Honda CBR1000RR 2010 F-18-1 AIR INTAKE DUCT & SOLENOID VALVE</a></h2>
+      <div class="price">
+                EGP&nbsp;1200&nbsp;
+      </div>
+      <div class="product-hover d-none d-lg-block d-xl-block">
+       
+        <div class="buttons">
+                                                                   
+         <button type="button" class="btn btn-block btn-danger" >Add to cart</button>
+        </div>
+      </div>
+
+  </article>
+        </div>
+            </div>
+      
+       
+
+
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+       <br><br><br><div class="product">
+    <article>
+        <div class="thumb">
+          <img class="img-fluid" src="<?php echo URLROOT . 'images/car.jpg'; ?>" alt="Genuine Air Mass Sensor Seal, Ring O MAZDA 3 BL / ZL01-13-214">
+        </div>
+          
+      <span class="tag">,,</span>
+      <h2 class="title text-center"><a href="">Honda CBR1000RR 2010 F-18-1 AIR INTAKE DUCT & SOLENOID VALVE</a></h2>
+      <div class="price">
+                EGP&nbsp;1200&nbsp;
+      </div>
+      <div class="product-hover d-none d-lg-block d-xl-block">
+       
+        <div class="buttons">
+                                                                   
+         <button type="button" class="btn btn-block btn-danger" >Add to cart</button>
+        </div>
+      </div>
+
+  </article>
+        </div>
+            </div>
       
        
 
@@ -216,211 +339,11 @@ class products extends view{
 
 
 
-
        
 
 
 
 
-
-
-
-     <div class="col-12 col-sm-12 col-md-6 col-lg-3">
-      <!-- Product -->
-       <br><br><br><div class="product">
-    <article>
-        <div class="thumb">
-          <div class="icons mobile-icons d-lg-none d-xl-none">
-              <div class="icon-liked">
-                <a class="icon active is_liked" products_id="8373">
-                  <i class="fas fa-heart"></i>
-                  <span class="badge badge-secondary counter">0</span>
-                </a>
-              </div>
-              <div class="icon"><i class="fas fa-eye"></i></div>
-              <a href="" class="icon"><i class="fas fa-align-right" data-fa-transform="rotate-90"></i></a>
-            </div>
-
-          <img class="img-fluid" src="<?php echo URLROOT . 'images/car.jpg'; ?>" alt="Genuine Air Mass Sensor Seal, Ring O MAZDA 3 BL / ZL01-13-214">
-       </div>
-              
-              
-      <span class="tag">
-                    ,                     ,                                    </span>
-      <h2 class="title text-center"><a href="">Honda CBR1000RR 2010 F-18-1 AIR INTAKE DUCT & SOLENOID VALVE</a></h2>
-      <div class="price">
-                EGP&nbsp;1200&nbsp;
-              </div>
-      <div class="product-hover d-none d-lg-block d-xl-block">
-        <div class="icons">
-            
-          <div class="icon modal_show" data-toggle="modal" data-target="#myModal" ><i class="fas fa-eye"></i></div>
-           
-       
-        <div class="buttons">
-                                                                   
-                              <button type="button" class="btn btn-block btn-danger" >Add to cart</button>
-                                                                                </div>
-      </div>
-
-  </article>
-</div>
-     </div>
-      
-       
-
-
-
-
-
-
-       
-
-     <div class="col-12 col-sm-12 col-md-6 col-lg-3">
-      <!-- Product -->
-       <br><br><br><div class="product">
-    <article>
-        <div class="thumb">
-          <div class="icons mobile-icons d-lg-none d-xl-none">
-              <div class="icon-liked">
-                <a class="icon active is_liked" products_id="8373">
-                  <i class="fas fa-heart"></i>
-                  <span class="badge badge-secondary counter">0</span>
-                </a>
-              </div>
-              <div class="icon"><i class="fas fa-eye"></i></div>
-              <a href="" class="icon"><i class="fas fa-align-right" data-fa-transform="rotate-90"></i></a>
-            </div>
-
-          <img class="img-fluid" src="<?php echo URLROOT . 'images/car.jpg'; ?>" alt="Genuine Air Mass Sensor Seal, Ring O MAZDA 3 BL / ZL01-13-214">
-       </div>
-              
-              
-      <span class="tag">
-                    ,                     ,                                    </span>
-      <h2 class="title text-center"><a href="">Honda CBR1000RR 2010 F-18-1 AIR INTAKE DUCT & SOLENOID VALVE</a></h2>
-      <div class="price">
-                EGP&nbsp;1200&nbsp;
-              </div>
-      <div class="product-hover d-none d-lg-block d-xl-block">
-        <div class="icons">
-            
-          <div class="icon modal_show" data-toggle="modal" data-target="#myModal" ><i class="fas fa-eye"></i></div>
-           
-       
-        <div class="buttons">
-                                                                   
-                              <button type="button" class="btn btn-block btn-danger" >Add to cart</button>
-                                                                                </div>
-      </div>
-
-  </article>
-</div>
-     </div>
-      
-       
-
-
-
-
-
-
-       
-
-     <div class="col-12 col-sm-12 col-md-6 col-lg-3">
-      <!-- Product -->
-       <br><br><br><div class="product">
-    <article>
-        <div class="thumb">
-          <div class="icons mobile-icons d-lg-none d-xl-none">
-              <div class="icon-liked">
-                <a class="icon active is_liked" products_id="8373">
-                  <i class="fas fa-heart"></i>
-                  <span class="badge badge-secondary counter">0</span>
-                </a>
-              </div>
-              <div class="icon"><i class="fas fa-eye"></i></div>
-              <a href="" class="icon"><i class="fas fa-align-right" data-fa-transform="rotate-90"></i></a>
-            </div>
-
-          <img class="img-fluid" src="<?php echo URLROOT . 'images/car.jpg'; ?>" alt="Genuine Air Mass Sensor Seal, Ring O MAZDA 3 BL / ZL01-13-214">
-       </div>
-              
-              
-      <span class="tag">
-                    ,                     ,                                    </span>
-      <h2 class="title text-center"><a href="">Honda CBR1000RR 2010 F-18-1 AIR INTAKE DUCT & SOLENOID VALVE</a></h2>
-      <div class="price">
-                EGP&nbsp;1200&nbsp;
-              </div>
-      <div class="product-hover d-none d-lg-block d-xl-block">
-        <div class="icons">
-            
-          <div class="icon modal_show" data-toggle="modal" data-target="#myModal" ><i class="fas fa-eye"></i></div>
-           
-       
-        <div class="buttons">
-                                                                   
-                              <button type="button" class="btn btn-block btn-danger" >Add to cart</button>
-                                                                                </div>
-      </div>
-
-  </article>
-</div>
-     </div>
-      
-       
-
-
-
-
-
-
-       
-
-     <div class="col-12 col-sm-12 col-md-6 col-lg-3">
-      <!-- Product -->
-       <br><br><br><div class="product">
-    <article>
-        <div class="thumb">
-          <div class="icons mobile-icons d-lg-none d-xl-none">
-              <div class="icon-liked">
-                <a class="icon active is_liked" products_id="8373">
-                  <i class="fas fa-heart"></i>
-                  <span class="badge badge-secondary counter">0</span>
-                </a>
-              </div>
-              <div class="icon"><i class="fas fa-eye"></i></div>
-              <a href="" class="icon"><i class="fas fa-align-right" data-fa-transform="rotate-90"></i></a>
-            </div>
-
-          <img class="img-fluid" src="<?php echo URLROOT . 'images/car.jpg'; ?>" alt="Genuine Air Mass Sensor Seal, Ring O MAZDA 3 BL / ZL01-13-214">
-       </div>
-              
-              
-      <span class="tag">
-                    ,                     ,                                    </span>
-      <h2 class="title text-center"><a href="">Honda CBR1000RR 2010 F-18-1 AIR INTAKE DUCT & SOLENOID VALVE</a></h2>
-      <div class="price">
-                EGP&nbsp;1200&nbsp;
-              </div>
-      <div class="product-hover d-none d-lg-block d-xl-block">
-        <div class="icons">
-            
-          <div class="icon modal_show" data-toggle="modal" data-target="#myModal" ><i class="fas fa-eye"></i></div>
-           
-       
-        <div class="buttons">
-                                                                   
-                              <button type="button" class="btn btn-block btn-danger" >Add to cart</button>
-                                                                                </div>
-      </div>
-
-  </article>
-</div>
-     </div>
-      
-       
 
 
 
