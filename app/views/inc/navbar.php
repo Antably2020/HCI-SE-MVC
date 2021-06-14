@@ -5,9 +5,9 @@
 <nav class="navbar navbar-expand-md ">
   <a class="navbar-brand" href="<?php echo URLROOT . 'public'; ?>">
 
-    <img src="<?php echo URLROOT . 'images/logo.png'; ?>" alt="Logo" style="width: 90px;">
+    <img src="<?php echo URLROOT . 'images/logo.png'; ?>" alt="Logo" style="width: 150px;">
   </a>
-  <a class="navbar-brand" href="<?php echo URLROOT . 'public'; ?>"><?php echo SITENAME; ?></a>
+  
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
         <span class="navbar-toggler-icon justify-content-end"></span>
     </button>
