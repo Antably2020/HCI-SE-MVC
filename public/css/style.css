@@ -220,6 +220,8 @@ i {
 }
 
 
+.
+
 .product article .price {
   display: flex;
   justify-content: center;
@@ -276,6 +278,21 @@ i {
   color: #FF7A00
 }
 
+.product .module .cat-title {
+  display: block;
+  background-color: #FF7A00;
+  opacity: 85%;
+  font-size: 25px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+}
 .product:hover .product-hover {
   opacity: 1
 }
@@ -329,7 +346,7 @@ a:hover{
   border-width: 1px;
 }
 .heading h2 {
-  font-size: 1.25rem;
+  font-size:30px;
   margin-bottom: 10px;
   text-transform: uppercase;
   display: flex;
@@ -358,7 +375,7 @@ a:hover{
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(50,78,92,.77);
+  background-color: rgba(255, 255, 255, 0.77);
   border-radius: 0;
   height: 270px;
   width: 100%;
@@ -644,8 +661,9 @@ margin-bottom:40px;
   text-align: Left;
 }
 .price {
-    color: rgb(22, 189, 44);
+    color: #FF7A00;
     font-size: 22px;
+    font-weight: bold;
 }
 
 .cart button {
