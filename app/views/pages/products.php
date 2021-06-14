@@ -164,6 +164,8 @@ class products extends view{
     </h2>
        <hr class="hr2">
   </div>
+
+  
   <div class="row">
 
 
