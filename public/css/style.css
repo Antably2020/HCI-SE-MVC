@@ -15,6 +15,11 @@
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
 }
+.nav-link:hover {
+  
+  color:#FF7A00;
+  opacity: 50%;
+}
 li{
   
     margin:0 20px 0 20px;  
@@ -32,8 +37,7 @@ border: 1px solid #000000;
 
 
 .navhr {
-  /* margin-top: 20px; */
-  /* margin-bottom: 20px; */
+ 
   border: 0;
   border-top: 6px solid #FF7A00;
   margin-top: 100px;
@@ -72,32 +76,19 @@ border-radius: 15px;
 }
 
 /* Header */
+
+
+
+
+
 body {
 	font-family: "Open Sans", sans-serif;
 }
-h2 {
-	color: #000;
-	font-size: 26px;
-	font-weight: 300;
-	text-align: center;
-	text-transform: uppercase;
-	position: relative;
-	margin: 30px 0 80px;
-}
+
 h2 b {
 	color: #FF7A00;
 }
-h2::after {
-	content: "";
-	width: 100px;
-	position: absolute;
-	margin: 0 auto;
-	height: 4px;
-	background: rgba(0, 0, 0, 0.2);
-	left: 0;
-	right: 0;
-	bottom: -20px;
-}
+
 .carousel {
 	margin: 50px auto;
 	padding: 0 70px;
@@ -343,8 +334,6 @@ i {
 
 
 
-
-
 .product article .product-hover .icons .icon {
   background-color: transparent;
   display: flex;
@@ -361,6 +350,7 @@ i {
   margin-right: 7px;
   cursor: pointer;
 }
+
 
 .product article .product-hover .buttons {
   position: absolute;
@@ -408,7 +398,8 @@ i {
 }
 
 .product article:hover {
-  box-shadow: 0 0 10px rgba(0,0,0,.15)
+  box-shadow: 0 0 10px rgba(0,0,0,.15);
+  opacity:30%;
 }
 
 .product .module {
@@ -429,11 +420,9 @@ i {
   width: 100%
 }
 
-.product .module .cat-title:hover {
- 
-  color: #FF7A00
+.product .module  .cat-title:hover{
+  opacity: 70%
 }
-
 .product .module .cat-title {
   display: block;
   background-color: #FF7A00;
