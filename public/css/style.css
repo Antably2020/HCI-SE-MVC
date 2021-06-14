@@ -215,8 +215,8 @@ i {
 }
 .btn-danger {
   color: #fff;
-  background-color: #ce202d;
-  border-color: #ce202d;
+  background-color: #FF7A00;
+  border-color: #FF7A00;
 }
 
 
@@ -226,7 +226,7 @@ i {
   align-items: center;
   font-size: 1.35rem;
   font-weight: 700;
-  color: #ce202d;
+  color: #FF7A00;
   padding-bottom: 9px;
 }
 
