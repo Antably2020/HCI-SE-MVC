@@ -3,7 +3,7 @@
 
 
 <nav class="navbar navbar-expand-md ">
-  <a class="navbar-brand" href="<?php echo URLROOT . 'public'; ?>">
+  <a class="" href="<?php echo URLROOT . 'public'; ?>">
 
     <img src="<?php echo URLROOT . 'images/logo.png'; ?>" alt="Logo" style="width: 150px;">
   </a>
@@ -55,5 +55,5 @@
 
 
     </div>
-    <hr>
+    <hr class="navhr">
 </nav>
