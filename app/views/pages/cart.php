@@ -1,5 +1,5 @@
 <?php 
-class cart extends views{
+class cart extends view{
     public function output (){
         $title = $this->model->title;
     require APPROOT . '/views/inc/header.php';
@@ -28,7 +28,7 @@ class cart extends views{
 								<tr class=" cart_item">
 
 						<td class="product-thumbnail">
-						<a href="" class="no-lightbox"><img height="60" src="images/car.jpg"></a></td>
+						<a href="" class="no-lightbox"><img height="60" src="<?php echo URLROOT . 'images/car.jpg'; ?>"></a></td>
 
 						<td class="product-name" data-title="cart-description">
 						<a href="">this is a super car</a>
@@ -48,55 +48,30 @@ class cart extends views{
 					
                     
 						<td >
-							<a href=""  aria-label="Remove this item"  >X</a>	</td>
+							<button class="btn btn-warning" id="delete" name="delete" viewBox="0 0 10 16">Remove item</button>	</td>
 
                         </tr>
 					
 			
 			<tr>
-
-
-
-
-            
 				<td colspan="6" >
 
 											<div>
-							<label >Coupon:</label> <input type="text" name="" class="coupon-input"  value="" placeholder="Coupon code"> <button type="submit" class="coupon-btn" value="Apply coupon">Apply coupon</button>
-													</div>
-					
-					
+							<label >Coupon:</label> <input type="text" name="" class="coupon-input"  value="" placeholder="Coupon code"> <button type="submit" class="btn btn-warning" value="Apply coupon">Apply coupon</button>
+													</div>	
 			</tr>
-
-					</tbody>
-
-
-                    
+					</tbody>   
 		</thead>
-    
         </table>
-
-
 </form>
 
-
-
-<div class="table2"  id="table2">
-
-
-
+<div class="table2"  id="table2" style="position:realtive; bottom:0px; right:0px;">
 	<table style="border-radius: 19px;"  cellspacing="0">
-
 		<h2 class="checkot-total">Cart totals</h2>
-
 		<tbody ><tr>
 			<th >Subtotal</th>
 			<td data-title="Subtotal"><span ><bdi>610.00&nbsp;<span >EGP</span></bdi></span></td>
 		</tr>
-
-		
-		
-			
 			<tr >
 	<th>Shipping</th>
 	<td data-title="Shipping">
@@ -106,36 +81,21 @@ class cart extends views{
 							</ul>
 							<p >
 					Shipping to <strong>cairo, Cairo</strong>. 				</p>
-						
-	
-
 			</td>
 </tr>
-
-		
 		<tr class="order-total">
 			<th >Total</th>
 			<td data-title="Total"><strong><span ><bdi>645.00&nbsp;<span>EGP</span></bdi></span></strong> </td>
 		</tr>
+</tbody></table>	
+<button class="btn btn-warning">		
 
-		
-	</tbody></table>
-
-
-	
-<button class="checkout-btn">		
-<a href=""  type="button">
-	Proceed to checkout</a></button>
-	
-
-</div>
-
-        
+<a href=""  type="button">Proceed to checkout</a></button>
+</div>        
 </div>
 </section>
 <?php
   require APPROOT . '/views/inc/footer.php';
-
   }
 }
 ?>

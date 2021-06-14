@@ -54,4 +54,12 @@ class Pages extends Controller
 
 
     }
+    public function cart()
+    {
+        $viewPath = VIEWS_PATH . 'pages/cart.php';
+        require_once $viewPath;
+        $cartView = new Cart($this->getModel(), $this);
+        $cartView->output();
+    }
+
 }
