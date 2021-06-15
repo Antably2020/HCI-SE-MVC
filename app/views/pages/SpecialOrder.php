@@ -5,12 +5,13 @@ class SpecialOrder extends view{
     require APPROOT . '/views/inc/header.php';
     ?>
     <br><br><br>
-<h2 style=" text-align: center;"><b>Make your order Now</b></h2>
+
+<h2 style=" text-align: center;">MAKE YOUR ORDER <b>NOW!!</b></h2>
 <br>
     <body>
    
    <form action="post">
-    <div class="container" style="background-color:#FF7A00 ; border-radius:10px">
+    <div class="container" style="background-color:#FF7A00 ; border-radius:10px ">
     <div class="row" style="margin-bottom:30px;">
     <div class="col-sm">
     <label style="font-size: 20px;"><b>Type</b></label>  
@@ -101,10 +102,13 @@ class SpecialOrder extends view{
     <div class="d-flex justify-content-center">
     <button class="btn " type="submit" style="margin-bottom:10px; width:90px; border:2px solid #000;  ">Submit</button>
     </div>
+     </div>
+     </div>
 </form>
+<div style="margin-top:362px">
 </body>
 <?php
   require APPROOT . '/views/inc/footer.php';
   }
 }
-?>
+?>   </div>
