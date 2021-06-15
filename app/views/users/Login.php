@@ -9,9 +9,9 @@ class Login extends view
     <div class="login-container ">
 
 
-    <div> <button class="column" style="border-bottom:0px; border-top: 5px solid #FF7A00; " ><a href="<?php echo URLROOT . 'public/users/login'; ?>"><h1>Login<h1></a></button></div>
+    <div> <button class="column" style="border-bottom:0px; border-top: 5px solid #FF7A00;  " ><a href="<?php echo URLROOT . 'public/users/login'; ?>"style="color: #FF7A00;"><h1>Login<h1></a></button></div>
     
-    <div> <button class="column" style="background-color:#bbb;"><a href="<?php echo URLROOT . 'public/users/register'; ?>"><h1>SignUp<h1></a></button></div>
+    <div> <button class="column" style="background-color:#bbb; "><a href="<?php echo URLROOT . 'public/users/register'; ?>" style="color: #FF7A00; "><h1>SignUp<h1></a></button></div>
     
     
     
