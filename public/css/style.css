@@ -108,7 +108,10 @@ border: 5px solid #FF7A00;
   opacity: 0;
   z-index: -1;
 }
-
+.abus
+{
+  margin-left:5%; margin-right:5%; margin-top:5%; margin-bottom:5%; font-size:20px; ;
+}
 /* Header */
 
 
