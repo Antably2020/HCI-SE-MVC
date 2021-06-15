@@ -39,12 +39,12 @@ class ProductDescription extends view{
 
 </div>
 </div>  
-
 <div class="row">
 		<div class="col-md-12">
-			<h2>RELATIVE<b> PRODUCTS</b></h2>
+			<h2>REALTIVE<b> PRODUCTS</b></h2>
       
       <hr class="hr2">
+
 			<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
 			<!-- Carousel indicators -->
 			<ol class="carousel-indicators">
@@ -59,11 +59,11 @@ class ProductDescription extends view{
 						<div class="col-sm-3">
 							<div class="thumb-wrapper">
 								<div class="img-box">
-									<img src="<?php echo URLROOT . 'images/car.jpg'; ?>" class="img-responsive" alt="">
+									<img src="<?php echo URLROOT . 'images/p1.jpg'; ?>" class="img-responsive" alt="">
 								</div>
 								<div class="thumb-content">
-									<h4>Apple iPad</h4>
-									<p class="item-price"><strike>$250.00</strike> <span>$200.00</span></p>
+									<h4>Akrapovic GP Slip-On Exhaust</h4>
+									<p class="item-price"><strike>$400.00</strike> <span>$369.00</span></p>
 									<div class="star-rating">
 										<ul class="list-inline">
 											<li class="list-inline-item"><i class="fa fa-star"></i></li>
@@ -80,11 +80,11 @@ class ProductDescription extends view{
 						<div class="col-sm-3">
 							<div class="thumb-wrapper">
 								<div class="img-box">
-									<img src="<?php echo URLROOT . 'images/car.jpg'; ?>" class="img-responsive" alt="">
+									<img src="<?php echo URLROOT . 'images/p2.jpg'; ?>" class="img-responsive" alt="">
 								</div>
 								<div class="thumb-content">
-									<h4>Sony Headphone</h4>
-									<p class="item-price"><strike>$25.00</strike> <span>$23.99</span></p>
+									<h4>Yoshimura Alpha T Works Slip-On Exhaust</h4>
+									<p class="item-price"><strike>$825.00</strike> <span>$23.99</span></p>
 									<div class="star-rating">
 										<ul class="list-inline">
 											<li class="list-inline-item"><i class="fa fa-star"></i></li>
@@ -101,10 +101,10 @@ class ProductDescription extends view{
 						<div class="col-sm-3">
 							<div class="thumb-wrapper">
 								<div class="img-box">
-									<img src="<?php echo URLROOT . 'images/car.jpg'; ?>" class="img-responsive" alt="">
+									<img src="<?php echo URLROOT . 'images/p3.jpg'; ?>" class="img-responsive" alt="">
 								</div>
 								<div class="thumb-content">
-									<h4>Macbook Air</h4>
+									<h4>Akrapovic Slip-On Exhausts</h4>
 									<p class="item-price"><strike>$899.00</strike> <span>$649.00</span></p>
 									<div class="star-rating">
 										<ul class="list-inline">
@@ -122,10 +122,10 @@ class ProductDescription extends view{
 						<div class="col-sm-3">
 							<div class="thumb-wrapper">
 								<div class="img-box">
-									<img src="<?php echo URLROOT . 'images/car.jpg'; ?>" class="img-responsive" alt="">
+									<img src="<?php echo URLROOT . 'images/p4.jpg'; ?>" class="img-responsive" alt="">
 								</div>
 								<div class="thumb-content">
-									<h4>Nikon DSLR</h4>
+									<h4>Arrow Pro-Race Slip-On Exhaust</h4>
 									<p class="item-price"><strike>$315.00</strike> <span>$250.00</span></p>
 									<div class="star-rating">
 										<ul class="list-inline">
