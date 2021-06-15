@@ -69,9 +69,12 @@ class Pages extends Controller
         $cartView = new Cart($this->getModel(), $this);
         $cartView->output();
 
-        
-            
-
     }
-
+public function SpecialOrder()
+{
+    $viewPath = VIEWS_PATH . 'pages/SpecialOrder.php';
+    require_once $viewPath;
+    $cartView = new specialorder($this->getModel(), $this);
+    $cartView->output();
+}
 }
