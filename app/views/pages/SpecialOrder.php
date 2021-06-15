@@ -15,7 +15,7 @@ class SpecialOrder extends view{
     <div class="col-sm">
     <label style="font-size: 20px;"><b>Type</b></label>  
     <!--Type drop box -->
-    <select class="selectpicker" data-live-search="true">
+    <select class="selectpicker"  data-live-search="true">
     <option value="none" selected disabled hidden>Select</option>
     <option>Spare Part</option>
     <option>Accessories</option>
@@ -26,7 +26,7 @@ class SpecialOrder extends view{
     <option>Shock Absorber</option>
     </select>
     
-<a href="">Remove Choice</a>
+
 </div>
 
 <div class="col-sm">
@@ -52,13 +52,12 @@ class SpecialOrder extends view{
     <option>2006</option>
     </select>
 
-<a href="">Remove Choice</a>
 </div>
 
 <div class="col-sm">
 <!--Brand-->
 <label style="font-size: 20px;"><b>Brand</b></label>
-<select class="selectpicker" data-live-search="true" >
+<select class="selectpicker" data-live-search="true"  >
     <option value="none" selected disabled hidden>Select</option>
     <option>Honda</option>
     <option>Kawasaki</option>
@@ -68,8 +67,9 @@ class SpecialOrder extends view{
     <option>Benelli</option>
     <option>Yamaha</option>
     </select>
+ 
     
-<a href="">Remove Choice</a>
+
 </div>
 
 <div class="col-sm">
@@ -87,19 +87,19 @@ class SpecialOrder extends view{
     <option value="black">Black</option>
     </select>
     <br>
-<a href="">Remove Choice</a>
+
 </div></div>
 <div class="d-flex justify-content-center">
 <label style="font-size:20px;"><b>Description</b></label>
 </div>
 <div class="d-flex justify-content-center" style="margin-bottom:40px;" >
-<textarea  id="exampleFormControlTextarea1" rows="5" style="width:60%;border-radius:10px; border:10px; border:3px solid #1167b1;"></textarea>
+<textarea  id="exampleFormControlTextarea1" rows="5" style="width:60%;border-radius:10px; border:10px; border:2px solid #000;"></textarea>
 </div>
 <div class="d-flex justify-content-center ">
-<input type="file" class="form-control" id="customFile" style="width:60% ;margin-bottom:30px; border:3px solid #1167b1;" >
+<input type="file" class="form-control" id="customFile" style="width:20% ;margin-bottom:30px; border:2px solid #000;  background-color: #ffffff0d; height: 33px;" >
     </div>
     <div class="d-flex justify-content-center">
-    <button class="btn btn-primary" type="submit" style="margin-bottom:10px; ">Submit</button>
+    <button class="btn " type="submit" style="margin-bottom:10px; width:90px; border:2px solid #000;  ">Submit</button>
     </div>
 </form>
 </body>
