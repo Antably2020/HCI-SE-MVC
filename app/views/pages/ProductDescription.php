@@ -5,7 +5,43 @@ class ProductDescription extends view{
     require APPROOT . '/views/inc/header.php';
     ?>
     <br><br><br>
-    
+    <head>
+		<script>
+	$(document).ready(function(){
+
+var quantitiy=0;
+   $('.quantity-right-plus').click(function(e){
+		
+		// Stop acting like a button
+		e.preventDefault();
+		// Get the field name
+		var quantity = parseInt($('#quantity').val());
+		
+		// If is not undefined
+			
+			$('#quantity').val(quantity + 1);
+
+		  
+			// Increment
+		
+	});
+
+	 $('.quantity-left-minus').click(function(e){
+		// Stop acting like a button
+		e.preventDefault();
+		// Get the field name
+		var quantity = parseInt($('#quantity').val());
+		
+		// If is not undefined
+	  
+			// Increment
+			if(quantity>0){
+			$('#quantity').val(quantity - 1);
+			}
+	});
+	
+});</script>
+	</head>
 <body>
 
  
@@ -30,6 +66,33 @@ class ProductDescription extends view{
         <div >
 <button class="cart-btn" style="border-radius:15px; font-size:20px; margin-right:10px;">Add to Cart</button> 
 <input type="number" value="1" min="1" max="10" step="1" style="font-size:20px; border-radius:10px; width:7%; border:2px solid #000; "> 
+
+
+<div class="quantity buttons_added"><a href="javascript:void(0)" class="minus">-</a>
+				
+		<input type="number" id="quantity_60c29412b3096" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="Qty" size="4" placeholder="" inputmode="numeric"><a href="javascript:void(0)" class="plus">+</a>
+			</div>
+
+
+
+<div class="col-lg-2">
+                                        <div class="input-group">
+                                    <span class="input-group-btn">
+                                        <button type="button" class="quantity-left-minus btn btn-danger btn-number"  data-type="minus" data-field="">
+                                          <span class="glyphicon glyphicon-minus"></span>
+                                        </button>
+                                    </span>
+                                    <input type="text" id="quantity" name="quantity" class="form-control input-number" value="10" min="1" max="100" style=" border-radius:10px; width:50%; border:2px solid #000; ">
+                                  
+									<span class="input-group-btn">
+                                        <button type="button" class="quantity-right-plus btn btn-success btn-number" data-type="plus" data-field="">
+                                            <span class="glyphicon glyphicon-plus"></span>
+                                        </button>
+                                    </span>
+                                </div>
+                        </div>
+
+
 </div>
 </div>
 
