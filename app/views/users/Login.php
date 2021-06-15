@@ -6,38 +6,38 @@ class Login extends view
     $title = $this->model->title;
 
     require APPROOT . '/views/inc/header.php';?>
+    
+    <div class="row">
+		<div class="col-md-12">
+		<h2 ><a class="login-head1" href="<?php echo URLROOT . 'public/users/login'; ?>">Login</a> <li class="or">Or</li> <b> <a class="login-head2" style=" color: #FF7A00;" href="<?php echo URLROOT . 'public/users/register'; ?>">SignUp</a></b></h2>
+     
+ </div></div>
+    
     <div class="login-container ">
-
-
-    <div> <button class="column" style="border-bottom:0px; border-top: 5px solid #FF7A00;  " ><a href="<?php echo URLROOT . 'public/users/login'; ?>"style="color: #FF7A00;"><h1>Login<h1></a></button></div>
     
-    <div> <button class="column" style="background-color:#bbb; "><a href="<?php echo URLROOT . 'public/users/register'; ?>" style="color: #FF7A00; "><h1>SignUp<h1></a></button></div>
-    
-    
-    
-    
-      <form class="form" method="post" action="" name="Login" >
+      <form class="form" method="post" action="" name="Login" style="padding: 18px;" >
            
-        <h1 style=" padding-top: 105px;">LOGIN<h1>
+        
           
-        <div  >
+  
+        <div  style=" padding-top: 50px; ">
       
-                
-                <input class="login-field" type="text"  required="true"  name="email" placeholder="Email Adress" autofocus="false">
+               <div > <label >Email</label></div>
+                <input class=" form-control center-block" style="width:60%" type="text"  required="true"  name="email" placeholder="Email Adress" autofocus="false">
                 
         
           
           
-      
+                <div ><label >Password</label></div>
           
-                <input class="login-field" type="password" required="true" name="password" placeholder="password" autofocus="false">
+                <input class="form-control center-block" style="width:60%" type="password" required="true" name="password" placeholder="password" autofocus="false">
               </div>
             
               
               
               
             <input type="submit" class="login-btn" id="Login" name="Login"onsubmit="return false" value="Submit" class="login-button">
-            <input type="button" class="login-btn" onclick="window.location.href='<?php echo URLROOT . 'public'; ?>';" value="Back" />
+            
           
         </form>     </div>
     

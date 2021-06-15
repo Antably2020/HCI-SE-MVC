@@ -36,18 +36,14 @@
             </li>
         
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo URLROOT . 'public/pages/products'; ?>">Products</a>
+                <a class="nav-link" href="<?php echo URLROOT . 'public/pages/products'; ?>">PRODUCTS</a>
             </li>
             
             
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo URLROOT . 'public/users/login'; ?>">Login</a>
+                <a class="nav-link" href="<?php echo URLROOT . 'public/users/login'; ?>">MY ACCOUNT</a>
             </li>
 
-
-            <li class="nav-item">
-                <a class="nav-link" href="<?php echo URLROOT . 'public/users/register'; ?>">Register</a>
-            </li>
 
             <li class="nav-item">
             <a class="nav-link" href="<?php echo URLROOT . 'public/pages/cart'; ?>">

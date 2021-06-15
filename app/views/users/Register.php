@@ -7,42 +7,44 @@ class Register extends view
 
     require APPROOT . '/views/inc/header.php';?>
    
-   <div class="login-container ">
+  
+
+   <div class="row">
+		<div class="col-md-12">
+		<h2 ><a class="register-head1" href="<?php echo URLROOT . 'public/users/login'; ?>">Login</a> <li class="or">Or</li> <b> <a class="register-head2" style=" color: #FF7A00;" href="<?php echo URLROOT . 'public/users/register'; ?>">SignUp</a></b></h2>
+     
+ </div></div>
 
 
-<div> <button class="column" style="background-color:#bbb;"><a href="<?php echo URLROOT . 'public/users/login'; ?>"><h1>Login<h1></a></button></div>
-
-<div> <button class="column"style="border-bottom:0px; border-top: 5px solid #FF7A00; "  ><a href="<?php echo URLROOT . 'public/users/register'; ?>"><h1>SignUp<h1></a></button></div>
-
-
-
-
+  <div class="login-container">
   <form class="form" method="post" action="" name="Login" >
        
-    <h1 style=" padding-top: 105px;">REGISTER<h1>
+   
+  <div  style=" padding-top: 50px; ">
       
-		<div>
-	
-             <input class="login-field1" type="text"  required="true"  name="fname" placeholder="First Name" autofocus="false">
-
-						<input class="login-field1" type="text"  required="true"  name="lname" placeholder="Last Name" autofocus="false">
-            <input class="login-field" type="text"  required="true"  name="email" placeholder="Email Address" autofocus="false">
+            <div><label >First Name</label>
+             <input class="form-control center-block" style="width:60%" type="text"  required="true"  name="fname" placeholder="First Name" autofocus="false">
+             </div>
+             <div > <label >Last Name</label>
+             <input class="form-control center-block"style="width:60%"  type="text"  required="true"  name="lname" placeholder="Last Name" autofocus="false">
+            </div>
+           
+            <div > <label >Email Address</label></div>
+            <input class="form-control center-block"style="width:60%"  type="text"  required="true"  name="email" placeholder="Email Address" autofocus="false">
 						
-            <input class="login-field" type="text"  required="true"  name="age" placeholder="Age" autofocus="false">
+            <div > <label >Age</label></div>
+            <input class="form-control center-block"style="width:60%"  type="text"  required="true"  name="age" placeholder="Age" autofocus="false">
 						
-			
-			
-            <input class="login-field"type="password" required="true" name="password" placeholder="password" autofocus="false">
-					
-						<input class="login-field"type="password" required="true" name="C_password" placeholder="confirm password" autofocus="false">
+            <div > <label >password</label></div>
+            <input class="form-control center-block"style="width:60%" type="password" required="true" name="password" placeholder="password" autofocus="false">
+            
+            <div > <label >confirm password</label></div>
+						<input class="form-control center-block"style="width:60%" type="password" required="true" name="C_password" placeholder="confirm password" autofocus="false">
 					</div>
 				
 					
-					
-					
-        <input type="submit" class="login-btn" id="Login" name="Login"onsubmit="return false" value="submit" class="login-button">
-        <input type="button" class="login-btn" onclick="window.location.href='<?php echo URLROOT . 'public'; ?>';" value="Back" />
-  
+        <input type="submit" class="login-btn" id="Login" name="Login"onsubmit="return false" value="Submit" >
+            
 	  </form>  </div>
 
 <?php
