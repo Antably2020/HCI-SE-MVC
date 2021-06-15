@@ -182,11 +182,13 @@ class Index extends view{
 						<div class="col-sm-3">
 							<div class="thumb-wrapper">
 								<div class="img-box">
-									<img src="<?php echo URLROOT . 'images/p1.jpg'; ?>" class="img-responsive" alt="">
+								<a href="" class="cat-title">
+								<img src="<?php echo URLROOT . 'images/p1.jpg'; ?>" class="img-responsive" alt="">
 								</div>
+								
 								<div class="thumb-content">
 									<h4>Akrapovic GP Slip-On Exhaust</h4>
-									<p class="item-price"><strike>$400.00</strike> <span>$369.00</span></p>
+									<p class="item-price"><strike>$400.00</strike> <span>$369.00</span></p></a>
 									<div class="star-rating">
 										<ul class="list-inline">
 											<li class="list-inline-item"><i class="fa fa-star"></i></li>
@@ -203,11 +205,12 @@ class Index extends view{
 						<div class="col-sm-3">
 							<div class="thumb-wrapper">
 								<div class="img-box">
+								<a href="" class="cat-title">
 									<img src="<?php echo URLROOT . 'images/p2.jpg'; ?>" class="img-responsive" alt="">
 								</div>
 								<div class="thumb-content">
 									<h4>Yoshimura Alpha T Works Slip-On Exhaust</h4>
-									<p class="item-price"><strike>$825.00</strike> <span>$23.99</span></p>
+									<p class="item-price"><strike>$825.00</strike> <span>$23.99</span></p></a>
 									<div class="star-rating">
 										<ul class="list-inline">
 											<li class="list-inline-item"><i class="fa fa-star"></i></li>
@@ -224,11 +227,12 @@ class Index extends view{
 						<div class="col-sm-3">
 							<div class="thumb-wrapper">
 								<div class="img-box">
+								<a href="" class="cat-title">
 									<img src="<?php echo URLROOT . 'images/p3.jpg'; ?>" class="img-responsive" alt="">
 								</div>
 								<div class="thumb-content">
 									<h4>Akrapovic Slip-On Exhausts</h4>
-									<p class="item-price"><strike>$899.00</strike> <span>$649.00</span></p>
+									<p class="item-price"><strike>$899.00</strike> <span>$649.00</span></p></a>
 									<div class="star-rating">
 										<ul class="list-inline">
 											<li class="list-inline-item"><i class="fa fa-star"></i></li>
@@ -245,11 +249,12 @@ class Index extends view{
 						<div class="col-sm-3">
 							<div class="thumb-wrapper">
 								<div class="img-box">
+								<a href="" class="cat-title">
 									<img src="<?php echo URLROOT . 'images/p4.jpg'; ?>" class="img-responsive" alt="">
 								</div>
 								<div class="thumb-content">
 									<h4>Arrow Pro-Race Slip-On Exhaust</h4>
-									<p class="item-price"><strike>$315.00</strike> <span>$250.00</span></p>
+									<p class="item-price"><strike>$315.00</strike> <span>$250.00</span></p></a>
 									<div class="star-rating">
 										<ul class="list-inline">
 											<li class="list-inline-item"><i class="fa fa-star"></i></li>
@@ -270,11 +275,12 @@ class Index extends view{
 					<div class="col-sm-3">
 							<div class="thumb-wrapper">
 								<div class="img-box">
+								<a href="" class="cat-title">
 									<img src="<?php echo URLROOT . 'images/p1.jpg'; ?>" class="img-responsive" alt="">
 								</div>
 								<div class="thumb-content">
 									<h4>Akrapovic GP Slip-On Exhaust</h4>
-									<p class="item-price"><strike>$400.00</strike> <span>$369.00</span></p>
+									<p class="item-price"><strike>$400.00</strike> <span>$369.00</span></p></a>
 									<div class="star-rating">
 										<ul class="list-inline">
 											<li class="list-inline-item"><i class="fa fa-star"></i></li>
@@ -291,11 +297,12 @@ class Index extends view{
 						<div class="col-sm-3">
 							<div class="thumb-wrapper">
 								<div class="img-box">
+								<a href="" class="cat-title">
 									<img src="<?php echo URLROOT . 'images/p2.jpg'; ?>" class="img-responsive" alt="">
 								</div>
 								<div class="thumb-content">
 									<h4>Yoshimura Alpha T Works Slip-On Exhaust</h4>
-									<p class="item-price"><strike>$825.00</strike> <span>$23.99</span></p>
+									<p class="item-price"><strike>$825.00</strike> <span>$23.99</span></p></a>
 									<div class="star-rating">
 										<ul class="list-inline">
 											<li class="list-inline-item"><i class="fa fa-star"></i></li>
@@ -312,11 +319,12 @@ class Index extends view{
 						<div class="col-sm-3">
 							<div class="thumb-wrapper">
 								<div class="img-box">
+								<a href="" class="cat-title">
 									<img src="<?php echo URLROOT . 'images/p3.jpg'; ?>" class="img-responsive" alt="">
 								</div>
 								<div class="thumb-content">
 									<h4>Akrapovic Slip-On Exhausts</h4>
-									<p class="item-price"><strike>$899.00</strike> <span>$649.00</span></p>
+									<p class="item-price"><strike>$899.00</strike> <span>$649.00</span></p></a>
 									<div class="star-rating">
 										<ul class="list-inline">
 											<li class="list-inline-item"><i class="fa fa-star"></i></li>
@@ -333,11 +341,12 @@ class Index extends view{
 						<div class="col-sm-3">
 							<div class="thumb-wrapper">
 								<div class="img-box">
+								<a href="" class="cat-title">
 									<img src="<?php echo URLROOT . 'images/p4.jpg'; ?>" class="img-responsive" alt="">
 								</div>
 								<div class="thumb-content">
 									<h4>Arrow Pro-Race Slip-On Exhaust</h4>
-									<p class="item-price"><strike>$315.00</strike> <span>$250.00</span></p>
+									<p class="item-price"><strike>$315.00</strike> <span>$250.00</span></p></a>
 									<div class="star-rating">
 										<ul class="list-inline">
 											<li class="list-inline-item"><i class="fa fa-star"></i></li>
@@ -358,11 +367,12 @@ class Index extends view{
 						<div class="col-sm-3">
 							<div class="thumb-wrapper">
 								<div class="img-box">
+								<a href="" class="cat-title">
 									<img src="<?php echo URLROOT . 'images/p1.jpg'; ?>" class="img-responsive" alt="">
 								</div>
 								<div class="thumb-content">
 									<h4>Akrapovic GP Slip-On Exhaust</h4>
-									<p class="item-price"><strike>$400.00</strike> <span>$369.00</span></p>
+									<p class="item-price"><strike>$400.00</strike> <span>$369.00</span></p></a>
 									<div class="star-rating">
 										<ul class="list-inline">
 											<li class="list-inline-item"><i class="fa fa-star"></i></li>
@@ -379,11 +389,12 @@ class Index extends view{
 						<div class="col-sm-3">
 							<div class="thumb-wrapper">
 								<div class="img-box">
+								<a href="" class="cat-title">
 									<img src="<?php echo URLROOT . 'images/p2.jpg'; ?>" class="img-responsive" alt="">
 								</div>
 								<div class="thumb-content">
 									<h4>Yoshimura Alpha T Works Slip-On Exhaust</h4>
-									<p class="item-price"><strike>$825.00</strike> <span>$23.99</span></p>
+									<p class="item-price"><strike>$825.00</strike> <span>$23.99</span></p></a>
 									<div class="star-rating">
 										<ul class="list-inline">
 											<li class="list-inline-item"><i class="fa fa-star"></i></li>
@@ -400,11 +411,12 @@ class Index extends view{
 						<div class="col-sm-3">
 							<div class="thumb-wrapper">
 								<div class="img-box">
+								<a href="" class="cat-title">
 									<img src="<?php echo URLROOT . 'images/p3.jpg'; ?>" class="img-responsive" alt="">
 								</div>
 								<div class="thumb-content">
 									<h4>Akrapovic Slip-On Exhausts</h4>
-									<p class="item-price"><strike>$899.00</strike> <span>$649.00</span></p>
+									<p class="item-price"><strike>$899.00</strike> <span>$649.00</span></p><a>
 									<div class="star-rating">
 										<ul class="list-inline">
 											<li class="list-inline-item"><i class="fa fa-star"></i></li>
@@ -421,11 +433,12 @@ class Index extends view{
 						<div class="col-sm-3">
 							<div class="thumb-wrapper">
 								<div class="img-box">
+								<a href="" class="cat-title">
 									<img src="<?php echo URLROOT . 'images/p4.jpg'; ?>" class="img-responsive" alt="">
 								</div>
 								<div class="thumb-content">
 									<h4>Arrow Pro-Race Slip-On Exhaust</h4>
-									<p class="item-price"><strike>$315.00</strike> <span>$250.00</span></p>
+									<p class="item-price"><strike>$315.00</strike> <span>$250.00</span></p></a>
 									<div class="star-rating">
 										<ul class="list-inline">
 											<li class="list-inline-item"><i class="fa fa-star"></i></li>
@@ -443,10 +456,10 @@ class Index extends view{
 				</div>
 			</div>
 			<!-- Carousel controls -->
-			<a class="carousel-control left" href="#myCarousel" data-slide="prev">
+			<a class="carousel-control left" style=" background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgb(0 0 0 / 0%) 100%);" href="#myCarousel" data-slide="prev">
 				<i class="fa fa-angle-left"></i>
 			</a>
-			<a class="carousel-control right" href="#myCarousel" data-slide="next">
+			<a class="carousel-control right "  style=" background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgb(0 0 0 / 0%) 100%);"href="#myCarousel" data-slide="next">
 				<i class="fa fa-angle-right"></i>
 			</a>
 		</div>

@@ -320,10 +320,10 @@ class ProductDescription extends view{
 				</div>
 			</div>
 			<!-- Carousel controls -->
-			<a class="carousel-control left" href="#myCarousel" data-slide="prev">
+			<a class="carousel-control left" style=" background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgb(0 0 0 / 0%) 100%);" href="#myCarousel" data-slide="prev">
 				<i class="fa fa-angle-left"></i>
 			</a>
-			<a class="carousel-control right" href="#myCarousel" data-slide="next">
+			<a class="carousel-control right" style=" background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgb(0 0 0 / 0%) 100%);" href="#myCarousel" data-slide="next">
 				<i class="fa fa-angle-right"></i>
 			</a>
 		</div>
