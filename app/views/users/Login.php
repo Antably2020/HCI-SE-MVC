@@ -28,26 +28,16 @@ class Login extends view
         
           
           
-<<<<<<< HEAD
-      
-          
-                <input class="login-field" type="password" required="true" name="password" placeholder="password" autofocus="false">
-=======
                 <div ><label >Password</label></div>
           
                 <input class="form-control center-block" style="width:60%" type="password" required="true" name="password" placeholder="password" autofocus="false">
->>>>>>> mahmoud
               </div>
             
               
               
               
             <input type="submit" class="login-btn" id="Login" name="Login"onsubmit="return false" value="Submit" class="login-button">
-<<<<<<< HEAD
-            <input type="button" class="login-btn" onclick="window.location.href='<?php echo URLROOT . 'public'; ?>';" value="Back" />
-=======
             
->>>>>>> mahmoud
           
         </form>     </div>
     
