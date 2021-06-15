@@ -79,9 +79,9 @@ class Users extends Controller
 
             if ($userModel->findUserByEmail($_POST['email'],$_POST['password'])) {
                 //Check login is correct
-
-
+               
                 header('location: ' . URLROOT . 'public/');
+                
             }
             else{ header('location: ' . URLROOT . 'public/users/login');}
         }
@@ -92,4 +92,41 @@ class Users extends Controller
         $view = new Login($userModel, $this);
         $view->output();
     }
+
+    public function adminLogin()
+    {
+        $userModel = $this->getModel();
+        if($_SERVER['REQUEST_METHOD'] = 'POST')
+        {
+            $userModel->setEmail(trim($_POST['email']));
+            $userModel->setPassword(trim($_POST['password']));
+
+            if (empty($userModel->getEmail())) {
+                $userModel->setEmailErr('Please enter an email');
+            } elseif (!($userModel->emailExist($_POST['email']))) {
+                $userModel->setEmailErr('No user found');
+            }
+
+            if (empty($userModel->getPassword())) {
+                $userModel->setPasswordErr('Please enter a password');
+            } elseif (strlen($userModel->getPassword()) < 4) {
+                $userModel->setPasswordErr('Password must contain at least 4 characters');
+            }
+
+            if($userModel->findUserByEmail($_POST['email'],$_POST['password']))
+            {
+                header('location: ' . URLROOT . 'public/');
+                
+            }
+            else{ header('location: ' . URLROOT . 'public/users/login');}
+        }
+        // Load form
+        //echo 'Load form, Request method: ' . $_SERVER['REQUEST_METHOD'];
+        $viewPath = VIEWS_PATH . 'users/AdminLogin.php';
+        require_once $viewPath;
+        $view = new Login($userModel, $this);
+        $view->output();
+
+    }
+
 }
