@@ -29,13 +29,13 @@ class Index extends view{
                                                 <div class="col-6 col-sm-6 col-md-4 col-lg-3">
                   <!-- categories -->
                   <div class="product">
-                      <article>
+                      <article style="padding-bottom:30px;">
                         <div class="module">
                           <div class="cat-thumb">
-                              <img class="img-fluid" src="<?php echo URLROOT . 'images/part.jpg'; ?>" alt="Spare Parts">
+                              <img class="img-fluid" src="<?php echo URLROOT . 'images/cat1.jpg'; ?>" style="Height: 245px;" alt="Spare Parts">
                           </div>
                           <a href="" class="cat-title">
-                            Spare Parts
+						  Drive & Transmission
                           </a>
                         </div>
                       </article>
@@ -47,10 +47,10 @@ class Index extends view{
                       <article>
                         <div class="module">
                           <div class="cat-thumb">
-                              <img class="img-fluid" src="<?php echo URLROOT . 'images/part.jpg'; ?>" alt="Fluids">
+                              <img class="img-fluid" src="<?php echo URLROOT . 'images/p1.jpg'; ?>" alt="Fluids">
                           </div>
                           <a href="" class="cat-title">
-                            Fluids
+						  Exhaust Systems
                           </a>
                         </div>
                       </article>
@@ -62,10 +62,10 @@ class Index extends view{
                       <article>
                         <div class="module">
                           <div class="cat-thumb">
-                              <img class="img-fluid" src="<?php echo URLROOT . 'images/part.jpg'; ?>" alt="Car Care">
+                              <img class="img-fluid" src="<?php echo URLROOT . 'images/cat2.jpg'; ?>" alt="Car Care">
                           </div>
                           <a href="" class="cat-title">
-                            Car Care
+						  Air Cleaners
                           </a>
                         </div>
                       </article>
@@ -77,10 +77,10 @@ class Index extends view{
                       <article>
                         <div class="module">
                           <div class="cat-thumb">
-                              <img class="img-fluid" src="<?php echo URLROOT . 'images/part.jpg'; ?>" alt="Sound Systems">
+                              <img class="img-fluid" src="<?php echo URLROOT . 'images/cat3.jpg'; ?>" alt="Sound Systems">
                           </div>
                           <a href="" class="cat-title">
-                            Sound Systems
+						  HANDLEBARS & CONTROLS
                           </a>
                         </div>
                       </article>
@@ -92,10 +92,10 @@ class Index extends view{
                       <article>
                         <div class="module">
                           <div class="cat-thumb">
-                              <img class="img-fluid" src="<?php echo URLROOT . 'images/part.jpg'; ?>" alt="Engine Performance">
+                              <img class="img-fluid" src="<?php echo URLROOT . 'images/cat4.jpg'; ?>" alt="Engine Performance">
                           </div>
                           <a href="" class="cat-title">
-                            Engine Performance
+						  Bike Protection
                           </a>
                         </div>
                       </article>
@@ -107,10 +107,10 @@ class Index extends view{
                       <article>
                         <div class="module">
                           <div class="cat-thumb">
-                              <img class="img-fluid" src="<?php echo URLROOT . 'images/part.jpg'; ?>" alt="Car Lightening">
+                              <img class="img-fluid" src="<?php echo URLROOT . 'images/cat5.jpg'; ?>" alt="Car Lightening">
                           </div>
                           <a href="" class="cat-title">
-                            Car Lightening
+						  SUSPENSION & FRAME
                           </a>
                         </div>
                       </article>
@@ -122,10 +122,10 @@ class Index extends view{
                       <article>
                         <div class="module">
                           <div class="cat-thumb">
-                              <img class="img-fluid" src="<?php echo URLROOT . 'images/part.jpg'; ?>" alt="Accessories">
+                              <img class="img-fluid" src="<?php echo URLROOT . 'images/cat6.jpg'; ?>" alt="Accessories">
                           </div>
                           <a href="" class="cat-title">
-                            Accessories
+						  Brakes
                           </a>
                         </div>
                       </article>
@@ -137,10 +137,10 @@ class Index extends view{
                       <article>
                         <div class="module">
                           <div class="cat-thumb">
-                              <img class="img-fluid" src="<?php echo URLROOT . 'images/part.jpg'; ?>" alt="Best Selling">
+                              <img class="img-fluid" src="<?php echo URLROOT . 'images/cat7.jpg'; ?>" alt="Best Selling">
                           </div>
                           <a href="" class="cat-title">
-                            Best Selling
+						  Engine Parts 
                           </a>
                         </div>
                       </article>
@@ -182,10 +182,10 @@ class Index extends view{
 						<div class="col-sm-3">
 							<div class="thumb-wrapper">
 								<div class="img-box">
-									<img src="<?php echo URLROOT . 'images/car.jpg'; ?>" class="img-responsive" alt="">
+									<img src="<?php echo URLROOT . 'images/p1.jpg'; ?>" class="img-responsive" alt="">
 								</div>
 								<div class="thumb-content">
-									<h4>Apple iPad</h4>
+									<h4>Akrapovic GP Slip-On Exhaust</h4>
 									<p class="item-price"><strike>$400.00</strike> <span>$369.00</span></p>
 									<div class="star-rating">
 										<ul class="list-inline">
@@ -203,11 +203,11 @@ class Index extends view{
 						<div class="col-sm-3">
 							<div class="thumb-wrapper">
 								<div class="img-box">
-									<img src="<?php echo URLROOT . 'images/car.jpg'; ?>" class="img-responsive" alt="">
+									<img src="<?php echo URLROOT . 'images/p2.jpg'; ?>" class="img-responsive" alt="">
 								</div>
 								<div class="thumb-content">
-									<h4>Sony Headphone</h4>
-									<p class="item-price"><strike>$25.00</strike> <span>$23.99</span></p>
+									<h4>Yoshimura Alpha T Works Slip-On Exhaust</h4>
+									<p class="item-price"><strike>$825.00</strike> <span>$23.99</span></p>
 									<div class="star-rating">
 										<ul class="list-inline">
 											<li class="list-inline-item"><i class="fa fa-star"></i></li>
@@ -224,10 +224,10 @@ class Index extends view{
 						<div class="col-sm-3">
 							<div class="thumb-wrapper">
 								<div class="img-box">
-									<img src="<?php echo URLROOT . 'images/car.jpg'; ?>" class="img-responsive" alt="">
+									<img src="<?php echo URLROOT . 'images/p3.jpg'; ?>" class="img-responsive" alt="">
 								</div>
 								<div class="thumb-content">
-									<h4>Macbook Air</h4>
+									<h4>Akrapovic Slip-On Exhausts</h4>
 									<p class="item-price"><strike>$899.00</strike> <span>$649.00</span></p>
 									<div class="star-rating">
 										<ul class="list-inline">
@@ -245,10 +245,10 @@ class Index extends view{
 						<div class="col-sm-3">
 							<div class="thumb-wrapper">
 								<div class="img-box">
-									<img src="<?php echo URLROOT . 'images/car.jpg'; ?>" class="img-responsive" alt="">
+									<img src="<?php echo URLROOT . 'images/p4.jpg'; ?>" class="img-responsive" alt="">
 								</div>
 								<div class="thumb-content">
-									<h4>Nikon DSLR</h4>
+									<h4>Arrow Pro-Race Slip-On Exhaust</h4>
 									<p class="item-price"><strike>$315.00</strike> <span>$250.00</span></p>
 									<div class="star-rating">
 										<ul class="list-inline">
