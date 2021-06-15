@@ -182,11 +182,13 @@ class Index extends view{
 						<div class="col-sm-3">
 							<div class="thumb-wrapper">
 								<div class="img-box">
-									<img src="<?php echo URLROOT . 'images/p1.jpg'; ?>" class="img-responsive" alt="">
+								<a href="" class="cat-title">
+								<img src="<?php echo URLROOT . 'images/p1.jpg'; ?>" class="img-responsive" alt="">
 								</div>
+								
 								<div class="thumb-content">
 									<h4>Akrapovic GP Slip-On Exhaust</h4>
-									<p class="item-price"><strike>$400.00</strike> <span>$369.00</span></p>
+									<p class="item-price"><strike>$400.00</strike> <span>$369.00</span></p></a>
 									<div class="star-rating">
 										<ul class="list-inline">
 											<li class="list-inline-item"><i class="fa fa-star"></i></li>
@@ -203,11 +205,12 @@ class Index extends view{
 						<div class="col-sm-3">
 							<div class="thumb-wrapper">
 								<div class="img-box">
+								<a href="" class="cat-title">
 									<img src="<?php echo URLROOT . 'images/p2.jpg'; ?>" class="img-responsive" alt="">
 								</div>
 								<div class="thumb-content">
 									<h4>Yoshimura Alpha T Works Slip-On Exhaust</h4>
-									<p class="item-price"><strike>$825.00</strike> <span>$23.99</span></p>
+									<p class="item-price"><strike>$825.00</strike> <span>$23.99</span></p></a>
 									<div class="star-rating">
 										<ul class="list-inline">
 											<li class="list-inline-item"><i class="fa fa-star"></i></li>
@@ -224,11 +227,12 @@ class Index extends view{
 						<div class="col-sm-3">
 							<div class="thumb-wrapper">
 								<div class="img-box">
+								<a href="" class="cat-title">
 									<img src="<?php echo URLROOT . 'images/p3.jpg'; ?>" class="img-responsive" alt="">
 								</div>
 								<div class="thumb-content">
 									<h4>Akrapovic Slip-On Exhausts</h4>
-									<p class="item-price"><strike>$899.00</strike> <span>$649.00</span></p>
+									<p class="item-price"><strike>$899.00</strike> <span>$649.00</span></p></a>
 									<div class="star-rating">
 										<ul class="list-inline">
 											<li class="list-inline-item"><i class="fa fa-star"></i></li>
@@ -245,11 +249,12 @@ class Index extends view{
 						<div class="col-sm-3">
 							<div class="thumb-wrapper">
 								<div class="img-box">
+								<a href="" class="cat-title">
 									<img src="<?php echo URLROOT . 'images/p4.jpg'; ?>" class="img-responsive" alt="">
 								</div>
 								<div class="thumb-content">
 									<h4>Arrow Pro-Race Slip-On Exhaust</h4>
-									<p class="item-price"><strike>$315.00</strike> <span>$250.00</span></p>
+									<p class="item-price"><strike>$315.00</strike> <span>$250.00</span></p></a>
 									<div class="star-rating">
 										<ul class="list-inline">
 											<li class="list-inline-item"><i class="fa fa-star"></i></li>
@@ -267,14 +272,15 @@ class Index extends view{
 				</div>
 				<div class="item">
 					<div class="row">
-						<div class="col-sm-3">
+					<div class="col-sm-3">
 							<div class="thumb-wrapper">
 								<div class="img-box">
-									<img src="<?php echo URLROOT . 'images/car.jpg'; ?>" class="img-responsive" alt="">
+								<a href="" class="cat-title">
+									<img src="<?php echo URLROOT . 'images/p1.jpg'; ?>" class="img-responsive" alt="">
 								</div>
 								<div class="thumb-content">
-									<h4>Sony Play Station</h4>
-									<p class="item-price"><strike>$289.00</strike> <span>$269.00</span></p>
+									<h4>Akrapovic GP Slip-On Exhaust</h4>
+									<p class="item-price"><strike>$400.00</strike> <span>$369.00</span></p></a>
 									<div class="star-rating">
 										<ul class="list-inline">
 											<li class="list-inline-item"><i class="fa fa-star"></i></li>
@@ -291,11 +297,34 @@ class Index extends view{
 						<div class="col-sm-3">
 							<div class="thumb-wrapper">
 								<div class="img-box">
-									<img src="<?php echo URLROOT . 'images/car.jpg'; ?>" class="img-responsive" alt="">
+								<a href="" class="cat-title">
+									<img src="<?php echo URLROOT . 'images/p2.jpg'; ?>" class="img-responsive" alt="">
 								</div>
 								<div class="thumb-content">
-									<h4>Macbook Pro</h4>
-									<p class="item-price"><strike>$1099.00</strike> <span>$869.00</span></p>
+									<h4>Yoshimura Alpha T Works Slip-On Exhaust</h4>
+									<p class="item-price"><strike>$825.00</strike> <span>$23.99</span></p></a>
+									<div class="star-rating">
+										<ul class="list-inline">
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+										</ul>
+									</div>
+									<a href="#" class="btn btn-primary">Add to Cart</a>
+								</div>						
+							</div>
+						</div>		
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+								<a href="" class="cat-title">
+									<img src="<?php echo URLROOT . 'images/p3.jpg'; ?>" class="img-responsive" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Akrapovic Slip-On Exhausts</h4>
+									<p class="item-price"><strike>$899.00</strike> <span>$649.00</span></p></a>
 									<div class="star-rating">
 										<ul class="list-inline">
 											<li class="list-inline-item"><i class="fa fa-star"></i></li>
@@ -308,15 +337,16 @@ class Index extends view{
 									<a href="#" class="btn btn-primary">Add to Cart</a>
 								</div>						
 							</div>
-						</div>
+						</div>								
 						<div class="col-sm-3">
 							<div class="thumb-wrapper">
 								<div class="img-box">
-									<img src="<?php echo URLROOT . 'images/car.jpg'; ?>" class="img-responsive" alt="">
+								<a href="" class="cat-title">
+									<img src="<?php echo URLROOT . 'images/p4.jpg'; ?>" class="img-responsive" alt="">
 								</div>
 								<div class="thumb-content">
-									<h4>Bose Speaker</h4>
-									<p class="item-price"><strike>$109.00</strike> <span>$99.00</span></p>
+									<h4>Arrow Pro-Race Slip-On Exhaust</h4>
+									<p class="item-price"><strike>$315.00</strike> <span>$250.00</span></p></a>
 									<div class="star-rating">
 										<ul class="list-inline">
 											<li class="list-inline-item"><i class="fa fa-star"></i></li>
@@ -330,27 +360,6 @@ class Index extends view{
 								</div>						
 							</div>
 						</div>
-						<div class="col-sm-3">
-							<div class="thumb-wrapper">
-								<div class="img-box">
-									<img src="<?php echo URLROOT . 'images/car.jpg'; ?>" class="img-responsive" alt="">
-								</div>
-								<div class="thumb-content">
-									<h4>Samsung Galaxy S8</h4>
-									<p class="item-price"><strike>$599.00</strike> <span>$569.00</span></p>
-									<div class="star-rating">
-										<ul class="list-inline">
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-										</ul>
-									</div>
-									<a href="#" class="btn btn-primary">Add to Cart</a>
-								</div>						
-							</div>
-						</div>						
 					</div>
 				</div>
 				<div class="item">
@@ -358,11 +367,12 @@ class Index extends view{
 						<div class="col-sm-3">
 							<div class="thumb-wrapper">
 								<div class="img-box">
-									<img src="<?php echo URLROOT . 'images/car.jpg'; ?>" class="img-responsive" alt="">
+								<a href="" class="cat-title">
+									<img src="<?php echo URLROOT . 'images/p1.jpg'; ?>" class="img-responsive" alt="">
 								</div>
 								<div class="thumb-content">
-									<h4>Apple iPhone</h4>
-									<p class="item-price"><strike>$369.00</strike> <span>$349.00</span></p>
+									<h4>Akrapovic GP Slip-On Exhaust</h4>
+									<p class="item-price"><strike>$400.00</strike> <span>$369.00</span></p></a>
 									<div class="star-rating">
 										<ul class="list-inline">
 											<li class="list-inline-item"><i class="fa fa-star"></i></li>
@@ -379,11 +389,12 @@ class Index extends view{
 						<div class="col-sm-3">
 							<div class="thumb-wrapper">
 								<div class="img-box">
-									<img src="<?php echo URLROOT . 'images/car.jpg'; ?>" class="img-responsive" alt="">
+								<a href="" class="cat-title">
+									<img src="<?php echo URLROOT . 'images/p2.jpg'; ?>" class="img-responsive" alt="">
 								</div>
 								<div class="thumb-content">
-									<h4>Canon DSLR</h4>
-									<p class="item-price"><strike>$315.00</strike> <span>$250.00</span></p>
+									<h4>Yoshimura Alpha T Works Slip-On Exhaust</h4>
+									<p class="item-price"><strike>$825.00</strike> <span>$23.99</span></p></a>
 									<div class="star-rating">
 										<ul class="list-inline">
 											<li class="list-inline-item"><i class="fa fa-star"></i></li>
@@ -396,42 +407,44 @@ class Index extends view{
 									<a href="#" class="btn btn-primary">Add to Cart</a>
 								</div>						
 							</div>
-						</div>
+						</div>		
 						<div class="col-sm-3">
 							<div class="thumb-wrapper">
 								<div class="img-box">
-									<img src="<?php echo URLROOT . 'images/car.jpg'; ?>" class="img-responsive" alt="">
+								<a href="" class="cat-title">
+									<img src="<?php echo URLROOT . 'images/p3.jpg'; ?>" class="img-responsive" alt="">
 								</div>
 								<div class="thumb-content">
-									<h4>Google Pixel</h4>
-									<p class="item-price"><strike>$450.00</strike> <span>$418.00</span></p>
+									<h4>Akrapovic Slip-On Exhausts</h4>
+									<p class="item-price"><strike>$899.00</strike> <span>$649.00</span></p><a>
 									<div class="star-rating">
 										<ul class="list-inline">
 											<li class="list-inline-item"><i class="fa fa-star"></i></li>
 											<li class="list-inline-item"><i class="fa fa-star"></i></li>
 											<li class="list-inline-item"><i class="fa fa-star"></i></li>
 											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
 										</ul>
 									</div>
 									<a href="#" class="btn btn-primary">Add to Cart</a>
 								</div>						
 							</div>
-						</div>	
+						</div>								
 						<div class="col-sm-3">
 							<div class="thumb-wrapper">
 								<div class="img-box">
-									<img src="<?php echo URLROOT . 'images/car.jpg'; ?>" class="img-responsive" alt="">
+								<a href="" class="cat-title">
+									<img src="<?php echo URLROOT . 'images/p4.jpg'; ?>" class="img-responsive" alt="">
 								</div>
 								<div class="thumb-content">
-									<h4>Apple Watch</h4>
-									<p class="item-price"><strike>$350.00</strike> <span>$330.00</span></p>
+									<h4>Arrow Pro-Race Slip-On Exhaust</h4>
+									<p class="item-price"><strike>$315.00</strike> <span>$250.00</span></p></a>
 									<div class="star-rating">
 										<ul class="list-inline">
 											<li class="list-inline-item"><i class="fa fa-star"></i></li>
 											<li class="list-inline-item"><i class="fa fa-star"></i></li>
 											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
 											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
 										</ul>
 									</div>
@@ -443,10 +456,10 @@ class Index extends view{
 				</div>
 			</div>
 			<!-- Carousel controls -->
-			<a class="carousel-control left" href="#myCarousel" data-slide="prev">
+			<a class="carousel-control left" style=" background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgb(0 0 0 / 0%) 100%);" href="#myCarousel" data-slide="prev">
 				<i class="fa fa-angle-left"></i>
 			</a>
-			<a class="carousel-control right" href="#myCarousel" data-slide="next">
+			<a class="carousel-control right "  style=" background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgb(0 0 0 / 0%) 100%);"href="#myCarousel" data-slide="next">
 				<i class="fa fa-angle-right"></i>
 			</a>
 		</div>

@@ -137,6 +137,9 @@ h2 b {
 .carousel {
 	margin: 50px auto;
 	padding: 0 70px;
+ 
+    
+  
 }
 .carousel .item {
 	min-height: 330px;
@@ -196,10 +199,12 @@ h2 b {
     width: 40px;
     background: none;
     margin: auto 0;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0);
+    
+   
 }
 .carousel .carousel-control i {
-    font-size: 30px;
+    font-size: 60px;
     position: absolute;
     top: 50%;
     display: inline-block;
@@ -210,6 +215,9 @@ h2 b {
     color: rgba(0, 0, 0, 0.8);
     text-shadow: none;
     font-weight: bold;
+    background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgb(0 0 0 / 0%) 100%);
+   
+  
 }
 .carousel .item-price {
 	font-size: 13px;
@@ -240,11 +248,15 @@ h2 b {
 	border-color: transparent;
 }
 .carousel-indicators li {	
-	background: rgba(0, 0, 0, 0.2);
+	background: rgba(0, 0, 0, 0);
 }
 .carousel-indicators li.active {	
-	background: rgba(0, 0, 0, 0.6);
+	background: rgba(0, 0, 0, 0);
 }
+
+
+
+
 .star-rating li {
 	padding: 0;
 
@@ -330,27 +342,21 @@ border-radius: 37px;
 
 }
 
-.btn-danger {
-  background-color: #ffffff00;
-  border-color: #fff;
- 
-}
-.btn-danger:not(:disabled):not(.disabled).active, .btn-danger:not(:disabled):not(.disabled):active, .show>.btn-danger.dropdown-toggle {
+
+.p-btn {
   color: #fff;
-  background-color: #000000;
-  border-color: #fff;
+  background-color: #FF7A00;
+  opacity:80%;
+}
+.p-btn:hover {
+  color: #fff;
+  background-color: #FF7A00;
+  text-decoration: none;
+  opacity:100%;
 }
 
-.btn-group>.btn-group:not(:last-child)>.btn, .btn-group>.btn:not(:last-child):not(.dropdown-toggle) {
-  border-color: #fff;
-}
 
-.btn-danger:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
-  color: #fff;
-  background-color: #000000;
-  border-color: #fff; /*set the color you want here*/
-  
-}
+
 .margin-left{
   margin-left: 80px !important;
 }
@@ -444,13 +450,23 @@ i {
 
 .product article:hover {
   box-shadow: 0 0 10px rgba(0,0,0,.15);
-  opacity:30%;
+  
 }
 
 .product .module {
   position: relative
 }
 
+
+.cat-title{
+  color: #080808;
+  text-decoration: none;
+}
+.cat-title:hover{
+  color: #080808;
+  text-decoration: none;
+  opacity: 0.7;
+}
 .product .module  .cat-title {
   display: block;
   background-color: rgba(0,0,0,.75);
@@ -466,7 +482,8 @@ i {
 }
 
 .product .module  .cat-title:hover{
-  opacity: 70%
+  opacity: 70%;
+  text-decoration: none;
 }
 .product .module .cat-title {
   display: block;
@@ -482,9 +499,11 @@ i {
   padding-top: 5px;
   padding-bottom: 5px;
   width: 100%;
+  text-decoration: none;
 }
 .product:hover .product-hover {
-  opacity: 1
+  opacity: 1;
+  text-decoration: none;
 }
 
 
@@ -731,19 +750,23 @@ top: 645px;
 
 background: #C4C4C4;
 }
+
+
+/************* my account ***************/
+
+
 .login-container{
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
-  margin-top: 50px;
-width: 689px;
+width: 489px;
 height: auto;
 
-background: #DEDEDE;
+background: #dedede00;
 border: 1px solid #FF7A00;
 box-sizing: border-box;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 8px;
 text-align: center;
 }
 .login-heading{
@@ -754,80 +777,141 @@ top: 328px;
 background: #F0F0F0;
 border: 1px solid #000000;
 }
-
-.column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-  height: 71px;
-left: 718px;
-top: 328px;
-
-background: #DEDEDE;
-border: 1px solid #000000;
-text-align: center;
+.center-block{
+margin: auto;
+display: block;
 }
 
-.login-field{
-  
-width: 376px;
-height: 68px;
-left: 530px;
-top: 492px;
-font-size: x-large;
-
-background: #FFFFFF;
-border-radius: 22px;
-margin-bottom: 50px;
+.form-control{
+ 
+  margin-bottom:20px;
 }
 
-.login-field1{
+.or {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  line-height: 32px;
+  color: #333;
+  border: 2px solid;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 16px;
   
-  width: 188px;
-  height: 68px;
-  left: 200px;
-  top: 492px;
-  font-size: x-large;
-  
-  background: #FFFFFF;
-  border-radius: 22px;
-  margin-bottom: 50px;
-  }
+  opacity: .5;
+
+  border-radius: 50%;
+  vertical-align: text-bottom;
+}
+
 .login-field:focus{
   outline: none;
 }
 .login-field1:focus{
   outline: none;
 }
-.half-a-border-on-top {
-  padding:0;margin:0;display:block;/* probably not really needed? */
-  content: "";
-  width:50%;
-  height:1.1px;/* slight higher to work around rounding errors(?) on some zoom levels in some browsers. */
-  background-color:#FF7A00;
-  position: absolute;
-  right:0;
-  top:-1px;
-}
+
 
 .login-btn{
 width: 150px;
-background: #FC6511;
-border-radius: 22px;
+padding: 10px;
+background: #fc631100;
+color:white;
+background-color: #FF7A00;
+border-color: #FF7A00;
 margin-bottom:40px;
+  text-transform: uppercase;
+  border-radius: 4px;
 }
+
+
 
 .login-btn:hover{
-  background-color: gray;
+
+
+  opacity:70%;
 
 }
 
+.login-head1{
+  font-size: 50px;
+  text-decoration: none;
+  color: #000;
+  line-height: 1;
+  font-weight: bold;
+ 
+  }
+  
+.login-head2{
+font-size: 50px;
+color: #333;
+line-height: 1;
+font-weight: bold;
+opacity: .4;
+}
+.login-head1:hover{
+  font-size: 50px;
+  text-decoration: none;
+  color: #000;
+  line-height: 1;
+  font-weight: bold;
+  opacity: .4;
+  }
+  
+.login-head2:hover{
+  font-size: 50px;
+  text-decoration: none;
+  color: #000;
+  line-height: 1;
+  font-weight: bold;
+ opacity: 1;
+  
+}
 
+
+
+
+.register-head1{
+  font-size: 50px;
+  text-decoration: none;
+  color: #000;
+  line-height: 1;
+  font-weight: bold;
+ opacity: .4;
+  }
+  
+.register-head2{
+font-size: 50px;
+color: #333;
+line-height: 1;
+font-weight: bold;
+
+
+}
+.register-head1:hover{
+  font-size: 50px;
+  text-decoration: none;
+  color: #000;
+  line-height: 1;
+  font-weight: bold;
+   opacity: 1;
+  }
+  
+.register-head2:hover{
+  font-size: 50px;
+  text-decoration: none;
+  color: #000;
+  line-height: 1;
+  font-weight: bold;
+  opacity: .4;
+  
+}
 /* Product Description */
 .row{
   
   text-align: center;
-  margin-bottom: 10%;
+
 }
 
 .card {
@@ -863,6 +947,7 @@ margin-bottom:40px;
 
 .card button:hover {
   opacity: 0.7;
+  text-decoration: none;
 }
 
 .cart-btn{
