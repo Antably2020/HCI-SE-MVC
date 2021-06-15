@@ -11,7 +11,7 @@ class Register extends view
 
    <div class="row">
 		<div class="col-md-12">
-		<h2 ><a class="register-head1" href="<?php echo URLROOT . 'public/users/login'; ?>">Login</a> <li class="or">Or</li> <b> <a class="register-head2" style=" color: #FF7A00;" href="<?php echo URLROOT . 'public/users/register'; ?>">SignUp</a></b></h2>
+		<h2 ><a class="register-head1" href="<?php echo URLROOT . 'public/users/login'; ?>">Login</a> <li class="or">Or</li> <b> <a class="register-head2" style=" color: #FF7A00;" href="<?php echo URLROOT . 'public/users/register'; ?>">Register</a></b></h2>
      
  </div></div>
 
