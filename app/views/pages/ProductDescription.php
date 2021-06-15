@@ -29,7 +29,7 @@ class ProductDescription extends view{
 
         <div >
 <button class="cart-btn" style="border-radius:15px; font-size:20px; margin-right:10px;">Add to Cart</button> 
-<input type="number" value="1" min="1" max="10" step="1" style="font-size:20px; border-radius:10px; width:20%; border:2px solid #000; "> 
+<input type="number" value="1" min="1" max="10" step="1" style="font-size:20px; border-radius:10px; width:7%; border:2px solid #000; "> 
 </div>
 </div>
 
