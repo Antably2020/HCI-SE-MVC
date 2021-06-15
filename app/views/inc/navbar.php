@@ -34,22 +34,20 @@
                 <a class="nav-link" href="<?php echo URLROOT . 'public'; ?>">Home <span class="sr-only">(current)</span></a>
                 
             </li>
-            <div class="vl"></div>
         
             <li class="nav-item">
                 <a class="nav-link" href="<?php echo URLROOT . 'public/pages/products'; ?>">Products</a>
             </li>
-            <div class="vl"></div>
             
             
             <li class="nav-item">
                 <a class="nav-link" href="<?php echo URLROOT . 'public/users/login'; ?>">Login</a>
             </li>
-            <div class="vl"></div>
+
+
             <li class="nav-item">
                 <a class="nav-link" href="<?php echo URLROOT . 'public/users/register'; ?>">Register</a>
             </li>
-            <div class="vl"></div>
 
             <li class="nav-item">
             <a class="nav-link" href="<?php echo URLROOT . 'public/pages/cart'; ?>">
