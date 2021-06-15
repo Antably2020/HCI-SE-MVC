@@ -13,15 +13,14 @@ class products extends view{
   <div class="container">
      
     <div class="products-area">
-  <!-- heading -->
-  <div class="heading">
-    <h2>Newest Products      <small class="pull-right">
-     
-      </small>
-    </h2>
+  
+  <div class="row">
+  <div class="col-md-12">
+			<h2>TRENDING<b> PRODUCTS</b></h2>
+    
        <hr class="hr2">
   </div>
-
+  </div>
   
   <div class="row">
 

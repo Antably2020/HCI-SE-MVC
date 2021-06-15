@@ -19,6 +19,9 @@ class Index extends view{
     <div class="col-md-12">
       <!-- heading -->
       <h2>FEATURED <b>CATEGORIES</b></h2>
+      
+      <hr class="hr2" >
+      <br><br>
      
   </div>
       <div class="row">
@@ -162,6 +165,9 @@ class Index extends view{
 	<div class="row">
 		<div class="col-md-12">
 			<h2>TRENDING<b> PRODUCTS</b></h2>
+      
+      <hr class="hr2">
+
 			<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
 			<!-- Carousel indicators -->
 			<ol class="carousel-indicators">

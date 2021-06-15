@@ -16,13 +16,15 @@
     
     <ul class="navbar-nav mr-auto ">
 
-          <div >
-  <input type="search" class="input-group rounded" placeholder="Search" aria-label="Search"
-    aria-describedby="search-addon" />
+        
+<div class="box">
+        <form name="search">
+            <input type="text" class="inputsearch" name="txt" 
+            onmouseout="document.search.txt.value = ''">
+        </form>
+            <i class="fas fa-search"></i>
+    </div>
 
-    
-
-</div>
            
         </ul>
 
