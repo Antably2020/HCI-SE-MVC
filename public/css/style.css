@@ -69,18 +69,6 @@ border: 5px solid #FF7A00;
 
 }
 
-.input-group{
-
-  position: relative;
-width: 371px;
-height: 47px;
-margin-left: 375px;
-
-background: #ffffff00;
-border: 1px solid #FF7A00;
-box-sizing: border-box;
-border-radius: 15px;
-}
 
 .box{
   position: absolute;

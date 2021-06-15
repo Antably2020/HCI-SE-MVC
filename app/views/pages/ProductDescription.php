@@ -64,28 +64,22 @@ var quantitiy=0;
         <p><b>Tags:</b> spare parts  </p>
 
         <div >
-<button class="cart-btn" style="border-radius:15px; font-size:20px; margin-right:10px;">Add to Cart</button> 
-<input type="number" value="1" min="1" max="10" step="1" style="font-size:20px; border-radius:10px; width:7%; border:2px solid #000; "> 
+<button class="cart-btn" style="border-radius:15px; font-size:20px; margin-right:10px; margin-left:12px;">Add to Cart</button> 
 
 
-<div class="quantity buttons_added"><a href="javascript:void(0)" class="minus">-</a>
-				
-		<input type="number" id="quantity_60c29412b3096" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="Qty" size="4" placeholder="" inputmode="numeric"><a href="javascript:void(0)" class="plus">+</a>
-			</div>
+		
 
-
-
-<div class="col-lg-2">
-                                        <div class="input-group">
+                        <div class="col-lg-3">
+                                        <div class="input-group" >
                                     <span class="input-group-btn">
-                                        <button type="button" class="quantity-left-minus btn btn-danger btn-number"  data-type="minus" data-field="">
+                                        <button type="button" class="quantity-left-minus  btn  btn-number"  data-type="minus" data-field="">
                                           <span class="glyphicon glyphicon-minus"></span>
                                         </button>
                                     </span>
-                                    <input type="text" id="quantity" name="quantity" class="form-control input-number" value="10" min="1" max="100" style=" border-radius:10px; width:50%; border:2px solid #000; ">
+                                    <input type="text" id="quantity" name="quantity" class="form-control input-number" value="10" min="1" max="100" >
                                   
 									<span class="input-group-btn">
-                                        <button type="button" class="quantity-right-plus btn btn-success btn-number" data-type="plus" data-field="">
+                                        <button type="button" class="quantity-right-plus btn  btn-number" data-type="plus" data-field="">
                                             <span class="glyphicon glyphicon-plus"></span>
                                         </button>
                                     </span>
@@ -98,7 +92,9 @@ var quantitiy=0;
 
 
 <h3 style="text-align:left; font-size:30px; margin-top:5%;"><b>Desciption</b></h3>
-<p style="font-size:20px"> This is description of the product This is description of the product This is description of the productThis is description of the product The Bell Qualifier Helmet comes jam packed with many great features at an aggressive price. Featuring an aerodynamic shell and Bell's exclusive ClickRelease face shield system, the Qualifier Helmet offers a refined fit shape, tons of punch for the dollar with aggressive style great for any riding position. The Bell Qualifier raises the performance/value quotient to exceptional new levels.  </p>
+<p style="font-size:20px"> This is description of the product This is description of the product This is description of the product  </p>
+
+</div>
 
 </div>
 </div>  
