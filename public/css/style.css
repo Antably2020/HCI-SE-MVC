@@ -330,27 +330,21 @@ border-radius: 37px;
 
 }
 
-.btn-danger {
-  background-color: #ffffff00;
-  border-color: #fff;
- 
-}
-.btn-danger:not(:disabled):not(.disabled).active, .btn-danger:not(:disabled):not(.disabled):active, .show>.btn-danger.dropdown-toggle {
+
+.p-btn {
   color: #fff;
-  background-color: #000000;
-  border-color: #fff;
+  background-color: #FF7A00;
+  opacity:80%;
+}
+.p-btn:hover {
+  color: #fff;
+  background-color: #FF7A00;
+  text-decoration: none;
+  opacity:100%;
 }
 
-.btn-group>.btn-group:not(:last-child)>.btn, .btn-group>.btn:not(:last-child):not(.dropdown-toggle) {
-  border-color: #fff;
-}
 
-.btn-danger:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
-  color: #fff;
-  background-color: #000000;
-  border-color: #fff; /*set the color you want here*/
-  
-}
+
 .margin-left{
   margin-left: 80px !important;
 }
@@ -444,7 +438,7 @@ i {
 
 .product article:hover {
   box-shadow: 0 0 10px rgba(0,0,0,.15);
-  opacity:30%;
+  
 }
 
 .product .module {
@@ -466,7 +460,8 @@ i {
 }
 
 .product .module  .cat-title:hover{
-  opacity: 70%
+  opacity: 70%;
+  text-decoration: none;
 }
 .product .module .cat-title {
   display: block;
@@ -482,9 +477,11 @@ i {
   padding-top: 5px;
   padding-bottom: 5px;
   width: 100%;
+  text-decoration: none;
 }
 .product:hover .product-hover {
-  opacity: 1
+  opacity: 1;
+  text-decoration: none;
 }
 
 
@@ -731,6 +728,11 @@ top: 645px;
 
 background: #C4C4C4;
 }
+
+
+/************* my account ***************/
+
+
 .login-container{
   display: block;
   margin-left: auto;
@@ -774,12 +776,9 @@ display: block;
   font-weight: 600;
   text-transform: uppercase;
   margin: 0 16px;
-  -moz-opacity: .5;
-  -webkit-opacity: .5;
+  
   opacity: .5;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
+
   border-radius: 50%;
   vertical-align: text-bottom;
 }
@@ -926,6 +925,7 @@ font-weight: bold;
 
 .card button:hover {
   opacity: 0.7;
+  text-decoration: none;
 }
 
 .cart-btn{

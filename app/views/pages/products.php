@@ -42,7 +42,7 @@ class products extends view{
        
         <div class="buttons">
                                                                    
-         <button type="button" class="btn btn-block btn-danger" >Add to cart</button>
+         <button type="button" class="btn btn-block  p-btn" >Add to cart</button>
         </div>
       </div>
 
@@ -71,7 +71,7 @@ class products extends view{
        
         <div class="buttons">
                                                                    
-         <button type="button" class="btn btn-block btn-danger" >Add to cart</button>
+         <button type="button" class="btn btn-block p-btn " >Add to cart</button>
         </div>
       </div>
 
@@ -99,7 +99,7 @@ class products extends view{
        
         <div class="buttons">
                                                                    
-         <button type="button" class="btn btn-block btn-danger" >Add to cart</button>
+         <button type="button" class="btn btn-block  p-btn" >Add to cart</button>
         </div>
       </div>
 
@@ -127,7 +127,7 @@ class products extends view{
        
         <div class="buttons">
                                                                    
-         <button type="button" class="btn btn-block btn-danger" >Add to cart</button>
+         <button type="button" class="btn btn-block  p-btn" >Add to cart</button>
         </div>
       </div>
 
@@ -155,7 +155,7 @@ class products extends view{
        
         <div class="buttons">
                                                                    
-         <button type="button" class="btn btn-block btn-danger" >Add to cart</button>
+         <button type="button" class="btn btn-block  p-btn" >Add to cart</button>
         </div>
       </div>
 
@@ -183,7 +183,7 @@ class products extends view{
        
         <div class="buttons">
                                                                    
-         <button type="button" class="btn btn-block btn-danger" >Add to cart</button>
+         <button type="button" class="btn btn-block p-btn" >Add to cart</button>
         </div>
       </div>
 
