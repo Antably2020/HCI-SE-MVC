@@ -1012,9 +1012,16 @@ footer
   padding-top: 2vh;
   padding-bottom: 2vh;
 }
+footer {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:60px;   /* Height of the footer */
+  background:#6cf;
+}
 
 
-
+/************* slider ***************/
 
 
 .quantity .minus, .quantity .plus {
@@ -1042,3 +1049,4 @@ footer
   -ms-border-radius: 0;
   border-radius: 0;
 }
+

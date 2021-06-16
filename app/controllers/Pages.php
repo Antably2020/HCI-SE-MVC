@@ -91,4 +91,14 @@ public function A_products()
     $adminView = new A_products($this->getModel(), $this);
     $adminView->output();
 }
+
+
+public function A_orders()
+{
+    $viewPath = VIEWS_PATH . 'admin/A_orders.php';
+    require_once $viewPath;
+    $adminOrdersView = new A_orders($this->getModel(), $this);
+    $adminOrdersView->output();
+}
+
 }
