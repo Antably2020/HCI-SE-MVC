@@ -101,4 +101,23 @@ public function A_orders()
     $adminOrdersView->output();
 }
 
+
+public function Update_order()
+    {
+        $registerModel = $this->getModel();
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+            // Process form
+            $registerModel->setPName(trim($_POST['Pname']));
+            $registerModel->setPDescription(trim($_POST['Pdescription']));
+            $registerModel->setPPrice(trim($_POST['age']));
+
+        }
+        // Load form
+        //echo 'Load form, Request method: ' . $_SERVER['REQUEST_METHOD'];
+        $viewPath = VIEWS_PATH . 'admin/A_orders.php';
+        require_once $viewPath;
+        $adminView = new A_orders($this->getModel(), $this);
+        $adminView->output();
+    }
+
 }

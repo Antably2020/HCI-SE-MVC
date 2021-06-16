@@ -21,10 +21,7 @@ class A_orders extends view{
 } );
 
     </script>
-<style>
 
-
-    </style>
 
 
 </head>
