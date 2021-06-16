@@ -212,7 +212,7 @@ class Index extends view{
 								</div>
 								<div class="thumb-content">
 									<h4><?php echo $product->name?></h4>
-									<p class="item-price"><strike>$315.00</strike> <span><?php echo $product->price?></span></p></a>
+									<p class="item-price"><strike>EGP315.00</strike> <span>EGP<?php echo $product->price?></span></p></a>
 									<a href="#" class="btn btn-primary">Add to Cart</a>
 								</div>						
 							</div>
