@@ -44,70 +44,52 @@ class A_orders extends view{
 <table id="datatable" class="table table-striped table-bordered" cellspacing="0" width="100%">
     				<thead>
 						<tr>
-                            <th>Trending</th>
-							<th>Name</th>
-							<th>Position</th>
-							<th>Office</th>
-							<th>Age</th>
-							<th>Start date</th>
-							<th>Salary</th>
-                                <th>Edit</th>
-                                 <th>Delete</th>
+                            
+							<th>productID</th>
+							<th>productName</th>
+							<th>userID</th>
+							<th>status</th>
+							<th>address</th>
+							<th>order number</th>
+
 						</tr>
 					</thead>
 
 					<tfoot>
 						<tr>
-                            <th>Trending</th>
-							<th>Name</th>
-							<th>Position</th>
-							<th>Office</th>
-							<th>Age</th>
-							<th>Start date</th>
-							<th>Salary</th>
-                             <th>Edit</th>
-                                 <th>Delete</th>
+            
+            <th>productID</th>
+							<th>productName</th>
+							<th>userID</th>
+							<th>status</th>
+							<th>address</th>
+							<th>order number</th>
+                         
 						</tr>
 					</tfoot>
 
 					<tbody>
-						<tr>
-                            <td><input class="form-check-input"  type="checkbox" value="" id="flexCheckDefault"></td>
-							<td>ahmed Nixon</td>
-							<td>System Architect</td>
-							<td>Edinburgh</td>
-							<td>61</td>
-							<td>2011/04/25</td>
-							<td>$320,800</td>
-                            <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="order-btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="order-btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
-						</tr>
-						
-                
-                    
-                            <tr>
-                            <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
-							<td>Tiger Nixon</td>
-							<td>System Architect</td>
-							<td>Edinburgh</td>
-							<td>61</td>
-							<td>2011/04/25</td>
-							<td>$320,800</td>
-                            <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="order-btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="order-btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
-						</tr>
-                            <tr>
-                            <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
-							<td>Tiger Nixon</td>
-							<td>System Architect</td>
-							<td>Edinburgh</td>
-							<td>61</td>
-							<td>2011/04/25</td>
-							<td>$320,800</td>
-                            <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="order-btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="order-btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
-						</tr>
 
+          <?php
+  foreach($this->model->readorder() as $order){
+    ?>
+
+						<tr>
+              
+               <td><?php echo $order->productID; ?></td>
+               <td><?php echo $order->productName; ?></td>
+							<td><?php echo  $order->userID; ?></td>
+              <td><?php if ( $order->status==0 ) { echo 'not delivered';}  else{ echo 'delivered';}?></td>
+              <td><?php echo  $order->address; ?></td>
+              <td><?php echo  $order->id; ?></td>
+
+
+                         	</tr>
+					
+<?php
+  }
+  ?>	
+          
                         
 					</tbody>
 				</table>
