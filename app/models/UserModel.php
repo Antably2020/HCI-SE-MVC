@@ -3,6 +3,7 @@ class UserModel extends model
 {
     protected $email;
     protected $password;
+    protected $type;
 
     protected $emailErr;
     protected $passwordErr;
@@ -12,6 +13,7 @@ class UserModel extends model
         parent::__construct();
         $this->email    = '';
         $this->password = '';
+        $this->type    = '';
 
         $this->emailErr    = '';
         $this->passwordErr = '';
@@ -33,6 +35,15 @@ class UserModel extends model
     public function setPassword($password)
     {
         $this->password = $password;
+    }
+
+    public function getType()
+    {
+        return $this->type;
+    }
+    public function setType($type)
+    {
+        $this->type = $type;
     }
 
     public function getEmailErr()
@@ -59,9 +70,11 @@ class UserModel extends model
         $this->dbh->bind(':email', $email);
         $this->dbh->bind(':pass', $password);
 
-        $userRecord = $this->dbh->single();
-        return $this->dbh->rowCount();
+        //$userRecord = $this->dbh->single();
+        return $this->dbh->single();
+       
     }
+
 
     public function emailExist($email)
     {

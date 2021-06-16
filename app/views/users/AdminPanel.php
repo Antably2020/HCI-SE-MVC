@@ -1,5 +1,5 @@
 <?php
-class Login extends view
+class Admin extends view
 {
   public function output()
   {

@@ -84,4 +84,11 @@ public function productdescription()
     $cartView = new productdescription($this->getModel(), $this);
     $cartView->output();
 }
+public function A_products()
+{
+    $viewPath = VIEWS_PATH . 'admin/A_products.php';
+    require_once $viewPath;
+    $adminView = new A_products($this->getModel(), $this);
+    $adminView->output();
+}
 }
