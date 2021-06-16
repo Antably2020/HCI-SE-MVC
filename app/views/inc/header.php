@@ -22,6 +22,8 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
 
 <script src="https://kit.fontawesome.com/afd6aa68df.js" crossorigin="anonymous"></script>
+<script language="JavaScript" src="https://cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js" type="text/javascript"></script>
+
 
   <title><?php echo SITENAME; ?></title>
 </head>

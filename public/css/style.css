@@ -1050,3 +1050,110 @@ footer {
   border-radius: 0;
 }
 
+
+
+/************* datatable ***************/
+.dataTables_filter
+{
+float: right;
+font-size: 30px;
+color: #FF7A00;
+
+
+}
+.dataTables_filter input
+{
+border: 3px solid;
+border-color:  #FF7A00;
+font-size: 30px;
+border-radius: 5px;
+margin-bottom: 5px;
+}
+.dataTables_length label{
+ 
+  color: #FF7A00
+}
+
+.dataTables_length{
+  float: left;
+  font-size: 30px;
+}
+
+.dataTables_length select{
+border: 3px solid;
+border-color:  #FF7A00;
+font-size: 30px;
+border-radius: 5px;
+}
+
+
+
+.dataTables_paginate{
+  display:flex;
+  align-items:center;
+  
+  }
+  .dataTables_paginate a{
+    border: 3px solid;
+border-color:  #FF7A00;
+
+border-radius: 5px;
+margin:3px
+    }
+.dataTables_paginate {
+  
+  float:right;
+margin-right: 50px;
+}
+.paginate_button{
+
+  
+  padding: 15px ;
+  color: black;
+  
+}
+
+
+
+.dataTables_info{
+font-size: 15px;
+}
+.pagination>li {
+display: inline;
+padding:0px !important;
+margin:0px !important;
+border:none !important;
+}
+.modal-backdrop {
+  z-index: -1 !important;
+}
+/*
+Fix to show in full screen demo
+*/
+iframe
+{
+    height:700px !important;
+}
+
+.order-btn {
+display: inline-block;
+padding: 6px 12px !important;
+margin-bottom: 0;
+font-size: 14px;
+font-weight: 400;
+line-height: 1.42857143;
+text-align: center;
+white-space: nowrap;
+vertical-align: middle;
+-ms-touch-action: manipulation;
+touch-action: manipulation;
+cursor: pointer;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+background-image: none;
+border: 1px solid transparent;
+border-radius: 4px;
+}
+
