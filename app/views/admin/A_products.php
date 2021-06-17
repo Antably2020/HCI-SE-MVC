@@ -31,7 +31,7 @@ class A_products extends view{
        <div class="container">
 	<div class="row" style="padding-bottom:20px">
     <div class="col-md-12">
-			<h2>ALL<b> ORDERS</b></h2>
+			<h2>ALL<b> PRODUCTS</b></h2>
             
       <hr class="hr2" >
 
@@ -168,7 +168,7 @@ class A_products extends view{
 
 </div>
 <?php
- 
+ require APPROOT . '/views/inc/footer.php';
   }
 }
 ?>
