@@ -4,11 +4,10 @@ class Index extends view{
     $title = $this->model->title;
     $subtitle = $this->model->subtitle;
     require APPROOT . '/views/inc/header.php';
+    
     ?>
-   
 
 
-<Br><br><br>
 
 
 

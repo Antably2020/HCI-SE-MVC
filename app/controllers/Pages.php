@@ -33,6 +33,14 @@ class Pages extends Controller
         $errorrView = new Errorr($this->getModel(), $this);
         $errorrView->output();
     }
+    
+    public function dashboard()
+    {
+        $viewPath = VIEWS_PATH . 'pages/dashboard.php';
+        require_once $viewPath;
+        $dashboardView = new Dashboard($this->getModel(), $this);
+        $dashboardView->output();
+    }
 
     public function contact(){
         $contactModel = $this->getModel();

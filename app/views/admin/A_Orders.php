@@ -2,7 +2,8 @@
 class A_orders extends view{
     public function output (){
         $title = $this->model->title;
-    require APPROOT . '/views/inc/header.php';
+        ?><div style="margin-left: 160px;"><?php require APPROOT . '/views/inc/header.php';?></div ><?php
+        require APPROOT . '/views/inc/sidebar.php';
     ?>
    
 
@@ -25,7 +26,9 @@ class A_orders extends view{
 
 
 </head>
-    
+<div class="main">
+
+
 <div class="container">
 	<div class="row" style="padding-bottom:20px">
     <div class="col-md-12">
@@ -159,7 +162,7 @@ class A_orders extends view{
 
 
 
-
+</div>
    
    <?php
   require APPROOT . '/views/inc/footer.php';

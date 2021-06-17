@@ -2,7 +2,8 @@
 class A_products extends view{
     public function output (){
         $title = $this->model->title;
-    require APPROOT . '/views/inc/header.php';
+        ?><div style="margin-left: 160px;"><?php require APPROOT . '/views/inc/header.php';?></div ><?php
+        require APPROOT . '/views/inc/sidebar.php';
     ?>
    
    <head>
@@ -21,6 +22,8 @@ class A_products extends view{
 
 
 </head>
+<div class="main">
+
 
 
 
@@ -156,32 +159,14 @@ class A_products extends view{
   </div>
       <!-- /.modal-dialog --> 
     </div>
-   
-
-
-       
-
-
-
-
-
-
-
-
-
-
-       
-
-
-
-
-
 
      
          </div>
 </div>
   </div>
 </section>
+
+</div>
 <?php
  
   }
