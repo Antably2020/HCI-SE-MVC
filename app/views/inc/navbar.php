@@ -24,7 +24,8 @@ $site   =   'http://'.$_SERVER['HTTP_HOST'];
 //Get all vars en skip the empty ones
 $crumbs =   array_filter( explode("/",$_SERVER["REQUEST_URI"]) );
 //Create the homepage breadcrumb
-$bc    .=   '<li><a href="'.$site.'">'.$home.'</a>'.$sep.'</li>';
+$bc    .=   '<li><a href="../public/pages/index.php">'.$home.'</a>'.$sep.'</li>';   
+
 //Count all not empty breadcrumbs
 $nm     =   count($crumbs);
 $i      =   1;
@@ -43,7 +44,7 @@ $last_piece = end($crumbs);
     //Check if last crumb
     if ($last_piece!==$crumb){
     //Make the next crumb
-    $bc     .= '<li><a href="'.$site.'">'.$link.'</a>'.$sep.'</li>';
+    //$bc     .= '<li><a href="'.$site.'">'.$link.'</a>'.$sep.'</li>';
     } else {
     //Last crumb, do not make it a link
     $bc     .= '<li class="active">'.ucfirst( str_replace( array(".php","-","_"), array(""," "," ") ,$last_piece)).'</li>';
