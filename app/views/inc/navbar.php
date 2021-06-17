@@ -76,14 +76,14 @@ return $bc;
     
     <ul class="navbar-nav mr-auto ">
 
-        
 <div class="box">
         <form name="search">
-            <input type="text" class="inputsearch" name="txt" 
-            onmouseout="document.search.txt.value = ''">
+            <input type="text" class="inputsearch" name="txt" onmouseout="document.search.txt.value = ''">
         </form>
             <i class="fas fa-search"></i>
     </div>
+
+
 
            
         </ul>

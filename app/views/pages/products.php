@@ -37,7 +37,7 @@ class products extends view{
         </div>
           
       <span class="tag"><?php echo $product->name; ?></span>
-      <h2 class="title text-center"><a href=""><?php echo  $product->description; ?></a></h2>
+      <h2 class="title text-center"><?php echo  $product->description; ?></h2>
       <div class="price">
                 EGP&nbsp;<?php echo  $product->price; ?>&nbsp;
       </div>

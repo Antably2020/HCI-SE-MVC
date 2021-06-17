@@ -11,7 +11,12 @@ class  dashboard extends view{
             a{
                 color:#FF7A00
             }
+            footer{
+    bottom:0;
+  } 
             </style>
+            
+
             </head>
     <div class="main">
 
