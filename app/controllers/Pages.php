@@ -109,6 +109,14 @@ public function A_orders()
     $adminOrdersView->output();
 }
 
+public function A_userview()
+{
+    $viewPath = VIEWS_PATH . 'admin/A_userview.php';
+    require_once $viewPath;
+    $adminuserview = new A_Userview($this->getModel(), $this);
+    $adminuserview->output();
+}
+
 
 public function Update_order()
     {

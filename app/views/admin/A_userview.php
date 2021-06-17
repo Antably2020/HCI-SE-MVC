@@ -1,12 +1,16 @@
 <?php 
-class A_products extends view{
+class A_Userview extends view{
     public function output (){
         $title = $this->model->title;
         ?><div style="margin-left: 160px;"><?php require APPROOT . '/views/inc/header.php';?></div ><?php
         require APPROOT . '/views/inc/sidebar.php';
     ?>
    
-   <head>
+
+
+
+
+<head>
 <script>
 
 
@@ -19,19 +23,20 @@ class A_products extends view{
 
     </script>
 
-
+<style>
+  footer{
+    bottom:0;
+  } 
+  </style>
 
 </head>
 <div class="main">
 
 
-
-
-
-       <div class="container">
+<div class="container">
 	<div class="row" style="padding-bottom:20px">
     <div class="col-md-12">
-			<h2>ALL<b> PRODUCTS</b></h2>
+			<h2>ALL<b> ORDERS</b></h2>
             
       <hr class="hr2" >
 
@@ -46,60 +51,62 @@ class A_products extends view{
 <table id="datatable" class="table table-striped table-bordered" cellspacing="0" width="100%">
     				<thead>
 						<tr>
-              <th>Featured</th>
-              <th>Image</th>
+                            
+                            <th>User #</th>
 							<th>Name</th>
-							<th>Description</th>
-							<th>Price</th>
-							
-                                <th>Edit</th>
-                                 <th>Delete</th>
+							<th>Email</th>
+							<th>Age</th>
+							<th>Type</th>
+                            <th>EDIT</th>
+							<th>DELETE</th>
+
 						</tr>
 					</thead>
 
 					<tfoot>
 						<tr>
-              <th>Featured</th>
-							<th>Image</th>
+            
+            
+                            <th>User #</th>
 							<th>Name</th>
-							<th>Description</th>
-							<th>Price</th>
+							<th>Email</th>
+							<th>Age</th>
+							<th>Type</th>
+                            <th>EDIT</th>
+							<th>DELETE</th>
 							
-                             <th>Edit</th>
-                                 <th>Delete</th>
+                         
 						</tr>
 					</tfoot>
 
 					<tbody>
-
-           
-  <?php
-  foreach($this->model->readProd() as $product){
+                    <?php
+  foreach($this->model->readuser() as $user){
     ?>
 
 						<tr>
-             <td><input class="form-check-input"  type="checkbox" value="<?php echo $product->featured; ?>" id="flexCheckDefault"></td>
-            <td><img class="img-fluid" src="<?php echo URLROOT . $product->img; ?>"  width="90" height="90" ></td>
-                        
-							<td><?php echo $product->name; ?></td>
-							<td><?php echo  $product->description; ?></td>
-							<td> EGP&nbsp;<?php echo  $product->price; ?>&nbsp;</td>
-							
+              
+               <td><?php echo $user->ID; ?></td>
+               <td><?php echo $user->Name; ?></td>
+			   <td><?php echo  $user->Email; ?></td>
+            <!--<td><?php // if ( $user->status==0 ) { echo 'Not Delivered';}  else{ echo 'Delivered';}?></td>  -->
+              <td><?php echo  $user->Age; ?></td>
+              <td><?php echo  $user->Type; ?></td>
               <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="order-btn  btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"style="background-color:#fff; color:#FF7A00; border:1px solid #FF7A00; "  ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="order-btn  btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete"  style="background-color:#FF7A00; color:white;"><span class="glyphicon glyphicon-trash" ></span></button></p></td>	</tr>
-						
-             
+    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="order-btn  btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete"  style="background-color:#FF7A00; color:white;"><span class="glyphicon glyphicon-trash" ></span></button></p></td>
+					
 
 
-<?php
+                         	</tr>
+					
+                             <?php
   }
-  ?>
-                        
+  ?>	
+                
 					</tbody>
 				</table>
 
-	
-	</div>
+                </div>
 	</div>
 </div>
 
@@ -165,9 +172,18 @@ class A_products extends view{
   </div>
 </section>
 
+    
+    
+   
+
+
+
+
+
 </div>
-<?php
- require APPROOT . '/views/inc/footer.php';
+   
+   <?php
+  require APPROOT . '/views/inc/footer.php';
   }
 }
 ?>
