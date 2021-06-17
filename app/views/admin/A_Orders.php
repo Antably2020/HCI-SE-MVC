@@ -65,6 +65,7 @@ class A_orders extends view{
 					<tfoot>
 						<tr>
             
+            
             <th>Product #</th>
 							<th>Product Name</th>
 							<th>user ID</th>
