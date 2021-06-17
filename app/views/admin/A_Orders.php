@@ -23,7 +23,11 @@ class A_orders extends view{
 
     </script>
 
-
+<style>
+  footer{
+    bottom:0;
+  } 
+  </style>
 
 </head>
 <div class="main">
@@ -48,12 +52,12 @@ class A_orders extends view{
     				<thead>
 						<tr>
                             
-							<th>productID</th>
-							<th>productName</th>
-							<th>userID</th>
-							<th>status</th>
-							<th>address</th>
-							<th>order number</th>
+            <th>Product #</th>
+							<th>Product Name</th>
+							<th>user ID</th>
+							<th>Status</th>
+							<th>Address</th>
+							<th>Order #</th>
 
 						</tr>
 					</thead>
@@ -61,12 +65,12 @@ class A_orders extends view{
 					<tfoot>
 						<tr>
             
-            <th>productID</th>
-							<th>productName</th>
-							<th>userID</th>
-							<th>status</th>
-							<th>address</th>
-							<th>order number</th>
+            <th>Product #</th>
+							<th>Product Name</th>
+							<th>user ID</th>
+							<th>Status</th>
+							<th>Address</th>
+							<th>Order #</th>
                          
 						</tr>
 					</tfoot>
@@ -82,7 +86,7 @@ class A_orders extends view{
                <td><?php echo $order->productID; ?></td>
                <td><?php echo $order->productName; ?></td>
 							<td><?php echo  $order->userID; ?></td>
-              <td><?php if ( $order->status==0 ) { echo 'not delivered';}  else{ echo 'delivered';}?></td>
+              <td><?php if ( $order->status==0 ) { echo 'Not Delivered';}  else{ echo 'Delivered';}?></td>
               <td><?php echo  $order->address; ?></td>
               <td><?php echo  $order->id; ?></td>
 
