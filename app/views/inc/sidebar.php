@@ -16,8 +16,22 @@ hr {
 </style>
 </head>
 <body>
+    <script>
+$(document).scroll(function() {
+       if($(window).scrollTop() > 50){
 
-<div class="sidenav">
+        document.getElementById("sidenav").style.top = "0px";
+        
+
+       }else if($(window).scrollTop() < 50){
+
+        document.getElementById("sidenav").style.top = "87px";
+
+       }
+});
+</script>
+
+<div class="sidenav" id="sidenav">
  
 <a  href="<?php echo URLROOT . 'public/admin/A_products'; ?>">PRODUCTS</a>
  
@@ -25,6 +39,10 @@ hr {
  
  <a  href="<?php echo URLROOT . 'public/admin/A_orders'; ?>">ORDERS</a>
         
+ <hr>
+ 
+ <a  href="<?php echo URLROOT . 'public/admin/A_userview'; ?>">USERS</a>
+     
 </div>
 
 
