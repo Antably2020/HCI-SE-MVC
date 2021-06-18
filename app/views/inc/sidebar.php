@@ -33,16 +33,20 @@ $(document).scroll(function() {
 
 <div class="sidenav" id="sidenav">
  
-<a  href="<?php echo URLROOT . 'public/admin/A_products'; ?>">PRODUCTS</a>
- 
- <hr>
- 
+
  <a  href="<?php echo URLROOT . 'public/admin/A_orders'; ?>">ORDERS</a>
         
  <hr>
  
  <a  href="<?php echo URLROOT . 'public/admin/A_userview'; ?>">USERS</a>
-     
+ <hr>
+
+   <a  href="<?php echo URLROOT . 'public/admin/A_products'; ?>">VIEW PRODUCTS</a>
+ 
+ <hr>
+
+ <a  href="<?php echo URLROOT . 'public/admin/add_product'; ?>">ADD PRODUCTS</a>
+   
 </div>
 
 

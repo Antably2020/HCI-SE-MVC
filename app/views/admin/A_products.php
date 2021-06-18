@@ -37,9 +37,15 @@ class A_products extends view{
 
 </div>
 	</div>
+
+  
     
-        <div class="row">
-		
+        <div class="row"> 
+        <form action="add_product">
+        <input type="submit" class="login-btn" id="Login" name="Login"  value="Add New" class="login-button">
+         </form>
+    
+
             <div class="col-md-12">
             
             

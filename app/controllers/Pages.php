@@ -66,6 +66,37 @@ class Pages extends Controller
         $contactView=new contact($this->getModel(),$this);
         $contactView->output();
 
+    }
+
+
+        
+    public function add_product(){
+        $add_producttModel = $this->getModel();
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+            //process form
+            $add_producttModel->setName(trim($_POST['name']));
+            $add_producttModel->setDesc(trim($_POST['desc']));
+            $add_producttModel->setPrice(trim($_POST['price']));
+            $add_producttModel->setimage(trim($_POST['imgage']));
+            $add_producttModel->setFeatured(trim($_POST['featured']));
+
+            if($contactModel->contactus()){
+                echo '<script>';  
+                echo 'alert("Item added successfully!!!")';  
+                echo '</script>'; 
+            }
+            else{
+                die('Error has occured');
+            }
+
+
+        }
+        $viewPath=VIEWS_PATH. 'admin/add_product.php';
+        require_once $viewPath;
+        $add_productView=new contact($this->getModel(),$this);
+        $add_productView->output();
+
+
 
 
     }
