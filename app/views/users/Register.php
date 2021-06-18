@@ -5,7 +5,9 @@ class Register extends view
   {
     $title = $this->model->title;
 
-    require APPROOT . '/views/inc/header.php';?>
+    require APPROOT . '/views/inc/header.php';
+    echo breadcrumbs(); 
+    ?>
    
   
 

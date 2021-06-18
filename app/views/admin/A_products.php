@@ -2,7 +2,7 @@
 class A_products extends view{
     public function output (){
         $title = $this->model->title;
-        ?><div style="margin-left: 160px;"><?php require APPROOT . '/views/inc/header.php';?></div ><?php
+        ?><div style="margin-left: 160px;"><?php require APPROOT . '/views/inc/header.php'; echo breadcrumbs(); ?></div ><?php
         require APPROOT . '/views/inc/sidebar.php';
     ?>
    

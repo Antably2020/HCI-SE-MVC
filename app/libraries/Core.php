@@ -17,7 +17,7 @@ class Core
     
         //define default values
         $modelName = 'IndexModel';
-        $viewName = 'Index';
+        $viewName = 'errorr';
         $controllerName = 'Pages';
 
         //print_r($this->getUrl());

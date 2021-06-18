@@ -5,7 +5,9 @@ class Login extends view
   {
     $title = $this->model->title;
 
-    require APPROOT . '/views/inc/header.php';?>
+    require APPROOT . '/views/inc/header.php';
+    echo breadcrumbs(); 
+    ?>
     
     <div class="row">
 		<div class="col-md-12">

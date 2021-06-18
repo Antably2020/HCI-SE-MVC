@@ -3,6 +3,7 @@ class SpecialOrder extends view{
     public function output (){
         $title = $this->model->title;
     require APPROOT . '/views/inc/header.php';
+    echo breadcrumbs(); 
     ?>
     <br><br><br>
 

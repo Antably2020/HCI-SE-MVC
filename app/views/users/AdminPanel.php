@@ -5,7 +5,11 @@ class Admin extends view
   {
     $title = $this->model->title;
 
-    require APPROOT . '/views/inc/header.php';?>
+    require APPROOT . '/views/inc/header.php';
+    echo breadcrumbs(); 
+    ?>
+    
+    
     <div class="login-container ">
 
 
@@ -45,6 +49,7 @@ class Admin extends view
     <?php
 
     require APPROOT . '/views/inc/footer.php';
+    
   }
 
 

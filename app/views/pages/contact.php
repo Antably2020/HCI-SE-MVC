@@ -4,18 +4,10 @@ class contact extends view{
  public function output(){
     $title = $this->model->title;
     require APPROOT . '/views/inc/header.php';
+    echo breadcrumbs(); 
  ?>
 
-      <!--      <select class="form-select login-field" name="choice" aria-label="Default select example">
-  <option value="none" selected disabled hidden>Select</option>
-  <option value="1">Orders and shipping</option>
-  <option value="2">option 2</option>
-  <option value="3">option 3</option>
-</select>
-<textarea class="form-control login-field" id="exampleFormControlTextarea1" rows="3" name="desc" placeholder="Description"style="  display: block; margin-left:auto; margin-right: auto;"></textarea>
--->
-
-
+  
 <div class="login-container ">
     
     <form class="form" method="post" action="post" name="Contact" style="padding: 18px;" >

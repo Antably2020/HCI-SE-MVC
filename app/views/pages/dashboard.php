@@ -3,7 +3,9 @@ class  dashboard extends view{
     public function output (){
         $title = $this->model->title;
     require APPROOT . '/views/inc/header.php';
+    echo breadcrumbs(); 
     require APPROOT . '/views/inc/sidebar.php';
+    
     ?> 
     
     <head>

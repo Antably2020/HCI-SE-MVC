@@ -1,5 +1,6 @@
 
   <head>
+
       <style>
           .breadcrumb {
   padding: 8px 15px;
@@ -24,7 +25,7 @@ $site   =   'http://'.$_SERVER['HTTP_HOST'];
 //Get all vars en skip the empty ones
 $crumbs =   array_filter( explode("/",$_SERVER["REQUEST_URI"]) );
 //Create the homepage breadcrumb
-$bc    .=   '<li><a href="../public/pages/index.php">'.$home.'</a>'.$sep.'</li>';   
+$bc    .=   '<li><a href="index">'.$home.'</a>'.$sep.'</li>';   
 
 //Count all not empty breadcrumbs
 $nm     =   count($crumbs);
@@ -63,7 +64,7 @@ return $bc;
 
 
 <nav class="navbar navbar-expand-md ">
-  <a class="" href="<?php echo URLROOT . 'public'; ?>">
+  <a class="" href="<?php echo URLROOT . 'public/pages/index'; ?>">
 
     <img src="<?php echo URLROOT . 'images/logo.png'; ?>" alt="Logo" style="width: 150px;">
   </a>
@@ -91,7 +92,7 @@ return $bc;
 
         <ul class="navbar-nav">
         <li class="nav-item ">
-                <a class="nav-link" href="<?php echo URLROOT . 'public'; ?>">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="<?php echo URLROOT . 'public/pages/index'; ?>">Home <span class="sr-only">(current)</span></a>
                 
             </li>
         
@@ -118,7 +119,4 @@ return $bc;
     <hr class="navhr">
     
 </nav>
-<?php
 
-echo breadcrumbs(); 
-?>
