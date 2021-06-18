@@ -7,7 +7,21 @@ class contact extends view{
     echo breadcrumbs(); 
  ?>
 
-  
+  <head>
+  <style>
+  footer{
+    bottom:0px;
+  }
+  </style>
+  </head>
+
+  <div class="row">
+    <div class="col-md-12">
+      <!-- heading -->
+      <h2>FEATURED <b>CATEGORIES</b></h2>
+      </div>
+      </div>
+      
 <div class="login-container ">
     
     <form class="form" method="post" action="post" name="Contact" style="padding: 18px;" >
