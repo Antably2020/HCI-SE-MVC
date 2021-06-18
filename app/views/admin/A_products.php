@@ -113,6 +113,7 @@ class A_products extends view{
       <div class="modal-dialog">
     <div class="modal-content">
           <div class="modal-header">
+          <h3 class="modal-title custom_align" id="Heading">Edit</h3>
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
         <h3 class="modal-title custom_align" id="Heading">Edit</h3>
       </div>
@@ -147,8 +148,9 @@ class A_products extends view{
       <div class="modal-dialog">
     <div class="modal-content">
           <div class="modal-header">
+          <h4 class="modal-title custom_align" id="Heading">Delete this entry</h4>
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-        <h4 class="modal-title custom_align" id="Heading">Delete this entry</h4>
+     
       </div>
           <div class="modal-body">
        

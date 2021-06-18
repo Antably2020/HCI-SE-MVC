@@ -36,7 +36,7 @@ class A_Userview extends view{
 <div class="container">
 	<div class="row" style="padding-bottom:20px">
     <div class="col-md-12">
-			<h2>ALL<b> ORDERS</b></h2>
+			<h2>ALL<b> USERS</b></h2>
             
       <hr class="hr2" >
 
@@ -110,19 +110,23 @@ class A_Userview extends view{
 	</div>
 </div>
 
-<div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
+<div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="edit"aria-hidden="true">
       <div class="modal-dialog">
     <div class="modal-content">
-          <div class="modal-header">
+          <div class="modal-header" >
+          <h3 style="text-align:center"class="modal-title custom_align" id="Heading">Edit</h3>
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-        <h3 class="modal-title custom_align" id="Heading">Edit</h3>
+        
       </div>
           <div class="modal-body">
             
           <div class="form-group">
         <input class="form-control " type="text" name="Pname" placeholder="Name">
         </div>
-        
+
+
+  
+
         <div class="form-group">
         <input class="form-control " type="text" name="Pdescription" placeholder="Description">
         </div>
@@ -130,12 +134,21 @@ class A_Userview extends view{
         <div class="form-group">
         <input class="form-control " type="text" name="Pprice" placeholder="Price">
         </div>
-
+        <div class="form-group">
+      
+      <select class="dropdown-toggle form-control" name="role"placeholder="Role">
+        <option value="1" >User</option>
+        <option value="2">Admin </option>
+        
+      </select>
+      </div>
       </div>
           <div class="modal-footer ">
         <input type="submit" class="btn btn-warning btn-lg" id="Update" name="UopdateProduct" onsubmit="return false" value="UPDATE" style="width: 100%;"><span class="glyphicon glyphicon-ok-sign"></span> 
         
       </div>
+
+   
         </div>
     <!-- /.modal-content --> 
   </div>
@@ -148,8 +161,9 @@ class A_Userview extends view{
       <div class="modal-dialog">
     <div class="modal-content">
           <div class="modal-header">
+          <h4 class="modal-title custom_align" id="Heading">Delete this entry</h4>
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-        <h4 class="modal-title custom_align" id="Heading">Delete this entry</h4>
+
       </div>
           <div class="modal-body">
        
