@@ -8,7 +8,13 @@ class Login extends view
     require APPROOT . '/views/inc/header.php';
     echo breadcrumbs(); 
     ?>
-    
+    <head>
+  <style>
+  footer{
+    bottom:0px;
+  }
+  </style>
+  </head>
     <div class="row">
 		<div class="col-md-12">
 		<h2 ><a class="login-head1" href="<?php echo URLROOT . 'public/users/login'; ?>">Login</a> <li class="or">Or</li> <b> <a class="login-head2" style=" color: #FF7A00;" href="<?php echo URLROOT . 'public/users/register'; ?>">Register</a></b></h2>
