@@ -634,84 +634,60 @@ a:hover{
   width: auto;
   height: auto;
   left: 50px;
-  
-  background: rgba(196, 196, 196, 0.21);
+  background: rgb(253, 253, 253);
 }
 
 .product-image{
   position: relative;
   width: 163px;
   height: 48px;
-
-  margin-top: 264px;
-  
-  background: #C4C4C4;
+  background:#FF7A00;
   }
+
 .cart-description{
 position: relative;
 width: 415px;
 height: 48px;
-
-margin-top: 263px;
-
-background: #C4C4C4;
+background:#FF7A00;
 }
 
 .cart-price{
 position: relative;
 width: 163px;
 height: 48px;
-
-margin-top: 264px;
-
-background: #C4C4C4;
+background:#FF7A00;
 }
 .cart-quantity{
 position: relative;
 width: 161px;
 height: 48px;
-
-margin-top: 263px;
-
-background: #C4C4C4;
+background:#FF7A00;
 }
 
 .cart-total{
-position: relative;
-width: 161px;
-height: 47px;
-
-margin-top: 264px;
-background: #C4C4C4;
+background:#FF7A00;
 }
 
 .cart-delete{
-  position: relative;
-  width: 46px;
-height: 47px;
-
-margin-top: 264px;
-background: #C4C4C4;
-transform: matrix(-1, 0, 0, 1, 0, 0);
+background:#FF7A00;
 }
 
 
 .cart-table {
-  border-width: 2px;
-  border: solid;
+  border: solid 2px;
   text-align: left;
   width: auto;
-  border-color: #eaeaea;
+  border-radius: 20%;
+  border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 .cart-container table.cart img {
   width: auto;
   max-width: 60px;
 }
-.table2 {
-  position: relative;
-  width: 300px;
-  left: 1140px;
+
+.table2 {  
+  width: 22%;
   background: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.5);
   box-sizing: border-box;
@@ -720,17 +696,12 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  
-
 }
 
 .checkot-total{
-  text-align: center;
+text-align: center;
 height: 45px;
-
-
 box-sizing: border-box;
-
 }
 
 #table2 td, #table2 th {
@@ -738,7 +709,7 @@ box-sizing: border-box;
   padding: 8px;
 }
 
-#table2 tr:nth-child(even){background-color: #f2f2f2;}
+#table2 tr:nth-child(even){background-color: #fff;}
 
 #table2 tr:hover {background-color: #ddd;}
 
@@ -750,32 +721,7 @@ box-sizing: border-box;
   color: #000;
 }
 
-.checkout-btn{
 
-
-height: 100%;
-width: 100%;
-float: right;
-background: #0EC420;
-border-radius: 0px 0px 19px 19px;
-}
-.coupon-btn{
-width: 145px;
-height: 47px;
-
-
-background: #0EC420;
-}
-
-.coupon-input{
-  
-width: 526px;
-height: 47px;
-left: 235px;
-top: 645px;
-
-background: #C4C4C4;
-}
 
 
 /************* my account ***************/
