@@ -92,7 +92,7 @@ class cart extends view{
           </tr>
        </tbody>
 	  </table>	
-	  <input type="submit" style="margin-top:4%; width:45%" class="login-btn" id="tocheckout" name="tocheckout" onsubmit="return false" value="Proceed to Checkout">
+	  <input type="submit" style="margin-top:4%; width:45%" class="login-btn" id="tocheckout" name="tocheckout" onsubmit="return false" value="Checkout">
 	  </div>        
 
 
