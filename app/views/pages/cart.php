@@ -5,14 +5,22 @@ class cart extends view{
     require APPROOT . '/views/inc/header.php';
 	echo breadcrumbs(); 
     ?>
+<head>
+<style>
+footer{
+    bottom:0;
+}
+</style>
+</head>
     <br><br><br>
+
 <section class="cart-content">
 <div class="row">
  <div class="cart-container" style="margin-right:10%">
  <form>
     <table class="cart-table"  cellspacing="0">
     <thead>
-		
+
 			<tr>
                 <th class="product-image">&nbsp;</th>
 				<th class="cart-description">Name</th>
@@ -50,9 +58,7 @@ class cart extends view{
 	
     </table>
  </form>
- <div>
-	<strong><B style="color:#FF7A00">CONGRATULATIONS!!!</B> YOU'VE EARNED <B style="color:#FF7A00">98</B> POINTS!!</strong>
-	</div>
+ 
  </div>
  
  <div class="table2"  id="table2" style="position:realtive; ">
@@ -88,13 +94,30 @@ class cart extends view{
 
            <tr class="order-total">
            <th >Total</th>
-           <td data-title="Total"><strong><span ><bdi><?php $TOTAL=$sub+$shipping; echo $TOTAL;   $this->model->cartPoints($TOTAL,$_SESSION['ID'])?>&nbsp;<span>EGP</span></bdi></span></strong> </td>
+           <td data-title="Total"><strong><span ><bdi>
+		   <?php 
+		   $TOTAL=$sub+$shipping; 
+		   echo $TOTAL;   
+		   $user=$this->model->userPoints($_SESSION['ID']);
+		   $oldPoints =$user->Points;
+		   $TOTAL=$TOTAL/4;
+		   $points=intval($TOTAL)+$oldPoints;
+		   $this->model->cartPoints($points,$_SESSION['ID'])
+		   ?>
+		   
+		   &nbsp;<span>EGP</span></bdi></span></strong> </td>
           </tr>
        </tbody>
-	  </table>	
+	  
+	  </table>
+	  <div>
+	<strong><B style="color:#FF7A00">CONGRATULATIONS!!!</B> YOU'VE EARNED <B style="color:#FF7A00"><?php  echo intval($TOTAL);  ?></B> POINTS!!</strong>
+	</div>	
 	  <input type="submit" style="margin-top:4%; width:45%" class="login-btn" id="tocheckout" name="tocheckout" onsubmit="return false" value="Checkout">
+	  
+	  
 	  </div>        
-
+	  
 
 
 

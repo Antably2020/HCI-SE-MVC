@@ -100,4 +100,13 @@ public function productSum($quantity,$price)
         return $this->dbh->execute();  
     }
 
+    public function userPoints($id)
+    {
+     
+        $this->dbh->query('select * from users where ID= :id ' );
+        $this->dbh->bind(':id', $id);
+
+        return $this->dbh->single();
+    }
+
 }
