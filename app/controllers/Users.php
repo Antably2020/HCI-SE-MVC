@@ -1,7 +1,7 @@
 <?php
 class Users extends Controller
 {
-     protected $t;
+    protected $t;
     public function register()
     {
         $registerModel = $this->getModel();
@@ -63,7 +63,6 @@ class Users extends Controller
             //process form
             $userModel->setEmail(trim($_POST['email']));
             $userModel->setPassword(trim($_POST['password']));
-            
             //validate login form
             if (empty($userModel->getEmail())) {
                 $userModel->setEmailErr('Please enter an email');
@@ -82,11 +81,10 @@ class Users extends Controller
                 //Check login is correct
 
                 $t= $result->Type;
-               
+               $_SESSION['ID']=$result->ID;
                if($t=='user')
                {
-               
-                header('location: ' . URLROOT . 'public/');
+                header('location: ' . URLROOT . 'public/pages/index');
                }
                else if($t=='admin')
                {
@@ -95,7 +93,13 @@ class Users extends Controller
                }
 
             }
-            else{ header('location: ' . URLROOT . 'public/users/login');}
+            else{ 
+                echo '<script> window.location = "login";
+                alert("Incorrect Username or Password");
+              </script>';
+               // header('location: ' . URLROOT . 'public/users/login');
+                   
+            }
         }
         // Load form
         //echo 'Load form, Request method: ' . $_SERVER['REQUEST_METHOD'];

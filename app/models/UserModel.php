@@ -70,7 +70,7 @@ class UserModel extends model
         $this->dbh->bind(':email', $email);
         $this->dbh->bind(':pass', $password);
 
-        //$userRecord = $this->dbh->single();
+        $userRecord = $this->dbh->single();
         return $this->dbh->single();
        
     }

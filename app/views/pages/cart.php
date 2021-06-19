@@ -12,9 +12,15 @@ class cart extends view{
  <form>
     <table class="cart-table"  cellspacing="0">
     <thead>
+	<?php
+  foreach($this->model->readCart($_SESSION['ID']) as $cart){
+	foreach($this->model->readProductFromCart($cart->productID) as $product){
+		$sum=$this->model->productSum($cart->quantity,$product->price);
+		$this->model->insertSum($sum,$cart->id);
+    ?>
 			<tr>
                 <th class="product-image">&nbsp;</th>
-				<th class="cart-description">Description</th>
+				<th class="cart-description">Name</th>
 				<th class="cart-price">Price</th>
 				<th class="cart-quantity">Quantity</th>
 				<th class="cart-total">Subtotal</th>
@@ -25,24 +31,19 @@ class cart extends view{
 				<td class="product-thumbnail">
 				<a href="" class="no-lightbox"><img height="60" src="<?php echo URLROOT . 'images/car.jpg'; ?>"></a></td>
 				<td class="product-name" data-title="cart-description">
-				<a href="">this is a super car</a><dt>Sold By:</dt><p><a href="" title="L">item seller</a></p>
+				<a href=""><?php echo  $product->name; ?></a>
+				<td  data-title="Price"><span ><bdi><?php echo  $product->price; ?>&nbsp;<span>EGP</span></bdi></span>						
 				</td>
-				<td  data-title="Price"><span ><bdi>610.00&nbsp;<span>EGP</span></bdi></span>						
-				</td>
-				<td  data-title="Quantity">1 <input type="hidden" name="" value=""></td>
-				<td  data-title="TOTAL"><span >EGP</span></td>
+				<td  data-title="Quantity"><?php echo  $cart->quantity; ?> <input type="hidden" name="" value=""></td>
+				<td  data-title="TOTAL"><?php echo $sum;  ?><span > EGP</span></td>
 				<td >
 				<button class="btn login-btn"  id="delete" name="delete" viewBox="0 0 10 16">Remove item</button>	</td>
            </tr>
-			
-		   <tr>
-			  <td colspan="6" >
-			     <div class="row">
-			      <label >Coupon:</label>
-				  <input type="text" name="" class="form-control " style="background-color:#FF7A00; width:60%;"  value="" placeholder="Coupon code">
-				  <button type="submit" class="login-btn" style="margin-left:3%" name="Applycoupon">Apply coupon</button>
-			     </div>	
-		   </tr>
+		<?php
+	}	
+	}
+		?>	
+		   
 		</tbody>   
 	</thead>
     </table>
@@ -55,7 +56,16 @@ class cart extends view{
 	   <tbody >
             <tr>
 		       <th >Subtotal</th>
-		       <td data-title="Subtotal"><span ><bdi>610.00&nbsp;<span >EGP</span></bdi></span></td>
+		       <td data-title="Subtotal"><span ><bdi>
+			   <?php
+  			$sub=0;
+			  foreach($this->model->readCart($_SESSION['ID']) as $cart){
+			$sub+=$cart->sum;
+
+			}
+			echo $sub;
+    			?>
+				&nbsp;<span >EGP</span></bdi></span></td>
 	       </tr>
 		
 		   <tr>
@@ -64,7 +74,7 @@ class cart extends view{
             <ul>
             <li>
               <input type="hidden" name="shipping_method[0]" data-index="0" id="shipping_method_0_flat_rate1" value="flat_rate:1">
-              <label>Flat rate: <span><bdi>35.00&nbsp;<span >EGP</span></bdi></span></label>	
+              <label>Flat rate: <span><bdi><?php $shipping=35; echo $shipping;  ?>&nbsp;<span >EGP</span></bdi></span></label>	
             </li>
             </ul>
               <p>Shipping to <strong>cairo, Cairo</strong>.</p>
@@ -73,7 +83,7 @@ class cart extends view{
 
            <tr class="order-total">
            <th >Total</th>
-           <td data-title="Total"><strong><span ><bdi>645.00&nbsp;<span>EGP</span></bdi></span></strong> </td>
+           <td data-title="Total"><strong><span ><bdi><?php $TOTAL=$sub+$shipping; echo $TOTAL;   $this->model->cartPoints($TOTAL,$_SESSION['ID'])?>&nbsp;<span>EGP</span></bdi></span></strong> </td>
           </tr>
        </tbody>
 	  </table>	

@@ -103,10 +103,18 @@ class Pages extends Controller
     public function cart()
     {
         
+        $cartModel = $this->getModel();
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+            
+            $cartModel->readCart($_SESSION['ID']);
+        }
+        // Load form
+        //echo 'Load form, Request method: ' . $_SERVER['REQUEST_METHOD'];
         $viewPath = VIEWS_PATH . 'pages/cart.php';
         require_once $viewPath;
         $cartView = new Cart($this->getModel(), $this);
         $cartView->output();
+        
 
     }
 public function SpecialOrder()
