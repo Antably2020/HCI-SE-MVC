@@ -30,15 +30,15 @@ class cart extends view{
 		$this->model->insertSum($sum,$cart->id);
     ?>
 				<td class="product-thumbnail">
-				<a href="" class="no-lightbox"><img height="60" src="<?php echo URLROOT . 'images/car.jpg'; ?>"></a></td>
+				<a href="" class="no-lightbox"><img height="60" style="margin:20px;" src="<?php echo URLROOT . 'images/car.jpg'; ?>"></a></td>
 				<td class="product-name" data-title="cart-description">
 				<a href=""><?php echo  $product->name; ?></a>
 				<td  data-title="Price"><span ><bdi><?php echo  $product->price; ?>&nbsp;<span>EGP</span></bdi></span>						
 				</td>
 				<td  data-title="Quantity"><?php echo  $cart->quantity; ?> <input type="hidden" name="" value=""></td>
-				<td  data-title="TOTAL"><?php echo $sum;  ?><span > EGP</span></td>
-				<td >
-				<button class="btn login-btn"  id="delete" name="delete" viewBox="0 0 10 16">Remove item</button>	</td>
+				<td  data-title="TOTAL"><?php echo $sum;  ?><span > EGP</span></td>=
+				<td><button class="order-btn  btn-xs"  data-target="#delete"  style="margin:20px; background-color:#FF7A00; color:white;"><span class="glyphicon glyphicon-trash" ></span></button></td>	
+						
            </tr>
 		<?php
 	}	
