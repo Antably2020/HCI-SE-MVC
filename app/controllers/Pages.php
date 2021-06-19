@@ -69,6 +69,34 @@ class Pages extends Controller
     }
 
 
+
+    public function checkout(){
+        $chechoytModel = $this->getModel();
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+            //process form
+            $checkoutModel->setEmail(trim($_POST['email']));
+            $checkoutModel->setComplain(trim($_POST['choice']));
+            $checkoutModel->setDesc(trim($_POST['desc']));
+
+            if($checkoutModel->checkout()){
+                echo '<script>';  
+                echo 'alert("successfully!!!")';  
+                echo '</script>'; 
+            }
+            else{
+                die('Error has occured');
+            }
+
+
+        }
+        $viewPath=VIEWS_PATH. 'pages/checkout.php';
+        require_once $viewPath;
+        $contactView=new checkout($this->getModel(),$this);
+        $contactView->output();
+
+    }
+
+
         
     public function add_product(){
         $add_producttModel = $this->getModel();

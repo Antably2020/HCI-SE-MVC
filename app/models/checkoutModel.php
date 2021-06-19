@@ -1,23 +1,10 @@
 <?php 
-class contactModel extends model{
+class checkoutModel extends model{
 
-    public $title="contact model";
+    public $title="checkout model";
     protected $email ;
     protected $complain;
     protected $desc;
-
-
-    
-  $userID = $_SESSION['ID'];
-  $fullname = $_POST['fullname'];
-  $email = $_POST['email'];
-  $phone = $_POST['phone'];
-  $city = $_POST['city'];
-  $address = $_POST['address'];
-  $street = $_POST['street'];
-  $building = $_POST['building'];
-  $floor = $_POST['floor'];
-
 
     public function __construct()
     {
@@ -45,7 +32,7 @@ class contactModel extends model{
 
     }
 
-    public function contactus(){
+    public function checkout(){
         $this->dbh->query("INSERT INTO contact (email, complain, description) VALUES(:email, :complain, :description)");
         $this->dbh->bind(':email',$this->email);
         $this->dbh->bind(':complain', $this->complain);
