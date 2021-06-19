@@ -47,8 +47,12 @@ class cart extends view{
 		   
 		</tbody>   
 	</thead>
+	
     </table>
  </form>
+ <div>
+	<strong><B style="color:#FF7A00">CONGRATULATIONS!!!</B> YOU'VE EARNED 98 POINTS!!</strong>
+	</div>
  </div>
  
  <div class="table2"  id="table2" style="position:realtive; ">
