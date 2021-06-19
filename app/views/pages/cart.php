@@ -12,12 +12,7 @@ class cart extends view{
  <form>
     <table class="cart-table"  cellspacing="0">
     <thead>
-	<?php
-  foreach($this->model->readCart($_SESSION['ID']) as $cart){
-	foreach($this->model->readProductFromCart($cart->productID) as $product){
-		$sum=$this->model->productSum($cart->quantity,$product->price);
-		$this->model->insertSum($sum,$cart->id);
-    ?>
+		
 			<tr>
                 <th class="product-image">&nbsp;</th>
 				<th class="cart-description">Name</th>
@@ -28,6 +23,12 @@ class cart extends view{
 			</tr>
         <tbody>
 			<tr class=" cart_item">
+			<?php
+  foreach($this->model->readCart($_SESSION['ID']) as $cart){
+	foreach($this->model->readProductFromCart($cart->productID) as $product){
+		$sum=$this->model->productSum($cart->quantity,$product->price);
+		$this->model->insertSum($sum,$cart->id);
+    ?>
 				<td class="product-thumbnail">
 				<a href="" class="no-lightbox"><img height="60" src="<?php echo URLROOT . 'images/car.jpg'; ?>"></a></td>
 				<td class="product-name" data-title="cart-description">
