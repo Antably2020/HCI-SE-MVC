@@ -67,7 +67,12 @@ class checkout extends view{
           
         </div>
         
-        <input type="submit" name="order" value="Order" class="btn">
+        <form action="checkout">
+        <input type="submit" style="background-image:"name="order" value="Order" class="btn">
+         </form>
+
+
+       
       </form>
     </div>
   </div>
