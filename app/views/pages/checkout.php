@@ -14,16 +14,12 @@ class checkout extends view{
   <div class="col-25">
     <div class="container">
 
+<p> <img style="float:left" src="<?php echo URLROOT . 'images/p1.jpg'; ?>" width="60" height="60"> 
+<a style="float:left"  href="">شكمان</a> <span class="price">500 LE</span> <br><span class="Quantity"  style="float:left" >Quantity: 20</span></p>
 
 
 
-
-<p> <img src="layout/photos/" width="60" height="60"> 
-<a href="http://localhost/hikers/buyProduct.php?productID=''">name</a> <span class="price"> LE</span> <br><span class="Quantity">Quantity:</span></p>
-
-
-
-      <p>Total <span class="price" style="color:black"><b>SUM  LE</b></span></p>
+      <p> <span class="price" style="color:black"><b>TOTAL: 500 LE</b></span></p>
  
 
 
@@ -68,7 +64,7 @@ class checkout extends view{
         </div>
         
         <form action="checkout">
-        <input type="submit" style="background-image:"name="order" value="Order" class="btn">
+        <input type="submit" name="order" value="Order" class="btn">
          </form>
 
 
