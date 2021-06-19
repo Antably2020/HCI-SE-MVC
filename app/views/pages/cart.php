@@ -44,7 +44,7 @@ footer{
 				<td  data-title="Price"><span ><bdi><?php echo  $product->price; ?>&nbsp;<span>EGP</span></bdi></span>						
 				</td>
 				<td  data-title="Quantity"><?php echo  $cart->quantity; ?> <input type="hidden" name="" value=""></td>
-				<td  data-title="TOTAL"><?php echo $sum;  ?><span > EGP</span></td>=
+				<td  data-title="TOTAL"><?php echo $sum;  ?><span > EGP</span></td>
 				<td><button class="order-btn  btn-xs"  data-target="#delete"  style="margin:20px; background-color:#FF7A00; color:white;"><span class="glyphicon glyphicon-trash" ></span></button></td>	
 						
            </tr>
