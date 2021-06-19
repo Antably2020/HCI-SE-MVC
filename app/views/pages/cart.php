@@ -51,7 +51,7 @@ class cart extends view{
     </table>
  </form>
  <div>
-	<strong><B style="color:#FF7A00">CONGRATULATIONS!!!</B> YOU'VE EARNED 98 POINTS!!</strong>
+	<strong><B style="color:#FF7A00">CONGRATULATIONS!!!</B> YOU'VE EARNED <B style="color:#FF7A00">98</B> POINTS!!</strong>
 	</div>
  </div>
  
