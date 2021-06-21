@@ -57,14 +57,11 @@ class CartModel extends model
     }
 
     public function readCart($userID)
-    {
-        
+    {       
         $this->dbh->query('select * from cart where userID= :userID ' );
         $this->dbh->bind(':userID', $userID);
 
-        return $this->dbh->resultSet();
-       
-    
+        return $this->dbh->resultSet(); 
 }
 public function readProductFromCart($id)
     {
@@ -72,9 +69,7 @@ public function readProductFromCart($id)
         $this->dbh->query('select * from products where id= :id ' );
         $this->dbh->bind(':id', $id);
 
-        return $this->dbh->resultSet();
-       
-    
+        return $this->dbh->resultSet();   
 }
 
 public function productSum($quantity,$price)

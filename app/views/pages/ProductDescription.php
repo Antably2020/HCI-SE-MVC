@@ -4,6 +4,7 @@ class ProductDescription extends view{
         $title = $this->model->title;
     require APPROOT . '/views/inc/header.php';
 	echo breadcrumbs(); 
+	$productID=$_POST['addtocart'];
     ?>
     <br><br><br>
     <head>

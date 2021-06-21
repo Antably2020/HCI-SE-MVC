@@ -27,6 +27,7 @@ class products extends view{
   
   <?php
   foreach($this->model->readProd() as $product){
+    $var = "window.location.href='ProductDescription?id=".$product->id."';";
     ?>
         
  <!-- Product -->
@@ -45,8 +46,9 @@ class products extends view{
       <div class="product-hover d-none d-lg-block d-xl-block">
        
         <div class="buttons">
-                                                                   
-         <button type="button" class="btn btn-block  p-btn" >Add to cart</button>
+          <form action="ProductDescription" method="post" name="addToCart">                                            
+              <?php echo'<button id="addtocart" name="addtocart" class="btn btn-block  p-btn"  value="'.$product->id.'">Details</button>';?>
+          </form>
         </div>
       </div>
 
