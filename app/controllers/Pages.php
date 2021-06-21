@@ -161,6 +161,13 @@ public function productdescription()
 }
 public function A_products()
 {
+    $p = $this->getModel();
+    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+        //process form
+        $p->deleteProduct(trim($_POST['id']));
+
+
+    }
     $viewPath = VIEWS_PATH . 'admin/A_products.php';
     require_once $viewPath;
     $adminView = new A_products($this->getModel(), $this);
