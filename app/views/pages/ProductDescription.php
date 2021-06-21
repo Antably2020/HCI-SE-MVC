@@ -78,7 +78,7 @@ var quantitiy=0;
                                           <span class="glyphicon glyphicon-minus"></span>
                                         </button>
                                     </span>
-                                    <input type="text" id="quantity" name="quantity" class="form-control input-number" value="10" min="1" max="100" >
+                                    <input type="text" id="quantity" name="quantity" class="form-control input-number" value="1" min="1" max="100" >
                                   
 									<span class="input-group-btn">
                                         <button type="button" class="quantity-right-plus btn  btn-number" data-type="plus" data-field="">
