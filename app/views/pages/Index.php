@@ -64,8 +64,7 @@ class Index extends view{
                               <img class="img-fluid" src="<?php echo URLROOT . 'images/cat2.jpg'; ?>" alt="Car Care">
                           </div>
                           <a href="" class="cat-title">
-						  Air Cleaners
-                          </a>
+Air Cleaners                          </a>
                         </div>
                       </article>
                   </div>
@@ -79,7 +78,7 @@ class Index extends view{
                               <img class="img-fluid" src="<?php echo URLROOT . 'images/cat3.jpg'; ?>" alt="Sound Systems">
                           </div>
                           <a href="" class="cat-title">
-						  HANDLEBARS & CONTROLS
+						  Handlebars & Controls
                           </a>
                         </div>
                       </article>
@@ -94,7 +93,7 @@ class Index extends view{
                               <img class="img-fluid" src="<?php echo URLROOT . 'images/cat4.jpg'; ?>" alt="Engine Performance">
                           </div>
                           <a href="" class="cat-title">
-						  Bike Protection
+						  Bike Protections
                           </a>
                         </div>
                       </article>
@@ -109,7 +108,7 @@ class Index extends view{
                               <img class="img-fluid" src="<?php echo URLROOT . 'images/cat5.jpg'; ?>" alt="Car Lightening">
                           </div>
                           <a href="" class="cat-title">
-						  SUSPENSION & FRAME
+						  Suspensions & Frames
                           </a>
                         </div>
                       </article>
@@ -139,7 +138,7 @@ class Index extends view{
                               <img class="img-fluid" src="<?php echo URLROOT . 'images/cat7.jpg'; ?>" alt="Best Selling">
                           </div>
                           <a href="" class="cat-title">
-						  Engine Parts 
+						  Engine parts 
                           </a>
                         </div>
                       </article>
