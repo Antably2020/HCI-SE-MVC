@@ -161,10 +161,10 @@ public function productdescription()
 }
 public function A_products()
 {
-    $p = $this->getModel();
+    $A_productsModel = $this->getModel();
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         //process form
-        $p->deleteProduct(trim($_POST['id']));
+        $A_productsModels->deleteProduct($_POST['del']);
 
 
     }

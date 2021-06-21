@@ -92,7 +92,7 @@ class A_products extends view{
 							<td> EGP&nbsp;<?php echo  $product->price; ?>&nbsp;</td>
 							
               <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="order-btn  btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"style="background-color:#fff; color:#FF7A00; border:1px solid #FF7A00; "  ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="order-btn  btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete"  style="background-color:#FF7A00; color:white;"><span class="glyphicon glyphicon-trash" ></span></button></p></td>	</tr>
+    <td> <?php echo'<form method="post" action=""><button class="order-btn  btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" name="del" id="del" value="'.$product->id.'"  style="background-color:#FF7A00; color:white;"><span class="glyphicon glyphicon-trash" ></span></button></form>';?></td>	</tr>
 						
              
 

@@ -7,6 +7,7 @@ public $title="Products";
     protected $Pname;
     protected $Pdescription;
     protected $Pprice;
+    protected $id;
 
 
 public function readProd()
@@ -46,6 +47,15 @@ function Uproduct() {
         $this->dbh->bind(':pdesciption', $this->Pdescription);
         $this->dbh->bind(':pprice', $this->Pprice);
     return $this->dbh->execute();
+
+}
+function deleteProduct($id) {
+
+    $this->dbh->query= "DELETE FROM products WHERE id = ':id' ";
+        $this->dbh->bind(':id', $id);
+    return $this->dbh->execute();
+
+    
 
 }
 }
