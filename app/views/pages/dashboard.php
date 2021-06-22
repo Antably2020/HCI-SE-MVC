@@ -23,7 +23,7 @@ class  dashboard extends view{
 
 	<div class="row" style="padding-bottom:10px">
     <div class="col-md-12">
-			<h2>ALL<b> USERS</b></h2>
+			<h2>MY<b> PROFILE</b></h2>
             
       <hr class="hr2" style="margin-top:4px">
 
