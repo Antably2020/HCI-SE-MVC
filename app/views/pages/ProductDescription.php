@@ -46,11 +46,11 @@ var quantitiy=0;
 	</head>
 <body>
 
- 
+<?php foreach($this->model->readProd($productID) as $product) ?> 
 <div class="row" >
 
 <div class="col-md-12">
-			<h2>PRODUCT<b> NAME</b></h2>
+			<h2><?php echo  $product->name; ?></h2>
     </div>
 <div class="card" style="margin-left:5%; width:30%;height:30% ;border:2px solid #FF7A00;">
   <img src="<?php echo URLROOT . 'images/im.png'; ?>" alt="Denim Jeans" style="width:100% hieght:100%">    
@@ -59,10 +59,9 @@ var quantitiy=0;
 <div class="col-sm" style="margin-top:4%; margin-left:6%; text-align:left; margin-right:10%;">
 
         <br>
-        <p class="price" style="font-size:30px">$19.99</p>
+        <p class="price" style="font-size:30px"><?php echo  $product->price; ?></p>
         <div style="font-size:20px ">
         <p><b>Avalability:</b> in stock  </p>
-        <p><b>Product code:</b> cs000 </p>
         <p><b>Tags:</b> spare parts  </p>
 
         <div >
@@ -94,7 +93,7 @@ var quantitiy=0;
 
 
 <h3 style="text-align:left; font-size:30px; margin-top:5%;"><b>Desciption</b></h3>
-<p style="font-size:20px"> This is description of the product This is description of the product This is description of the product  </p>
+<p style="font-size:20px"> <?php echo  $product->description; ?></p>
 
 </div>
 

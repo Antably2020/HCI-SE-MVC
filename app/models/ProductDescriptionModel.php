@@ -3,12 +3,23 @@ require_once 'ProductDescriptionModel.php';
 class ProductDescriptionModel extends model
 {
     public  $title = 'ProductDescription';
-        
-	public function readProd(){
+    protected $productID;
+    
+    
+    public function getproductID()
+    {
+        return $this->productID;
+    }
+    public function setproductID($productID)
+    {
+        $this->productID = $productID;
+    }
 
-        $this->dbh->query("SELECT * FROM products");
-        return $this->dbh->resultSet();
+	public function readProd($id)   {
         
-        }
+        $this->dbh->query('select * from products where id= :id ' );
+        $this->dbh->bind(':id', $id);
+        return $this->dbh->resultSet();   
+}
     
 }
