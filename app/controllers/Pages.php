@@ -75,7 +75,6 @@ class Pages extends Controller
         if ($_SERVER['REQUEST_METHOD'] == 'POST')
         {
             //process form
-            $checkoutModel->setDesc(trim($_POST['desc']));
             
             $checkoutModel->setName(trim($_POST['fullname']));
             $checkoutModel->setemail(trim($_POST['email']));
