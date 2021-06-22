@@ -10,4 +10,11 @@ class IndexModel extends model{
           return $this->dbh->resultSet();
           
           }
+
+          public function readcat(){
+
+               $this->dbh->query("SELECT * FROM categories");
+               return $this->dbh->resultSet();
+               
+               }
 }

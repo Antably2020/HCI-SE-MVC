@@ -7,6 +7,7 @@ class add_productModel extends model{
     protected $price;
     protected $image;
     protected $featured;
+    protected $Category;
 
     public function __construct()
     {
@@ -30,7 +31,7 @@ class add_productModel extends model{
     }
 
     public function setPrice($price){
-        $this->complain=$price;
+        $this->price=$price;
 
     }
     
@@ -42,14 +43,19 @@ class add_productModel extends model{
         $this->featured=$featured;
 
     }
+    public function setCategory($category){
+        $this->Category=$category;
+
+    }
 
     public function contactus(){
-        $this->dbh->query("INSERT INTO products (name, description, price, img, featured) VALUES(:name, :description, :price, :image, :featured)");
+        $this->dbh->query("INSERT INTO products (name, description, price, img, featured , category) VALUES(:name, :description, :price, :image, :featured , :category)");
         $this->dbh->bind(':name',$this->name);
         $this->dbh->bind(':description',$this->desc);
         $this->dbh->bind(':price', $this->price);
         $this->dbh->bind(':image',$this->image);
-        $this->dbh->bind(':featured',$this->featured);
+        $this->dbh->bind(':featured','0');
+        $this->dbh->bind(':category',$this->Category);
         return $this->dbh->execute();
     }
 

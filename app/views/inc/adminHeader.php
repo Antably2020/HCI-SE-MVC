@@ -28,7 +28,6 @@
   <title><?php echo SITENAME; ?></title>
 </head>
 <body>
-<?php 
-require APPROOT . '/views/inc/navbar.php';?>
-<?php require APPROOT . '/views/inc/chaticon.php';?>
+
+<?php require APPROOT . '/views/inc/sidebar.php';?>
 

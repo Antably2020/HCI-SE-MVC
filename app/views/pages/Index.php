@@ -25,125 +25,29 @@ class Index extends view{
   </div>
       <div class="row">
         <!-- categories -->
+        <?php  foreach($this->model->readcat() as $cat){ ?>
                                                 <div class="col-6 col-sm-6 col-md-4 col-lg-3">
                   <!-- categories -->
                   <div class="product">
                       <article style="padding-bottom:30px;">
                         <div class="module">
                           <div class="cat-thumb">
-                              <img class="img-fluid" src="<?php echo URLROOT . 'images/cat1.jpg'; ?>" style="Height: 245px;" alt="Spare Parts">
+                              <img class="img-fluid" src="<?php echo URLROOT . $cat->catImage; ?> " style="Height: 200px; width: 200px;" alt="Spare Parts">
                           </div>
-                          <a href="" class="cat-title">
-						  Drive & Transmission
-                          </a>
+                          <form action="categorizedProduct" id="my_form" method="post" name="category">     
+
+ <button  name="category" value=" <?php echo  $cat->categoryID; ?>" class="cat-title" style="border:none">   <?php echo  $cat->category; ?> </button>
+</form>
+                         
+						
+                         
                         </div>
                       </article>
                   </div>
                 </div>
-                                 <div class="col-6 col-sm-6 col-md-4 col-lg-3">
-                  <!-- categories -->
-                  <div class="product">
-                      <article>
-                        <div class="module">
-                          <div class="cat-thumb">
-                              <img class="img-fluid" src="<?php echo URLROOT . 'images/p1.jpg'; ?>" alt="Fluids">
-                          </div>
-                          <a href="" class="cat-title">
-						  Exhaust Systems
-                          </a>
-                        </div>
-                      </article>
-                  </div>
-                </div>
-                                                                        <div class="col-6 col-sm-6 col-md-4 col-lg-3">
-                  <!-- categories -->
-                  <div class="product">
-                      <article>
-                        <div class="module">
-                          <div class="cat-thumb">
-                              <img class="img-fluid" src="<?php echo URLROOT . 'images/cat2.jpg'; ?>" alt="Car Care">
-                          </div>
-                          <a href="" class="cat-title">
-Air Cleaners                          </a>
-                        </div>
-                      </article>
-                  </div>
-                </div>
-                                                                        <div class="col-6 col-sm-6 col-md-4 col-lg-3">
-                  <!-- categories -->
-                  <div class="product">
-                      <article>
-                        <div class="module">
-                          <div class="cat-thumb">
-                              <img class="img-fluid" src="<?php echo URLROOT . 'images/cat3.jpg'; ?>" alt="Sound Systems">
-                          </div>
-                          <a href="" class="cat-title">
-						  Handlebars & Controls
-                          </a>
-                        </div>
-                      </article>
-                  </div>
-                </div>
-                                                                        <div class="col-6 col-sm-6 col-md-4 col-lg-3">
-                  <!-- categories -->
-                  <div class="product">
-                      <article>
-                        <div class="module">
-                          <div class="cat-thumb">
-                              <img class="img-fluid" src="<?php echo URLROOT . 'images/cat4.jpg'; ?>" alt="Engine Performance">
-                          </div>
-                          <a href="" class="cat-title">
-						  Bike Protections
-                          </a>
-                        </div>
-                      </article>
-                  </div>
-                </div>
-                                                                        <div class="col-6 col-sm-6 col-md-4 col-lg-3">
-                  <!-- categories -->
-                  <div class="product">
-                      <article>
-                        <div class="module">
-                          <div class="cat-thumb">
-                              <img class="img-fluid" src="<?php echo URLROOT . 'images/cat5.jpg'; ?>" alt="Car Lightening">
-                          </div>
-                          <a href="" class="cat-title">
-						  Suspensions & Frames
-                          </a>
-                        </div>
-                      </article>
-                  </div>
-                </div>
-                                                                        <div class="col-6 col-sm-6 col-md-4 col-lg-3">
-                  <!-- categories -->
-                  <div class="product">
-                      <article>
-                        <div class="module">
-                          <div class="cat-thumb">
-                              <img class="img-fluid" src="<?php echo URLROOT . 'images/cat6.jpg'; ?>" alt="Accessories">
-                          </div>
-                          <a href="" class="cat-title">
-						  Brakes
-                          </a>
-                        </div>
-                      </article>
-                  </div>
-                </div>
-                                                                        <div class="col-6 col-sm-6 col-md-4 col-lg-3">
-                  <!-- categories -->
-                  <div class="product">
-                      <article>
-                        <div class="module">
-                          <div class="cat-thumb">
-                              <img class="img-fluid" src="<?php echo URLROOT . 'images/cat7.jpg'; ?>" alt="Best Selling">
-                          </div>
-                          <a href="" class="cat-title">
-						  Engine parts 
-                          </a>
-                        </div>
-                      </article>
-                  </div>
-                </div>
+                              
+   <?php
+        }?>
                                                                                                                                                                                                         
       </div>
     </div>
@@ -210,8 +114,11 @@ Air Cleaners                          </a>
 								</div>
 								<div class="thumb-content">
 									<h4><?php echo $product->name?></h4>
-									<p class="item-price"><strike>EGP315.00</strike> <span>EGP<?php echo $product->price?></span></p></a>
-									<a href="#" class="btn btn-primary">Add to Cart</a>
+									<p class="item-price"><strike>EGP<?php echo $product->oldPrice?></strike> <span>EGP<?php echo $product->price?></span></p></a>
+								
+                  <form action="ProductDescription" method="post" name="addToCart">                                            
+              <?php echo'<a><button id="addtocart" name="addtocart" class="btn btn-primary"  value="'.$product->id.'">Details</button></a>';?>
+          </form>
 								</div>						
 							</div>
 						</div>

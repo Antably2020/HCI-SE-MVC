@@ -32,7 +32,7 @@ public function readProd()
     {
         $this->Pname = $Pname;
     }
-    public function Pdescriptio($Pdescription)
+    public function setDescription($Pdescription)
     {
         $this->Pdescription = $Pdescription;
     }
@@ -40,23 +40,28 @@ public function readProd()
     {
         $this->Pprice = $Pprice;
     }
-
+    public function setID($id){
+        $this->id=$id;
+    }
+    public function getID(){
+        return $this->id;
+    }
 
     
-function Uproduct() {
+public function Uproduct() {
 
-    $this->dbh->query= "UPDATE customers SET description = ':pdesciption' , price = ':pprice' , featued=':featured' WHERE name = ':Pname' ";
-    $this->dbh->bind(':featured', $this->featured);
+    $this->dbh->query= "UPDATE products SET name = ':name' , price = ':pprice'  WHERE name = ':Pname' ";
+  
     $this->dbh->bind(':pname', $this->Pname);
         $this->dbh->bind(':pdesciption', $this->Pdescription);
         $this->dbh->bind(':pprice', $this->Pprice);
     return $this->dbh->execute();
 
 }
-function deleteProduct($id) {
-
-    $this->dbh->query= "DELETE FROM products WHERE id = ':id' ";
-        $this->dbh->bind(':id', $id);
+public function deleteProduct($ids) {
+    
+    $this->dbh->query= "DELETE  FROM products WHERE id = ':ids' ";
+        $this->dbh->bind(':ids', $ids );
     return $this->dbh->execute();
 
     

@@ -3,10 +3,7 @@ class contact extends view{
 
  public function output(){
     $title = $this->model->title;
-    ?><div style="margin-left: 160px;"><?php require APPROOT . '/views/inc/header.php'; echo breadcrumbs(); ?></div ><?php
-    require APPROOT . '/views/inc/sidebar.php';
- ?>
-
+    ?><div style="margin-left: 200px;"><?php require APPROOT . '/views/inc/adminHeader.php'; ?></div >
 
 
   <div class="row">
@@ -18,7 +15,7 @@ class contact extends view{
       
 <div class="login-container ">
     
-    <form class="form" method="post" action="post" name="Contact" style="padding: 18px;" >
+    <form class="form" method="post" >
          <div style="margin-top:10px;">
 
 
@@ -27,7 +24,7 @@ class contact extends view{
                 
                 <div  style=" padding-top: 30px; ">
               <div ><label >Descrption</label></div>
-              <textarea class="form-control center-block" style="width:60% ;border:2px solid #FF7A00;" type="text" required="true" name="" ></textarea>
+              <input class="form-control center-block" style="width:60% ;border:2px solid #FF7A00;" type="text" required="true" name="description" ></textarea>
             </div>
 
 
@@ -36,7 +33,7 @@ class contact extends view{
                 
                 <div > <label >Image</label></div>
                <div class="d-flex justify-content-center ">
-<input type="file" class="form-control" id="customFile" style="width:50% ;margin-bottom:30px; border:2px solid #FF7A00;  background-color: #ffffff0d; height: 33px;" >
+<input type="file"name="img" class="form-control" id="customFile" style="width:50% ;margin-bottom:30px; border:2px solid #FF7A00;  background-color: #ffffff0d; height: 33px;" >
     </div>
 
                 <div  style=" padding-bottom: 30px; ">
