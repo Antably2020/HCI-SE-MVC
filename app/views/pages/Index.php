@@ -32,7 +32,7 @@ class Index extends view{
                       <article style="padding-bottom:30px;">
                         <div class="module">
                           <div class="cat-thumb">
-                              <img class="img-fluid" src="<?php echo URLROOT . $cat->image; ?> " style="Height: 245px;" alt="Spare Parts">
+                              <img class="img-fluid" src="<?php echo URLROOT . $cat->catImage; ?> " style="Height: 200px; width: 200px;" alt="Spare Parts">
                           </div>
                           <form action="categorizedProduct" id="my_form" method="post" name="category">     
 
