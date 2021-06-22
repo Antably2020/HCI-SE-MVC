@@ -2,10 +2,7 @@
 class A_Userview extends view{
     public function output (){
         $title = $this->model->title;
-        ?><div style="margin-left: 160px;"><?php require APPROOT . '/views/inc/header.php'; echo breadcrumbs(); ?></div ><?php
-        require APPROOT . '/views/inc/sidebar.php';
-    ?>
-   
+        ?><div style="margin-left: 160px;"><?php require APPROOT . '/views/inc/adminHeader.php';  ?></div >
 
 
 

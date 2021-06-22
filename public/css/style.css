@@ -8,9 +8,9 @@ background-color:rgba(0, 0, 0, 0);
 
 .sidenav {
   height: 100%;
-  width: 161px;
+  width: 200px;
   position: fixed;
-  top: 87px;
+  /*top: 87px;*/
   left: 0;
   background-color: #fff;
   overflow-x: hidden;

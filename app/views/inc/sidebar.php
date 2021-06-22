@@ -17,6 +17,7 @@ hr {
 </head>
 <body>
     <script>
+    /*
 $(document).scroll(function() {
        if($(window).scrollTop() > 50){
 
@@ -28,12 +29,14 @@ $(document).scroll(function() {
         document.getElementById("sidenav").style.top = "87px";
 
        }
-});
+});*/
 </script>
 
 <div class="sidenav" id="sidenav">
  
-
+<a  href="<?php echo URLROOT . 'public/pages/dashboard'; ?>">PROFILE</a>
+        
+        <hr>
  <a  href="<?php echo URLROOT . 'public/admin/A_orders'; ?>">ORDERS</a>
         
  <hr>
