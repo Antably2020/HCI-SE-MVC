@@ -23,7 +23,7 @@ footer{
 
 <div class="row">
 		<div class="col-md-12">
-			<h2>REALTIVE<b> PRODUCTS</b></h2>
+			<h2><b> PRODUCTS</b></h2>
       
       <hr class="hr2">
 
