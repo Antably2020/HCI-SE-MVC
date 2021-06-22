@@ -3,7 +3,7 @@ class A_productsModel extends model{
 public $title="Products";
 
 
-   
+    protected $featured;
     protected $Pname;
     protected $Pdescription;
     protected $Pprice;
@@ -24,7 +24,10 @@ public function readProd()
         $this->Pprice = "";
     }
 
-   
+    public function featured($featured)
+    {
+        $this->featured = $featured;
+    }
     public function setPName($Pname)
     {
         $this->Pname = $Pname;
@@ -42,7 +45,8 @@ public function readProd()
     
 function Uproduct() {
 
-    $this->dbh->query= "UPDATE customers SET description = ':pdesciption' , price = ':pprice' WHERE name = ':Pname' ";
+    $this->dbh->query= "UPDATE customers SET description = ':pdesciption' , price = ':pprice' , featued=':featured' WHERE name = ':Pname' ";
+    $this->dbh->bind(':featured', $this->featured);
     $this->dbh->bind(':pname', $this->Pname);
         $this->dbh->bind(':pdesciption', $this->Pdescription);
         $this->dbh->bind(':pprice', $this->Pprice);

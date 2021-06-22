@@ -77,14 +77,25 @@ class A_products extends view{
 					</tfoot>
 
 					<tbody>
+<script>
+$(function(){
+$('.preference').each(function(e){
+    if($(this).val() == 1){
+        $(this).attr("checked", "checked");
+    }
+});
+});
 
+</script>
            
   <?php
   foreach($this->model->readProd() as $product){
     ?>
 
+    
+
 						<tr>
-             <td><input class="form-check-input"  type="checkbox" value="<?php echo $product->featured; ?>" id="flexCheckDefault"></td>
+             <td><input class="form-check-input preference"  name="featured" type="checkbox"  value="<?php echo $product->featured; ?>" id="flexCheckDefault"></td>
             <td><img class="img-fluid" src="<?php echo URLROOT . $product->img; ?>"  width="90" height="90" ></td>
                         
 							<td><?php echo $product->name; ?></td>
@@ -130,6 +141,7 @@ class A_products extends view{
         <div class="form-group">
         <input class="form-control " type="text" name="Pprice" placeholder="Price">
         </div>
+
 
       </div>
           <div class="modal-footer ">
