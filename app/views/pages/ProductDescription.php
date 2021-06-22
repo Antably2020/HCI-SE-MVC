@@ -60,7 +60,7 @@ var quantitiy=0;
 <div class="col-sm" style="margin-top:4%; margin-left:6%; text-align:left; margin-right:10%;">
 
         <br>
-        <p class="price" style="font-size:30px"><?php echo  $product->price; ?></p>
+        <p class="price" style="font-size:30px">EGP&nbsp;<?php echo  $product->price; ?></p>
         <div style="font-size:20px ">
         <p><b>Avalability:</b> in stock  </p>
         <p><b>Tags:</b> spare parts  </p>

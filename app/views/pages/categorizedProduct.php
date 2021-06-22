@@ -10,11 +10,11 @@ class categorizedProduct extends view{
     <head>
     
     <head>
-<style>
-footer{
+    <style>
+  footer{
     bottom:0;
-}
-</style>
+  } 
+  </style>
 </head>
 	
 	</head>
@@ -26,7 +26,7 @@ footer{
 			<h2><b> PRODUCTS</b></h2>
       
       <hr class="hr2">
-
+      </div>
 
 
 

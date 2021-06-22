@@ -41,5 +41,13 @@ class ProductDescriptionModel extends model
         $this->dbh->bind(':total', $total);
          return $this->dbh->execute();
     }
+
+    public function readrelativeProd($product){
+
+        $this->dbh->query('SELECT * FROM products where category= :category');
+        $this->dbh->bind(':category', $product);
+        return $this->dbh->resultSet();
+        
+        }
     
 }
