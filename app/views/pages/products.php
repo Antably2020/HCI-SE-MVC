@@ -39,15 +39,17 @@ class products extends view{
         </div>
           
       <span class="tag"><?php echo $product->name; ?></span>
-      <h2 class="title text-center"><?php echo  $product->description; ?></h2>
+      <h2 class="title text-center"><?php echo  $product->category; ?></h2>
       <div class="price">
-                EGP&nbsp;<?php echo  $product->price; ?>&nbsp;
+      <p class="item-price"> <strike style="color: #999;">EGP<?php echo $product->oldPrice?></strike> <span style="padding-left:3px"> EGP&nbsp;<?php echo  $product->price;?></span></p> &nbsp;
       </div>
       <div class="product-hover d-none d-lg-block d-xl-block">
        
         <div class="buttons">
-          <form action="ProductDescription" method="post" name="addToCart">                                            
-              <?php echo'<button id="addtocart" name="addtocart" class="btn btn-block  p-btn"  value="'.$product->id.'">Details</button>';?>
+          <form action="ProductDescription" method="post" name="addToCart">     
+
+              <?php 
+            echo'<button id="addtocart" name="addtocart" class="btn btn-block  p-btn"  value="'.$product->id.'">Details</button>';?>
           </form>
         </div>
       </div>
