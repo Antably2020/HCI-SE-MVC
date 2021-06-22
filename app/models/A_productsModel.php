@@ -3,10 +3,11 @@ class A_productsModel extends model{
 public $title="Products";
 
 
-   
+    protected $featured;
     protected $Pname;
     protected $Pdescription;
     protected $Pprice;
+    protected $id;
 
 
 public function readProd()
@@ -23,7 +24,10 @@ public function readProd()
         $this->Pprice = "";
     }
 
-   
+    public function featured($featured)
+    {
+        $this->featured = $featured;
+    }
     public function setPName($Pname)
     {
         $this->Pname = $Pname;
@@ -41,11 +45,21 @@ public function readProd()
     
 function Uproduct() {
 
-    $this->dbh->query= "UPDATE customers SET description = ':pdesciption' , price = ':pprice' WHERE name = ':Pname' ";
+    $this->dbh->query= "UPDATE customers SET description = ':pdesciption' , price = ':pprice' , featued=':featured' WHERE name = ':Pname' ";
+    $this->dbh->bind(':featured', $this->featured);
     $this->dbh->bind(':pname', $this->Pname);
         $this->dbh->bind(':pdesciption', $this->Pdescription);
         $this->dbh->bind(':pprice', $this->Pprice);
     return $this->dbh->execute();
+
+}
+function deleteProduct($id) {
+
+    $this->dbh->query= "DELETE FROM products WHERE id = ':id' ";
+        $this->dbh->bind(':id', $id);
+    return $this->dbh->execute();
+
+    
 
 }
 }

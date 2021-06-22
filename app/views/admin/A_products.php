@@ -77,14 +77,25 @@ class A_products extends view{
 					</tfoot>
 
 					<tbody>
+<script>
+$(function(){
+$('.preference').each(function(e){
+    if($(this).val() == 1){
+        $(this).attr("checked", "checked");
+    }
+});
+});
 
+</script>
            
   <?php
   foreach($this->model->readProd() as $product){
     ?>
 
+    
+
 						<tr>
-             <td><input class="form-check-input"  type="checkbox" value="<?php echo $product->featured; ?>" id="flexCheckDefault"></td>
+             <td><input class="form-check-input preference"  name="featured" type="checkbox"  value="<?php echo $product->featured; ?>" id="flexCheckDefault"></td>
             <td><img class="img-fluid" src="<?php echo URLROOT . $product->img; ?>"  width="90" height="90" ></td>
                         
 							<td><?php echo $product->name; ?></td>
@@ -92,7 +103,7 @@ class A_products extends view{
 							<td> EGP&nbsp;<?php echo  $product->price; ?>&nbsp;</td>
 							
               <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="order-btn  btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"style="background-color:#fff; color:#FF7A00; border:1px solid #FF7A00; "  ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="order-btn  btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete"  style="background-color:#FF7A00; color:white;"><span class="glyphicon glyphicon-trash" ></span></button></p></td>	</tr>
+    <td> <?php echo'<form method="post" action=""><button class="order-btn  btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" name="del" id="del" value="'.$product->id.'"  style="background-color:#FF7A00; color:white;"><span class="glyphicon glyphicon-trash" ></span></button></form>';?></td>	</tr>
 						
              
 
@@ -130,6 +141,7 @@ class A_products extends view{
         <div class="form-group">
         <input class="form-control " type="text" name="Pprice" placeholder="Price">
         </div>
+
 
       </div>
           <div class="modal-footer ">
