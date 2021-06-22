@@ -66,7 +66,7 @@ var quantitiy=0;
         <p><b>Tags:</b> spare parts  </p>
 
         <div >
-<button class="cart-btn" style="border-radius:15px; font-size:20px; margin-right:10px; margin-left:12px;">Add to Cart</button> 
+<form method="POST"><button class="cart-btn" name="addC" value="<?php echo $product->id; ?>" style="border-radius:15px; font-size:20px; margin-right:10px; margin-left:12px;">Add to Cart</button>
 
 
 		
@@ -87,7 +87,7 @@ var quantitiy=0;
                                     </span>
                                 </div>
                         </div>
-
+						</form>
 
 </div>
 </div>

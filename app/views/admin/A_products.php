@@ -103,7 +103,7 @@ $('.preference').each(function(e){
 							<td> EGP&nbsp;<?php echo  $product->price; ?>&nbsp;</td>
 							
               <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="order-btn  btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"style="background-color:#fff; color:#FF7A00; border:1px solid #FF7A00; "  ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-    <td> <?php echo'<form method="post" action=""><button class="order-btn  btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" name="del" id="del" value="'.$product->id.'"  style="background-color:#FF7A00; color:white;"><span class="glyphicon glyphicon-trash" ></span></button></form>';?></td>	</tr>
+    <td> <?php echo'<form method="POST" ><button class="order-btn  btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" name="del" id="del" value="'.$product->id.'"  style="background-color:#FF7A00; color:white;"><span class="glyphicon glyphicon-trash" ></span></button></form>';?></td>	</tr>
 						
              
 
@@ -130,6 +130,8 @@ $('.preference').each(function(e){
       </div>
           <div class="modal-body">
             
+         
+          <form method="post" >
           <div class="form-group">
         <input class="form-control " type="text" name="Pname" placeholder="Name">
         </div>
@@ -145,9 +147,10 @@ $('.preference').each(function(e){
 
       </div>
           <div class="modal-footer ">
-        <input type="submit" class="btn btn-warning btn-lg" id="Update" name="UopdateProduct" onsubmit="return false" value="UPDATE" style="width: 100%;"><span class="glyphicon glyphicon-ok-sign"></span> 
+        <input type="submit" class="btn btn-warning btn-lg" id="Update" name="UpdateProduct" onsubmit="return false" value="UPDATE" style="width: 100%;"><span class="glyphicon glyphicon-ok-sign"></span> 
         
       </div>
+      </form>
         </div>
     <!-- /.modal-content --> 
   </div>

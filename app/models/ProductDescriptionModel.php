@@ -31,13 +31,15 @@ class ProductDescriptionModel extends model
         return $this->dbh->resultSet();   
 }
 
-public function readrelativeProd($category){
+    public function addCart($id,$quantity,$total){
+       
 
-    $this->dbh->query('SELECT * FROM products where category= :category');
-    $this->dbh->bind(':category', $category);
-    return $this->dbh->resultSet();
-    
+        $this->dbh->query("INSERT INTO cart (productID, userID, quantity,total ) VALUES(:productID, :userID, :quantity, :total)" );
+        $this->dbh->bind(':productID', $id);
+        $this->dbh->bind(':userID', $_SESSION['ID']);
+        $this->dbh->bind(':quantity', $quantity);
+        $this->dbh->bind(':total', $total);
+         return $this->dbh->execute();
     }
-
     
 }

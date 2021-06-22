@@ -101,14 +101,17 @@ class Pages extends Controller
     public function add_product(){
         $add_producttModel = $this->getModel();
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+
+            $path='images/'.$_POST['img'];
             //process form
             $add_producttModel->setName(trim($_POST['name']));
-            $add_producttModel->setDesc(trim($_POST['desc']));
+            $add_producttModel->setDesc(trim($_POST['description']));
             $add_producttModel->setPrice(trim($_POST['price']));
-            $add_producttModel->setimage(trim($_POST['imgage']));
-            $add_producttModel->setFeatured(trim($_POST['featured']));
+            $add_producttModel->setimage($path);
+           
+            $add_producttModel->setCategory(trim($_POST['choice']));
 
-            if($contactModel->contactus()){
+            if($add_producttModel->contactus()){
                 echo '<script>';  
                 echo 'alert("Item added successfully!!!")';  
                 echo '</script>'; 
@@ -156,6 +159,25 @@ public function SpecialOrder()
 
 public function productdescription()
 {
+    $descModel = $this->getModel();
+    if(isset($_POST['addC'])){
+        $quan=$_POST['quantity'];
+        $pri;
+        $PID=$_POST['addC'];
+        foreach ($descModel->readProd($PID) as $product){
+            $pri=$product->price;
+        }
+        $total=$quan*$pri;
+        if($descModel->addCart($PID,$quan,$total)){
+            
+            echo '<script> window.location = "products";
+            alert("ADDED TO CART!");
+          </script>';
+        }
+
+
+    }
+
     $viewPath = VIEWS_PATH . 'pages/ProductDescription.php';
     require_once $viewPath;
     $proddesc = new productdescription($this->getModel(), $this);
@@ -173,11 +195,24 @@ public function categorizedProduct()
 public function A_products()
 {
     $A_productsModel = $this->getModel();
-    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    if (isset($_Post['del'])) {
         //process form
-        $A_productsModels->deleteProduct($_POST['del']);
+        
+        
+        if($A_productsModel->deleteProduct($_POST['del'])){
+            echo '<script> window.location = "A_products";
+            alert("Deleted!");
+          </script>';
+        }
 
 
+    }
+    elseif(isset($_Post['UpdateProduct'])){
+        $A_productsModel->setName($_Post['Pname']);
+        $A_productsModel->setDescription($_Post['Pdescription']);
+        $A_productsModel->setPprice($_Post['Pprice']);
+
+        
     }
     $viewPath = VIEWS_PATH . 'admin/A_products.php';
     require_once $viewPath;
@@ -211,6 +246,7 @@ public function Update_order()
             $registerModel->setPName(trim($_POST['Pname']));
             $registerModel->setPDescription(trim($_POST['Pdescription']));
             $registerModel->setPPrice(trim($_POST['age']));
+            
 
         }
         // Load form
