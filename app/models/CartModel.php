@@ -16,7 +16,7 @@ class CartModel extends model
         $this->type    = '';
 
         $this->quantity    = '';
-        $this->sumn= '';
+        $this->sum= '';
     }
 
     public function getuserID()

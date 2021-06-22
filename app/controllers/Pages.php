@@ -71,28 +71,37 @@ class Pages extends Controller
 
 
     public function checkout(){
-        $chechoytModel = $this->getModel();
-        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+        $checkoutModel = $this->getModel();
+        if ($_SERVER['REQUEST_METHOD'] == 'POST')
+        {
             //process form
-            $checkoutModel->setEmail(trim($_POST['email']));
-            $checkoutModel->setComplain(trim($_POST['choice']));
             $checkoutModel->setDesc(trim($_POST['desc']));
-
-            if($checkoutModel->checkout()){
-                echo '<script>';  
-                echo 'alert("successfully!!!")';  
-                echo '</script>'; 
-            }
-            else{
-                die('Error has occured');
-            }
-
-
+            
+            $checkoutModel->setName(trim($_POST['fullname']));
+            $checkoutModel->setemail(trim($_POST['email']));
+            $checkoutModel->setphone(trim($_POST['phone']));
+            $checkoutModel->setcity(trim($_POST['city']));
+            $checkoutModel->setaddress(trim($_POST['address']));
+            $checkoutModel->setstreet(trim($_POST['street']));
+            $checkoutModel->setbuilding(trim($_POST['building']));
+            $checkoutModel->setfloor(trim($_POST['floor']));
+            $checkoutModel->checkout();
         }
+
+
         $viewPath=VIEWS_PATH. 'pages/checkout.php';
         require_once $viewPath;
-        $contactView=new checkout($this->getModel(),$this);
-        $contactView->output();
+        $checkoutView=new checkout($this->getModel(), $this);
+        $checkoutView->output();
+        /*if($checkoutModel->checkout()){
+            echo '<script>';  
+            echo 'alert("Order Placed successfully!!!")';  
+            echo '</script>'; 
+        }
+        else{
+            die('Error has occured');
+        }
+*/
 
     }
 

@@ -113,8 +113,10 @@ footer{
 	  <div>
 	<strong><B style="color:#FF7A00">CONGRATULATIONS!!!</B> YOU'VE EARNED <B style="color:#FF7A00"><?php  echo intval($TOTAL);  ?></B> POINTS!!</strong>
 	</div>	
-	  <input type="submit" style="margin-top:4%; width:45%" class="login-btn" id="tocheckout" name="tocheckout" onsubmit="return false" value="Checkout">
-	  
+	<form action="checkout" method="post" name="tocheckout">                                            
+	
+	<?php echo'<button id="ToCheckOut" name="ToCheckOut" class="login-btn" >Check Out</button>';?>  
+	  </form>
 	  
 	  </div>        
 	  

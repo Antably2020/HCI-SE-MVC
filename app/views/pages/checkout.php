@@ -9,25 +9,24 @@ class checkout extends view{
 <head>
 <link rel="stylesheet" href="<?php echo URLROOT; ?>public/css/checkout.css">
 </head>
-
 <div class="row">
   <div class="col-25">
     <div class="container">
 
 <p> <img style="float:left" src="<?php echo URLROOT . 'images/p1.jpg'; ?>" width="60" height="60"> 
-<a style="float:left"  href="">شكمان</a> <span class="price">500 LE</span> <br><span class="Quantity"  style="float:left" >Quantity: 20</span></p>
+<a style="float:left"  href=""><?php echo  $product->name; ?></a> <span class="price"><?php echo  $product->price; ?></span> <br><span class="Quantity"  style="float:left" >Quantity: 20</span></p>
 
 
 
-      <p> <span class="price" style="color:black"><b>TOTAL: 500 LE</b></span></p>
+      <p> <span class="price" style="color:black"><b></b></span></p>
  
 
+  </div>
+  </div>
 
-  </div>
-  </div>
   <div class="col-75">
     <div class="container">
-      <form action="" method="post">
+      <form action="" method="post" name="order">
       
         <div class="row">
           <div class="col-50">
@@ -47,25 +46,16 @@ class checkout extends view{
             <label for="bld"><i class="fa fa-building"></i> Building No</label>
             <input type="text" class="a" id="bld" name="building" placeholder="1,2.." required="true" pattern="[0-9]{1,10}" title="Please enter a valid building number.">
             <label for="floor"> Floor No</label>
-            <input type="text" class="a" id="floor" name="floor" placeholder="1,2.." required="true" pattern="[0-9]{1,10}" title="Please enter a valid floor number.">
-            
-           
-         
-
-          
+            <input type="text" class="a" id="floor" name="floor" placeholder="1,2.." required="true" pattern="[0-9]{1,10}" title="Please enter a valid floor number.">            
             <h3>Payment</h3>
             <label>
           <input type="checkbox" checked="checked" name="sameadr"> Cash on delivery
-        </label>
-        
-            
+        </label>                    
           </div>
           
-        </div>
-        
-        <form action="checkout">
+        </div>               
         <input type="submit" name="order" value="Order" class="btn">
-         </form>
+       
 
 
        

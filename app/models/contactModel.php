@@ -7,18 +7,6 @@ class contactModel extends model{
     protected $desc;
 
 
-    
-  $userID = $_SESSION['ID'];
-  $fullname = $_POST['fullname'];
-  $email = $_POST['email'];
-  $phone = $_POST['phone'];
-  $city = $_POST['city'];
-  $address = $_POST['address'];
-  $street = $_POST['street'];
-  $building = $_POST['building'];
-  $floor = $_POST['floor'];
-
-
     public function __construct()
     {
         parent::__construct();

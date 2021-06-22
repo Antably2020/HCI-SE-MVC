@@ -3,7 +3,7 @@ class Users extends Controller
 {
     protected $t;
     public function register()
-    {
+    {   
         $registerModel = $this->getModel();
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             // Process form
