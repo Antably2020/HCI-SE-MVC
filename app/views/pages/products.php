@@ -39,7 +39,12 @@ class products extends view{
         </div>
           
       <span class="tag"><?php echo $product->name; ?></span>
-      <h2 class="title text-center"><?php echo  $product->category; ?></h2>
+      <h2 class="title text-center">
+      <?php
+      if ( $product->category==0 ) { echo 'Transmission';}  else if ( $product->category==1 ){ echo 'Exhaust ';}  else if( $product->category==2 ){ echo 'Air Cleaners  ';} 
+       else if  ( $product->category==3 ){ echo 'Handlebars ';} else if ( $product->category==4 ){ echo 'Bike Protection ';}else if ( $product->category==5 ){ echo 'Suspensions ';} 
+       else if ( $product->category==6 ){ echo 'Brakes ';} else { echo 'Engine Parts';}
+      ?></h2>
       <div class="price">
       <p class="item-price"> <strike style="color: #999;">EGP<?php echo $product->oldPrice?></strike> <span style="padding-left:3px"> EGP&nbsp;<?php echo  $product->price;?></span></p> &nbsp;
       </div>

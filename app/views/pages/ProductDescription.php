@@ -47,7 +47,7 @@ var quantitiy=0;
 	</head>
 <body>
 
-<?php foreach($this->model->readProd($productID) as $product) ?> 
+<?php foreach($this->model->readProd($productID) as $product){ ?> 
 <div class="row" >
 
 <div class="col-md-12">
@@ -118,12 +118,11 @@ var quantitiy=0;
 			
 
 
-  
    
 		 	<div class="item active">
 		<?php	
 		$count=0;
-				foreach($this->model->readrelativeProd($category) as $product){
+				foreach($this->model->readrelativeProd($product->category) as $cat){
 
 		 while($count%4==0){
 		if($count==0){
@@ -138,21 +137,21 @@ var quantitiy=0;
 	break;
 		 }
 ?>
-						
-
+						<?php if (!($product->id==$cat->id)){?>
+			
 						
 						<div class="col-sm-3">
 							<div class="thumb-wrapper">
 								<div class="img-box">
 								<a href="" class="cat-title">
-									<img src="<?php echo URLROOT . $product->img; ?>" class="img-responsive" alt="">
+									<img src="<?php echo URLROOT . $cat->img; ?>" class="img-responsive" alt="">
 								</div>
 								<div class="thumb-content">
-									<h4><?php echo $product->name?></h4>
-									<p class="item-price"><strike>EGP<?php echo $product->oldPrice?></strike> <span>EGP<?php echo $product->price?></span></p></a>
+									<h4><?php echo $cat->name?></h4>
+									<p class="item-price"><strike>EGP<?php echo $cat->oldPrice?></strike> <span>EGP<?php echo $cat->price?></span></p></a>
 								
                   <form action="ProductDescription" method="post" name="addToCart">                                            
-              <?php echo'<a><button id="addtocart" name="addtocart" class="btn btn-primary"  value="'.$product->id.'">Details</button></a>';?>
+              <?php echo'<a><button id="addtocart" name="addtocart" class="btn btn-primary"  value="'.$cat->id.'">Details</button></a>';?>
           </form>
 								</div>						
 							</div>
@@ -160,13 +159,15 @@ var quantitiy=0;
 					
 				
 				<?php
+				}
 			$count++;
 				
 				}
 				?>
 
 		</div>
-				
+	<?php	}
+	?>		
 				
 			</div>
 			<!-- Carousel controls -->
