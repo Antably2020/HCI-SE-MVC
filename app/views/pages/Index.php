@@ -210,8 +210,11 @@ Air Cleaners                          </a>
 								</div>
 								<div class="thumb-content">
 									<h4><?php echo $product->name?></h4>
-									<p class="item-price"><strike>EGP315.00</strike> <span>EGP<?php echo $product->price?></span></p></a>
-									<a href="#" class="btn btn-primary">Add to Cart</a>
+									<p class="item-price"><strike>EGP<?php echo $product->oldPrice?></strike> <span>EGP<?php echo $product->price?></span></p></a>
+								
+                  <form action="ProductDescription" method="post" name="addToCart">                                            
+              <?php echo'<a><button id="addtocart" name="addtocart" class="btn btn-primary"  value="'.$product->id.'">Details</button></a>';?>
+          </form>
 								</div>						
 							</div>
 						</div>

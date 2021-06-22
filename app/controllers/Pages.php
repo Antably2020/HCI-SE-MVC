@@ -152,13 +152,17 @@ public function SpecialOrder()
     $cartView = new specialorder($this->getModel(), $this);
     $cartView->output();
 }
+
+
 public function productdescription()
 {
     $viewPath = VIEWS_PATH . 'pages/ProductDescription.php';
     require_once $viewPath;
-    $cartView = new productdescription($this->getModel(), $this);
-    $cartView->output();
+    $proddesc = new productdescription($this->getModel(), $this);
+    $proddesc->output();
 }
+
+
 public function A_products()
 {
     $A_productsModel = $this->getModel();
