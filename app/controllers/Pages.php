@@ -162,6 +162,13 @@ public function productdescription()
     $proddesc->output();
 }
 
+public function categorizedProduct()
+{
+    $viewPath = VIEWS_PATH . 'pages/categorizedProduct.php';
+    require_once $viewPath;
+    $prodcat = new categorizedProduct($this->getModel(), $this);
+    $prodcat->output();
+}
 
 public function A_products()
 {
