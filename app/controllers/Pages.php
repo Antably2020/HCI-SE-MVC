@@ -36,7 +36,7 @@ class Pages extends Controller
     
     public function dashboard()
     {
-        $viewPath = VIEWS_PATH . 'pages/dashboard.php';
+        $viewPath = VIEWS_PATH . 'admin/dashboard.php';
         require_once $viewPath;
         $dashboardView = new Dashboard($this->getModel(), $this);
         $dashboardView->output();

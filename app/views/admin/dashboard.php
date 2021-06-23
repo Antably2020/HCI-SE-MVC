@@ -54,7 +54,7 @@ class  dashboard extends view{
 		<div class="account-settings">
 			<div class="user-profile">
 				<div class="user-avatar">
-					<img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Maxwell Admin">
+					<img src="<?php echo URLROOT . $user->profileIMG; ?>" alt="Maxwell Admin">
 				</div>
 				<h3 class="user-name"><?php echo $user->Name; ?></h3>
 				<h6 class="user-email"><?php echo  $user->Email; ?></h6>

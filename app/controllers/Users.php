@@ -89,7 +89,7 @@ class Users extends Controller
                else if($t=='admin')
                {
                 
-                header('location: ' . URLROOT . 'public/pages/dashboard');
+                header('location: ' . URLROOT . 'public/admin/dashboard');
                }
 
             }
