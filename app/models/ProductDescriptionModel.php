@@ -34,7 +34,7 @@ class ProductDescriptionModel extends model
     public function addCart($id,$quantity,$total){
        
 
-        $this->dbh->query("INSERT INTO cart (productID, userID, quantity,total ) VALUES(:productID, :userID, :quantity, :total)" );
+        $this->dbh->query("INSERT INTO cart (productID, userID, quantity,sum ) VALUES(:productID, :userID, :quantity, :total)" );
         $this->dbh->bind(':productID', $id);
         $this->dbh->bind(':userID', $_SESSION['ID']);
         $this->dbh->bind(':quantity', $quantity);

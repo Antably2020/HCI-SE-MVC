@@ -17,7 +17,7 @@ footer{
 <section class="cart-content">
 <div class="row">
  <div class="cart-container" style="margin-right:10%">
- <form>
+ <form method="post">
     <table class="cart-table"  cellspacing="0">
     <thead>
 
@@ -43,9 +43,9 @@ footer{
 				<a href=""><?php echo  $product->name; ?></a>
 				<td  data-title="Price"><span ><bdi><?php echo  $product->price; ?>&nbsp;<span>EGP</span></bdi></span>						
 				</td>
-				<td  data-title="Quantity"><?php echo  $cart->quantity; ?> <input type="hidden" name="" value=""></td>
+				<td  data-title="Quantity"><?php echo  $cart->quantity; ?> </td>
 				<td  data-title="TOTAL"><?php echo $sum;  ?><span > EGP</span></td>
-				<td><button class="order-btn  btn-xs"  data-target="#delete"  style="margin:20px; background-color:#FF7A00; color:white;"><span class="glyphicon glyphicon-trash" ></span></button></td>	
+				<td><button class="order-btn  btn-xs"  data-target="#delete" name="del" value=" <?php echo $cart->productID ?>"   style="margin:20px; background-color:#FF7A00; color:white;"><span class="glyphicon glyphicon-trash" ></span></button></td>	
 						
            </tr>
 		<?php

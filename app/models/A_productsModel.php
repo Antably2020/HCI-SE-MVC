@@ -1,3 +1,4 @@
+
 <?php
 class A_productsModel extends model{
 public $title="Products";
@@ -48,25 +49,16 @@ public function readProd()
     }
 
     
-public function Uproduct() {
 
-    $this->dbh->query= "UPDATE products SET name = ':name' , price = ':pprice'  WHERE name = ':Pname' ";
-  
-    $this->dbh->bind(':pname', $this->Pname);
-        $this->dbh->bind(':pdesciption', $this->Pdescription);
-        $this->dbh->bind(':pprice', $this->Pprice);
+function deleteProduct($id) {
+
+    $this->dbh->query( "DELETE FROM products WHERE id = :id ");
+        $this->dbh->bind(':id', $id);
+        
     return $this->dbh->execute();
-
 }
-public function deleteProduct($ids) {
-    
-    $this->dbh->query= "DELETE  FROM products WHERE id = ':ids' ";
-        $this->dbh->bind(':ids', $ids );
-    return $this->dbh->execute();
 
-    
 
-}
 }
 
 
