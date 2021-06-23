@@ -3,15 +3,25 @@ class contact extends view{
 
  public function output(){
     $title = $this->model->title;
-    ?><div style="margin-left: 200px;"><?php require APPROOT . '/views/inc/adminHeader.php'; ?></div >
+    ?><?php require APPROOT . '/views/inc/adminHeader.php'; ?>
 
+    <head>
+    <style>
+    footer{
+      bottom:0
+    }
+    </style>
+    </div>
 
+<div class="container">
   <div class="row">
     <div class="col-md-12">
       <!-- heading -->
       <h2>ADD <b>PRODUCT</b></h2>
       </div>
       </div>
+
+
       
 <div class="login-container ">
     
@@ -61,7 +71,7 @@ class contact extends view{
           <input type="submit" class="login-btn" id="Login" name="Login"onsubmit="return false" value="Add" class="login-button">
           
         
-      </form>     </div>
+      </form>     </div></div>
 
  <?php
   require APPROOT . '/views/inc/footer.php';
