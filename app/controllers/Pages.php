@@ -75,16 +75,16 @@ class Pages extends Controller
         if ($_SERVER['REQUEST_METHOD'] == 'POST')
         {
             //process form
-            
-            $checkoutModel->setName(trim($_POST['fullname']));
+          /*  $checkoutModel->setname(trim($_POST['name']));
             $checkoutModel->setemail(trim($_POST['email']));
             $checkoutModel->setphone(trim($_POST['phone']));
             $checkoutModel->setcity(trim($_POST['city']));
             $checkoutModel->setaddress(trim($_POST['address']));
             $checkoutModel->setstreet(trim($_POST['street']));
             $checkoutModel->setbuilding(trim($_POST['building']));
-            $checkoutModel->setfloor(trim($_POST['floor']));
-            $checkoutModel->checkout();
+            $checkoutModel->setfloor(trim($_POST['floor']));*/
+
+            $checkoutModel->Checkout();
         }
 
 
@@ -208,11 +208,27 @@ public function categorizedProduct()
 public function A_products()
 {
     $A_productsModel = $this->getModel();
-    if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+    if ($_SERVER['REQUEST_METHOD'] == 'POST')
+    {
         //process form
-        $A_productsModel->deleteProduct($_POST['del']);
-        echo'<script>alert("Product Deleted")</script>';
+        if(isset($_POST['del']))
+            {
+                $A_productsModel->deleteProduct($_POST['del']);
+                echo'<script>alert("Product Deleted")</script>';
+            }
+            
+            if(isset($_POST['edit']))
+            {
+                $A_productsModel->setPName(trim($_POST['name']));
+                $A_productsModel->setDescription(trim($_POST['desc']));
+                $A_productsModel->setPprice(trim($_POST['price']));
+
+                $A_productsModel->updateProduct($_POST['edit']);
+                echo'<script>alert("Product Updated")</script>';
+            }
+            
     }
+
     
     $viewPath = VIEWS_PATH . 'admin/A_products.php';
     require_once $viewPath;

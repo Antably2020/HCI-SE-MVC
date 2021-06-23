@@ -4,8 +4,7 @@ class checkoutModel extends model{
   public $title="checkout model";    
   protected $userID;
   protected $productID;
-  protected $productName;
-  protected $fullname;
+  protected $name;
   protected $email;
   protected $phone;
   protected $city;
@@ -19,8 +18,8 @@ class checkoutModel extends model{
       parent::__construct();
       $this->userID   = "";
       $this->productID= "";
-      $this->productName = "";
-      $this->fullname = "";
+      $this->productname = "";
+      $this->name = "";
       $this->email    = "";
       $this->phone    = "";
       $this->city     = "";
@@ -39,7 +38,7 @@ class checkoutModel extends model{
       $this->userID = $userID;
   }
 
-//ProductID
+//productID
 
   public function getproductID()
   {
@@ -51,30 +50,30 @@ class checkoutModel extends model{
   }  
 
 
-//Name
-  public function getName()
+//name
+  public function getname()
   {
       return $this->fullname;
   }
 
-  public function setName($fullname)
+  public function setname($fullname)
   {
       $this->fullname = $fullname;
   }
 
-  //product Name
-  public function getProductName()
+  //product name
+  public function getProductname()
   {
       return $this->fullname;
   }
 
-  public function setProductName($fullname)
+  public function setProductname($fullname)
   {
       $this->fullname = $fullname;
   }
 
 
-//Email   
+//email   
   public function getemail()
   {
       return $this->email;
@@ -85,7 +84,7 @@ class checkoutModel extends model{
       $this->email = $email;
   }
 
-//Phone
+//phone
   public function getphone()
   {
       return $this->phone;
@@ -96,7 +95,7 @@ class checkoutModel extends model{
       $this->phone = $phone;
   }
 
-//City
+//city
    public function getcity()
   {
       return $this->city;
@@ -107,7 +106,7 @@ class checkoutModel extends model{
       $this->city = $city;
   }
 
-//Address  
+//address  
   public function getaddress()
   {
       return $this->address;
@@ -129,7 +128,7 @@ class checkoutModel extends model{
       $this->street = $street;
   }
 
-//Building
+//building
 public function getbuilding()
 {
     return $this->street;
@@ -141,7 +140,7 @@ public function setbuilding($building)
 }
 
 
-//Floor
+//floor
 public function getfloor()
 {
     return $this->floor;
@@ -169,20 +168,19 @@ public function readcheckoutproduct($id)
 }
 
 
-public function checkout()
+public function Checkout()
 {       
-    $this->dbh->query("INSERT INTO orders (productID,productName,userID,status,Fullname,Email,Phone,City,address,Street,Building,Floor) VALUES(:productID,:productName,:userID,,:thename, :email, :phone, :city, :address,:street,:building,:floor)");
-    $this->dbh->bind(':productID', $this->productID);
-    $this->dbh->bind(':productID', $this->productID);
+    $this->dbh->query("INSERT INTO `orders` (`productID`, `userID`, `status`, `Fullname`, `Email`, `Phone`, `City`, `address`, `Street`, `Building`, `Floor`, `id`) VALUES ('5', '1', '0', 'kareem', 'anas@gmail.com', '9846', 'cairo', 'cairo', 'x', '5', '5', NULL);");
+    /*$this->dbh->bind(':productID', $this->productID);
     $this->dbh->bind(':userID', $this->userID);
-    $this->dbh->bind(':thename', $this->fullname);
+    $this->dbh->bind(':name', $this->name);
     $this->dbh->bind(':email', $this->email);
     $this->dbh->bind(':phone', $this->phone);
     $this->dbh->bind(':city', $this->city);
     $this->dbh->bind(':address', $this->address);
     $this->dbh->bind(':street', $this->street);
     $this->dbh->bind(':building', $this->building);
-    $this->dbh->bind(':floor', $this->floor);
+    $this->dbh->bind(':floor', $this->floor);*/
     return $this->dbh->execute(); 
 }
 

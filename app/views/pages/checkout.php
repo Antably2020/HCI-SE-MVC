@@ -9,12 +9,17 @@ class checkout extends view{
 <head>
 <link rel="stylesheet" href="<?php echo URLROOT; ?>public/css/checkout.css">
 </head>
+<?php
+  foreach($this->model->readcheckoutuser($_SESSION['ID']) as $cart){
+	foreach($this->model->readcheckoutproduct($cart->productID) as $product){
+		
+    ?>
 <div class="row">
   <div class="col-25">
     <div class="container">
 
 <p> <img style="float:left" src="<?php echo URLROOT . 'images/p1.jpg'; ?>" width="60" height="60"> 
-<a style="float:left"  href=""><?php echo  $product->name; ?></a> <span class="price"><?php echo  $product->price; ?></span> <br><span class="Quantity"  style="float:left" >Quantity: 20</span></p>
+<a style="float:left"  href=""><?php echo  $product->name; ?></a> <span class="price"><?php echo  $product->price; ?></span> <br><span class="Quantity"  style="float:left" ><?php echo  $cart-> quantity; ?></span></p>
 
 
 
@@ -23,7 +28,10 @@ class checkout extends view{
 
   </div>
   </div>
-
+  <?php
+	}	
+	}
+		?>	
   <div class="col-75">
     <div class="container">
       <form action="" method="post" name="order">
