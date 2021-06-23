@@ -32,6 +32,7 @@ $(document).scroll(function() {
 });*/
 </script>
 
+
 <div class="sidenav" id="sidenav">
  
 <a  href="<?php echo URLROOT . 'public/pages/dashboard'; ?>">PROFILE</a>
@@ -49,7 +50,9 @@ $(document).scroll(function() {
  <hr>
 
  <a  href="<?php echo URLROOT . 'public/admin/add_product'; ?>">ADD PRODUCTS</a>
-   
+ <hr>
+ <a  href="<?php echo URLROOT . 'public/users/login'; ?>" <?php  session_destroy();?>>LOGOUT</a>  
+ <hr>
 </div>
 
 
