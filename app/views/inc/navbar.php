@@ -12,7 +12,10 @@
 .breadcrumb>.active {
   color: #ff7a00;
 }
+
           </style>
+          <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
       </head>
   
   
@@ -79,8 +82,9 @@ return $bc;
 
 <div class="box">
         <form name="search">
-            <input type="text" class="inputsearch" name="txt" onmouseout="document.search.txt.value = ''">
+            <input type="text" onmouseout="document.search.txt.value = ''">
         </form>
+        <div class="result"></div>
             <i class="fas fa-search"></i>
     </div>
 

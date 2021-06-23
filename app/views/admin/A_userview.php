@@ -54,7 +54,7 @@ class A_Userview extends view{
 							<th>Email</th>
 							<th>Age</th>
 							<th>Type</th>
-                            <th>EDIT</th>
+                           
 							<th>DELETE</th>
 
 						</tr>
@@ -69,7 +69,7 @@ class A_Userview extends view{
 							<th>Email</th>
 							<th>Age</th>
 							<th>Type</th>
-                            <th>EDIT</th>
+                           
 							<th>DELETE</th>
 							
                          
@@ -89,8 +89,7 @@ class A_Userview extends view{
             <!--<td><?php // if ( $user->status==0 ) { echo 'Not Delivered';}  else{ echo 'Delivered';}?></td>  -->
               <td><?php echo  $user->Age; ?></td>
               <td><?php echo  $user->Type; ?></td>
-              <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="order-btn  btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"style="background-color:#fff; color:#FF7A00; border:1px solid #FF7A00; "  ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="order-btn  btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete"  style="background-color:#FF7A00; color:white;"><span class="glyphicon glyphicon-trash" ></span></button></p></td>
+              <td><form method="post" action='' ><?php echo '<button class="order-btn  btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete"  style="background-color:#FF7A00; color:white;" name="del" id="del" value="'.$user->ID.'"><span class="glyphicon glyphicon-trash" ></span></button>';?></td>	</tr>
 					
 
 

@@ -1,8 +1,11 @@
+
 <?php 
 class A_products extends view{
     public function output (){
         $title = $this->model->title;
-        ?><div style="margin-left: 160px;"><?php require APPROOT . '/views/inc/adminHeader.php'; ?></div >
+        ?><div style="margin-left: 160px;"><?php require APPROOT . '/views/inc/header.php'; echo breadcrumbs(); ?></div ><?php
+        require APPROOT . '/views/inc/sidebar.php';
+    ?>
    
    <head>
 <script>
@@ -75,25 +78,14 @@ class A_products extends view{
 					</tfoot>
 
 					<tbody>
-<script>
-$(function(){
-$('.preference').each(function(e){
-    if($(this).val() == 1){
-        $(this).attr("checked", "checked");
-    }
-});
-});
 
-</script>
            
   <?php
   foreach($this->model->readProd() as $product){
     ?>
 
-    
-
 						<tr>
-             <td><input class="form-check-input preference"  name="featured" type="checkbox"  value="<?php echo $product->featured; ?>" id="flexCheckDefault"></td>
+             <td><input class="form-check-input"  type="checkbox" value="<?php echo $product->featured; ?>" id="flexCheckDefault"></td>
             <td><img class="img-fluid" src="<?php echo URLROOT . $product->img; ?>"  width="90" height="90" ></td>
                         
 							<td><?php echo $product->name; ?></td>
@@ -101,7 +93,7 @@ $('.preference').each(function(e){
 							<td> EGP&nbsp;<?php echo  $product->price; ?>&nbsp;</td>
 							
               <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="order-btn  btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"style="background-color:#fff; color:#FF7A00; border:1px solid #FF7A00; "  ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-    <td> <?php echo'<form method="POST" ><button class="order-btn  btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" name="del" id="del" value="'.$product->id.'"  style="background-color:#FF7A00; color:white;"><span class="glyphicon glyphicon-trash" ></span></button></form>';?></td>	</tr>
+    <td><form method="post" action='' ><?php echo '<button class="order-btn  btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete"  style="background-color:#FF7A00; color:white;" name="del" id="del" value="'.$product->id.'"><span class="glyphicon glyphicon-trash" ></span></button>';?></td>	</tr>
 						
              
 
@@ -128,8 +120,6 @@ $('.preference').each(function(e){
       </div>
           <div class="modal-body">
             
-         
-          <form method="post" >
           <div class="form-group">
         <input class="form-control " type="text" name="Pname" placeholder="Name">
         </div>
@@ -142,13 +132,11 @@ $('.preference').each(function(e){
         <input class="form-control " type="text" name="Pprice" placeholder="Price">
         </div>
 
-
       </div>
           <div class="modal-footer ">
-        <input type="submit" class="btn btn-warning btn-lg" id="Update" name="UpdateProduct" onsubmit="return false" value="UPDATE" style="width: 100%;"><span class="glyphicon glyphicon-ok-sign"></span> 
+        <input type="submit" class="btn btn-warning btn-lg" id="Update" name="UopdateProduct" onsubmit="return false" value="UPDATE" style="width: 100%;"><span class="glyphicon glyphicon-ok-sign"></span> 
         
       </div>
-      </form>
         </div>
     <!-- /.modal-content --> 
   </div>

@@ -12,10 +12,16 @@ public function readuser()
     return $this->dbh->resultSet();
     
 }
+function deleteUser($id) {
+
+    $this->dbh->query( "DELETE FROM users WHERE ID = :id ");
+        $this->dbh->bind(':id', $id);
+        
+    return $this->dbh->execute();
 
 
 
 }
-
+}
 
 ?>

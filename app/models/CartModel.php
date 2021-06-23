@@ -103,5 +103,12 @@ public function productSum($quantity,$price)
 
         return $this->dbh->single();
     }
+    function deleteCartProduct($id) {
+
+        $this->dbh->query( "DELETE FROM cart WHERE productID = :id ");
+            $this->dbh->bind(':id', $id);
+            
+        return $this->dbh->execute();
+    }
 
 }

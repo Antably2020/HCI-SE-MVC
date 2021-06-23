@@ -146,6 +146,11 @@ class Pages extends Controller
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             
             $cartModel->readCart($_SESSION['ID']);
+            if(isset($_POST['del']))
+            {
+                $cartModel->deleteCartProduct($_POST['del']);
+                echo'<script>alert("Product Deleted")</script>';
+            }
         }
         // Load form
         //echo 'Load form, Request method: ' . $_SERVER['REQUEST_METHOD'];
@@ -203,25 +208,12 @@ public function categorizedProduct()
 public function A_products()
 {
     $A_productsModel = $this->getModel();
-    if (isset($_Post['del'])) {
+    if ($_SERVER['REQUEST_METHOD'] == 'POST'){
         //process form
-        
-        
-        if($A_productsModel->deleteProduct($_POST['del'])){
-            echo '<script> window.location = "A_products";
-            alert("Deleted!");
-          </script>';
-        }
-
-
+        $A_productsModel->deleteProduct($_POST['del']);
+        echo'<script>alert("Product Deleted")</script>';
     }
-    elseif(isset($_Post['UpdateProduct'])){
-        $A_productsModel->setName($_Post['Pname']);
-        $A_productsModel->setDescription($_Post['Pdescription']);
-        $A_productsModel->setPprice($_Post['Pprice']);
-
-        
-    }
+    
     $viewPath = VIEWS_PATH . 'admin/A_products.php';
     require_once $viewPath;
     $adminView = new A_products($this->getModel(), $this);
@@ -239,6 +231,12 @@ public function A_orders()
 
 public function A_userview()
 {
+    $A_usersModel = $this->getModel();
+    if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+        //process form
+        $A_usersModel->deleteUser($_POST['del']);
+        echo'<script>alert("User Deleted")</script>';
+    }
     $viewPath = VIEWS_PATH . 'admin/A_userview.php';
     require_once $viewPath;
     $adminuserview = new A_Userview($this->getModel(), $this);
