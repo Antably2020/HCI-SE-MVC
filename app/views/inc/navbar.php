@@ -82,7 +82,7 @@ return $bc;
 
 <div class="box">
         <form name="search">
-            <input type="text" onmouseout="document.search.txt.value = ''">
+            <input type="text"class="inputsearch"   onmouseout="document.search.txt.value = ''">
         </form>
         <div class="result"></div>
             <i class="fas fa-search"></i>
@@ -104,6 +104,9 @@ return $bc;
                 <a class="nav-link" href="<?php echo URLROOT . 'public/pages/products'; ?>">PRODUCTS</a>
             </li>
             
+            <li class="nav-item">
+                <a class="nav-link" href="<?php echo URLROOT . 'public/pages/about'; ?>">ABOUT</a>
+            </li>
             
             <li class="nav-item">
                 <a class="nav-link" href="<?php echo URLROOT . 'public/users/login'; ?>">MY ACCOUNT</a>

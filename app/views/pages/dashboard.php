@@ -42,7 +42,9 @@ class  dashboard extends view{
 
 
 
-
+    <?php
+  foreach($this->model->readuser($_SESSION['ID']) as $user){
+    ?>
 
     <div class="container profile-body" style="padding-bottom:10%">
 <div class="row gutters">
@@ -54,12 +56,12 @@ class  dashboard extends view{
 				<div class="user-avatar">
 					<img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Maxwell Admin">
 				</div>
-				<h3 class="user-name">Yuki Hayashi</h3>
-				<h6 class="user-email">yuki@Maxwell.com</h6>
+				<h3 class="user-name"><?php echo $user->Name; ?></h3>
+				<h6 class="user-email"><?php echo  $user->Email; ?></h6>
 			</div>
 			<div class="about">
 				<h3>Points</h3>
-				<h5>37674658358</h5>
+				<h5><?php echo  $user->Points; ?></h5>
 			</div>
 		</div>
 	</div>
@@ -117,7 +119,9 @@ class  dashboard extends view{
 </div>
 
 
-
+<?php
+}
+?>
 
         </div>
 </div>
