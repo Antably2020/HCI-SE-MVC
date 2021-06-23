@@ -1,4 +1,5 @@
 <?php 
+
 class  dashboard extends view{
     public function output (){
         $title = $this->model->title;
