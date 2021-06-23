@@ -20,11 +20,7 @@ class A_orders extends view{
 
     </script>
 
-<style>
-  footer{
-    bottom:0;
-  } 
-  </style>
+
 
 </head>
 <div class="main">
@@ -50,8 +46,9 @@ class A_orders extends view{
 						<tr>
                             
             <th>Product #</th>
-							<th>Product Name</th>
-							<th>user ID</th>
+            <th>Product Name</th>
+							<th>User Name</th>
+							<th>User ID</th>
 							<th>Status</th>
 							<th>Address</th>
 							<th>Order #</th>
@@ -64,8 +61,9 @@ class A_orders extends view{
             
             
             <th>Product #</th>
-							<th>Product Name</th>
-							<th>user ID</th>
+            <th>Product Name</th>
+							<th>User Name</th>
+							<th>User ID</th>
 							<th>Status</th>
 							<th>Address</th>
 							<th>Order #</th>
@@ -77,12 +75,14 @@ class A_orders extends view{
 
           <?php
   foreach($this->model->readorder() as $order){
+    foreach($this->model->readproduct($order->productID) as $product){
     ?>
 
 						<tr>
               
                <td><?php echo $order->productID; ?></td>
-               <td><?php echo $order->productName; ?></td>
+               <td><?php echo $product->name; ?></td>
+               <td><?php echo $order->Fullname; ?></td>
 							<td><?php echo  $order->userID; ?></td>
               <td><?php if ( $order->status==0 ) { echo 'Not Delivered';}  else{ echo 'Delivered';}?></td>
               <td><?php echo  $order->address; ?></td>
@@ -92,6 +92,7 @@ class A_orders extends view{
                          	</tr>
 					
 <?php
+    }
   }
   ?>	
           
