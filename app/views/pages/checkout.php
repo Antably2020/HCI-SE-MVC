@@ -21,7 +21,7 @@ $count=0;
     <div class="container">
 
 <p> <img style="float:left" src="<?php echo URLROOT . 'images/p1.jpg'; ?>" width="60" height="60"> 
-<a style="float:left"  href=""><?php echo  $product->name; ?></a> <span class="price"><?php echo  $product->price; ?></span> <br><span class="Quantity"  style="float:left" ><?php echo  $cart-> quantity; ?></span></p>
+<a style="float:left"  href=""><?php echo  $product->name; ?></a> <span class="price"><?php echo  $product->price; ?>EGP</span> <br><span class="Quantity"  style="float:left" ><?php echo  $cart-> quantity; ?></span></p>
 
 
 
