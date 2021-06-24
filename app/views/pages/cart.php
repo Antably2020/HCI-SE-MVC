@@ -6,11 +6,7 @@ class cart extends view{
 	echo breadcrumbs(); 
     ?>
 <head>
-<style>
-footer{
-    bottom:0;
-}
-</style>
+
 </head>
     <br><br><br>
 

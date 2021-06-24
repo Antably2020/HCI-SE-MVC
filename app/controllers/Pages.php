@@ -128,9 +128,11 @@ class Pages extends Controller
             $checkoutModel->setbuilding(trim($_POST['building']));
             $checkoutModel->setfloor(trim($_POST['floor']));
 
-            $checkoutModel->Checkout($product->id);
+            $checkoutModel->Checkout($product->productID);
+            $checkoutModel->deleteAllCart($product->id);
                 }
-                $checkoutModel->deleteAllCart();
+
+                
                 echo'<script>alert("Order Added")</script>';
             }
         }
@@ -210,13 +212,6 @@ class Pages extends Controller
         
 
     }
-public function SpecialOrder()
-{
-    $viewPath = VIEWS_PATH . 'pages/SpecialOrder.php';
-    require_once $viewPath;
-    $cartView = new specialorder($this->getModel(), $this);
-    $cartView->output();
-}
 
 
 public function productdescription()

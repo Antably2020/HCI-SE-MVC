@@ -190,10 +190,10 @@ public function readCart($userID)
 
         return $this->dbh->resultSet(); 
 }
-function deleteAllCart() {
+function deleteAllCart($id) {
 
-    $this->dbh->query( "DELETE FROM cart WHERE productID = :id ");
-        $this->dbh->bind(':id', $_SESSION['ID']);
+    $this->dbh->query( "DELETE FROM cart WHERE id = :id ");
+        $this->dbh->bind(':id', $id);
         
     return $this->dbh->execute();
 }

@@ -8,6 +8,7 @@ class checkout extends view{
 
 <head>
 <link rel="stylesheet" href="<?php echo URLROOT; ?>public/css/checkout.css">
+
 </head>
 <?php
 $count=0;
