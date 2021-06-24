@@ -292,6 +292,15 @@ public function A_orders()
     $adminOrdersView = new A_orders($this->getModel(), $this);
     $adminOrdersView->output();
 }
+public function A_Messages()
+{
+    $viewPath = VIEWS_PATH . 'admin/A_Messages.php';
+    require_once $viewPath;
+    $adminmessagesView = new A_Messages($this->getModel(), $this);
+    $adminmessagesView->output();
+}
+
+
 
 public function A_userview()
 {

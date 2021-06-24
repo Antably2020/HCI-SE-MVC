@@ -58,7 +58,9 @@ if(isset($_POST['logout'])){
 
  <a  href="<?php echo URLROOT . 'public/admin/add_product'; ?>">ADD PRODUCTS</a>
  <hr>
- 
+ <a  href="<?php echo URLROOT . 'public/admin/A_Messages'; ?>">MESSAGES</a>
+ <hr>
+
 
  <form  method="post" >    
             

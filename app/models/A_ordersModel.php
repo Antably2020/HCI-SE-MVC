@@ -15,9 +15,7 @@ public function readproduct($id)
 {
     $this->dbh->query("SELECT * FROM products where id=:id");
     $this->dbh->bind(':id', $id);
-
-    return $this->dbh->resultSet();
-    
+    return $this->dbh->resultSet();    
 }
 
 
