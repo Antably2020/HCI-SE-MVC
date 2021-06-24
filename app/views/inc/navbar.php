@@ -109,6 +109,10 @@ return $bc;
                 <a class="nav-link" href="<?php echo URLROOT . 'public/users/login'; ?>">MY ACCOUNT</a>
             </li>
 
+            <li class="nav-item">
+                <a class="nav-link" href="<?php echo URLROOT . 'public/pages/profile'; ?>">PROFILE</a>
+            </li>
+
 
             <li class="nav-item">
             <a class="nav-link" href="<?php echo URLROOT . 'public/pages/cart'; ?>">

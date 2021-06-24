@@ -56,6 +56,19 @@ class Pages extends Controller
             }
         }
     }
+
+
+
+
+    public function profile()
+    {
+        $viewPath = VIEWS_PATH . 'pages/profile.php';
+        require_once $viewPath;
+        $profileView = new profile($this->getModel(), $this);
+        $profileView->output();
+
+    
+    }
     public function contact(){
         $contactModel = $this->getModel();
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
