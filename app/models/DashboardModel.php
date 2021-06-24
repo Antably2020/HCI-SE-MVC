@@ -2,12 +2,14 @@
 class DashboardModel extends model{
     public  $title = "Dashboard";
   
-    protected $id;
+    protected $Uname;
+    protected $Uemail;
+    protected $Upassword;
 
     public function __construct()
     {
         parent::__construct();
-        $this->Uname     = "";
+        $this->Uname  = "";
         $this->Uemail = "";
         $this->Upassword = "";
     }

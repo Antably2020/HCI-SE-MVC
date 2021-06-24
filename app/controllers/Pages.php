@@ -36,15 +36,9 @@ class Pages extends Controller
     
     public function dashboard()
     {
-        $viewPath = VIEWS_PATH . 'admin/dashboard.php';
-        require_once $viewPath;
-        $dashboardView = new Dashboard($this->getModel(), $this);
-        $dashboardView->output();
-
+        $DashboardModel = $this->getModel();
         if ($_SERVER['REQUEST_METHOD'] == 'POST')
     {
-       
-            
             if(isset($_POST['update']))
             {
                 $DashboardModel->setUName(trim($_POST['name']));
@@ -52,9 +46,13 @@ class Pages extends Controller
                 $DashboardModel->setUPassword(trim($_POST['password']));
 
                 $DashboardModel->editProduct();
-                echo'<script>alert("Product Updated")</script>';
+                echo'<script>alert("Profile Updated")</script>';
             }
         }
+        $viewPath = VIEWS_PATH . 'admin/dashboard.php';
+        require_once $viewPath;
+        $dashboardView = new Dashboard($this->getModel(), $this);
+        $dashboardView->output();
     }
 
 
@@ -102,16 +100,24 @@ class Pages extends Controller
         if ($_SERVER['REQUEST_METHOD'] == 'POST')
         {
             //process form
-          /*  $checkoutModel->setname(trim($_POST['name']));
+            if(isset($_POST['order']))
+            {
+                foreach($checkoutModel->readCart($_SESSION['ID']) as $product)
+                {
+            $checkoutModel->setname(trim($_POST['name']));
             $checkoutModel->setemail(trim($_POST['email']));
             $checkoutModel->setphone(trim($_POST['phone']));
             $checkoutModel->setcity(trim($_POST['city']));
             $checkoutModel->setaddress(trim($_POST['address']));
             $checkoutModel->setstreet(trim($_POST['street']));
             $checkoutModel->setbuilding(trim($_POST['building']));
-            $checkoutModel->setfloor(trim($_POST['floor']));*/
+            $checkoutModel->setfloor(trim($_POST['floor']));
 
-            $checkoutModel->Checkout();
+            $checkoutModel->Checkout($product->id);
+                }
+                $checkoutModel->deleteAllCart();
+                echo'<script>alert("Order Added")</script>';
+            }
         }
 
 
@@ -287,23 +293,6 @@ public function A_userview()
 }
 
 
-public function Update_order()
-    {
-        $registerModel = $this->getModel();
-        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-            // Process form
-            $registerModel->setPName(trim($_POST['Pname']));
-            $registerModel->setPDescription(trim($_POST['Pdescription']));
-            $registerModel->setPPrice(trim($_POST['age']));
-            
 
-        }
-        // Load form
-        //echo 'Load form, Request method: ' . $_SERVER['REQUEST_METHOD'];
-        $viewPath = VIEWS_PATH . 'admin/A_orders.php';
-        require_once $viewPath;
-        $adminView = new A_orders($this->getModel(), $this);
-        $adminView->output();
-    }
 
 }

@@ -64,7 +64,7 @@ $count=0;
           </div>
           
         </div>               
-        <input type="submit" name="order" value="<?php echo $count; ?>" class="btn">
+        <input type="submit" name="order" value="Order Now" class="btn">
        
 
 

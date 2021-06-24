@@ -52,12 +52,12 @@ class checkoutModel extends model{
 //name
   public function getname()
   {
-      return $this->fullname;
+      return $this->name;
   }
 
-  public function setname($fullname)
+  public function setname($name)
   {
-      $this->fullname = $fullname;
+      $this->name = $name;
   }
 
   //product name
@@ -183,5 +183,19 @@ public function Checkout($pID)
     return $this->dbh->execute(); 
 }
 
+public function readCart($userID)
+    {       
+        $this->dbh->query('select * from cart where userID= :userID ' );
+        $this->dbh->bind(':userID', $userID);
+
+        return $this->dbh->resultSet(); 
+}
+function deleteAllCart() {
+
+    $this->dbh->query( "DELETE FROM cart WHERE productID = :id ");
+        $this->dbh->bind(':id', $_SESSION['ID']);
+        
+    return $this->dbh->execute();
+}
 
 }
