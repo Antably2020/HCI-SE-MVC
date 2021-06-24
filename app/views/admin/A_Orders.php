@@ -21,7 +21,11 @@ class A_orders extends view{
     </script>
 
 
-
+<style>
+  footer{
+    bottom:0
+  }
+  </style>
 </head>
 <div class="main">
 
