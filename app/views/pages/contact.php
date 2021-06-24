@@ -18,7 +18,7 @@ class contact extends view{
   <div class="row">
     <div class="col-md-12">
       <!-- heading -->
-      <h2>FEATURED <b>CATEGORIES</b></h2>
+      <h2>CONTACT <b>US</b></h2>
       </div>
       </div>
       
