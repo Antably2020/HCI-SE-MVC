@@ -20,6 +20,20 @@ background-color:rgba(0, 0, 0, 0);
 }
 
 
+.admin-logout-btn{
+
+  width:100%;
+  background-color:#fff;
+  border:none;
+  padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #FF7A00;
+
+}
+.admin-logout-btn:hover{
+ opacity:30%;
+}
 .sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;

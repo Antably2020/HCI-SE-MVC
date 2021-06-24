@@ -60,6 +60,21 @@ class Pages extends Controller
 
     public function profile()
     {
+
+        $ProfileView = $this->getModel();
+        if ($_SERVER['REQUEST_METHOD'] == 'POST')
+    {
+            if(isset($_POST['update']))
+            {
+                $ProfileView->setUName(trim($_POST['name']));
+                $ProfileView->setUEmail(trim($_POST['email']));
+                $ProfileView->setUPassword(trim($_POST['password']));
+
+                $ProfileView->editProduct();
+                echo'<script>alert("Profile Updated")</script>';
+            }
+        }
+
         $viewPath = VIEWS_PATH . 'pages/profile.php';
         require_once $viewPath;
         $profileView = new profile($this->getModel(), $this);

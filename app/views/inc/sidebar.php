@@ -13,6 +13,7 @@ hr {
      background: #FF7A00; 
    border: 1px solid #FF7A00; 
 }
+
 </style>
 </head>
 <body>
@@ -32,7 +33,13 @@ $(document).scroll(function() {
 });*/
 </script>
 
-
+<?php
+if(isset($_POST['logout'])){
+  unset($_SESSION['ID']);
+  header('location: ' . URLROOT . 'public/pages/index');
+  
+}
+?>
 <div class="sidenav" id="sidenav">
  
 <a  href="<?php echo URLROOT . 'public/pages/dashboard'; ?>">PROFILE</a>
@@ -52,6 +59,15 @@ $(document).scroll(function() {
  <a  href="<?php echo URLROOT . 'public/admin/add_product'; ?>">ADD PRODUCTS</a>
  <hr>
  
+
+ <form  method="post" >    
+            
+              
+                    <button class="admin-logout-btn text-left"  name="logout"> Logout</button>
+                    
+                            
+
+                            </form>
 </div>
 
 

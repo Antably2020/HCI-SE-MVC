@@ -70,6 +70,9 @@ class  profile extends view{
 	</div>
 </div>
 </div>
+<?php
+}
+?>
 <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12" >
 <div class="card h-100">
 	<div class="card-body">
@@ -77,10 +80,9 @@ class  profile extends view{
 			<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 				<h5 class="mb-2" style="color:#FF7A00;">Personal Details</h5>
 			</div>
-			<?php
-}
-?>
+
 			
+			<form class="form" method="post" action="" name="update" >
        
 			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 				<div class="form-group">
@@ -120,6 +122,7 @@ class  profile extends view{
 				</div>
 			</div>
 		</div>
+  </form>
 
 
 </div>
@@ -131,7 +134,7 @@ class  profile extends view{
 
 
         </div>
-</div>
+
  <?php
 require APPROOT . '/views/inc/footer.php';
 
