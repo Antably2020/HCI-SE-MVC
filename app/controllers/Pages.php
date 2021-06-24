@@ -40,8 +40,22 @@ class Pages extends Controller
         require_once $viewPath;
         $dashboardView = new Dashboard($this->getModel(), $this);
         $dashboardView->output();
-    }
 
+        if ($_SERVER['REQUEST_METHOD'] == 'POST')
+    {
+       
+            
+            if(isset($_POST['update']))
+            {
+                $DashboardModel->setUName(trim($_POST['name']));
+                $DashboardModel->setUEmail(trim($_POST['email']));
+                $DashboardModel->setUPassword(trim($_POST['password']));
+
+                $DashboardModel->editProduct();
+                echo'<script>alert("Product Updated")</script>';
+            }
+        }
+    }
     public function contact(){
         $contactModel = $this->getModel();
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -75,20 +89,16 @@ class Pages extends Controller
         if ($_SERVER['REQUEST_METHOD'] == 'POST')
         {
             //process form
-            if(isset($_POST['order']))
-            {
-                
-            $checkoutModel->setname(trim($_POST['name']));
+          /*  $checkoutModel->setname(trim($_POST['name']));
             $checkoutModel->setemail(trim($_POST['email']));
             $checkoutModel->setphone(trim($_POST['phone']));
             $checkoutModel->setcity(trim($_POST['city']));
             $checkoutModel->setaddress(trim($_POST['address']));
             $checkoutModel->setstreet(trim($_POST['street']));
             $checkoutModel->setbuilding(trim($_POST['building']));
-            $checkoutModel->setfloor(trim($_POST['floor']));
+            $checkoutModel->setfloor(trim($_POST['floor']));*/
 
             $checkoutModel->Checkout();
-            }
         }
 
 

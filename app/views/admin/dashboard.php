@@ -26,10 +26,13 @@ class  dashboard extends view{
             
       <hr class="hr2" style="margin-top:4px">
 
+	  <?php
+  foreach($this->model->readuser($_SESSION['ID']) as $user){
+    ?>
 
 
 <p style="padding-top:50px">
-	Hello <strong>Zoair</strong> (not <strong>Zoair</strong>? <a href="">Log out</a>)</p>
+	Hello <strong><?php echo $user->Name; ?></strong> (not <strong><?php echo $user->Name; ?></strong>? <a href="">Log out</a>)</p>
 
     <p>
 	From your account dashboard you can view your <a  href="<?php echo URLROOT . 'public/admin/A_orders'; ?>">ORDERS</a>, manage your <a  href="<?php echo URLROOT . 'public/admin/A_products'; ?>">PRODUCTS</a>.</p>
@@ -43,9 +46,6 @@ class  dashboard extends view{
 
 
 
-    <?php
-  foreach($this->model->readuser($_SESSION['ID']) as $user){
-    ?>
 
     <div class="container profile-body" style="padding-bottom:10%">
 <div class="row gutters">
@@ -75,16 +75,21 @@ class  dashboard extends view{
 			<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 				<h5 class="mb-2" style="color:#FF7A00;">Personal Details</h5>
 			</div>
+			<?php
+}
+?>
+			<form class="form" method="post" action="" name="update" >
+       
 			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 				<div class="form-group">
 					<label for="fullName">Full Name</label>
-					<input type="text" class="form-control" id="fullName" placeholder="Enter full name">
+					<input type="text" name="name" class="form-control" id="fullName" placeholder="Enter full name">
 				</div>
 			</div>
 			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 				<div class="form-group">
 					<label for="eMail">Email</label>
-					<input type="email" class="form-control" id="eMail" placeholder="Enter email ID">
+					<input type="email"name="email" class="form-control" id="eMail" placeholder="Enter email ID">
 				</div>
 			</div>
 
@@ -92,16 +97,16 @@ class  dashboard extends view{
 			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 				<div class="form-group">
 					<label for="password">Password</label>
-					<input type="text" class="form-control" id="Street" placeholder="Enter Street">
+					<input type="text"name="password" class="form-control" id="Street" placeholder="Password">
 				</div>
 			</div>
 
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+           <!-- <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 				<div class="form-group">
 					<label for="password">Confirm Password</label>
-					<input type="text" class="form-control" id="Street" placeholder="Enter Street">
+					<input type="text" class="form-control" id="Street" placeholder="Confirm Password">
 				</div>
-			</div>
+			</div>-->
 			
 		
 		
@@ -109,10 +114,11 @@ class  dashboard extends view{
 		<div class="row gutters">
 			<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 				<div >
-					<button type="button" id="submit" name="submit" style="margin-top:20px; "class=" login-btn">Update</button>
+					<button  id="submit" name="update" style="margin-top:20px; "class=" login-btn">Update</button>
 				</div>
 			</div>
 		</div>
+  </form>
 
 </div>
 </div>
@@ -120,9 +126,7 @@ class  dashboard extends view{
 </div>
 
 
-<?php
-}
-?>
+
 
         </div>
 </div>

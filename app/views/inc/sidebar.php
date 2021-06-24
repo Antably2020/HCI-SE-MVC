@@ -51,7 +51,8 @@ $(document).scroll(function() {
 
  <a  href="<?php echo URLROOT . 'public/admin/add_product'; ?>">ADD PRODUCTS</a>
  <hr>
- 
+ <a  href="<?php echo URLROOT . 'public/users/login'; ?>" <?php  session_destroy();?>>LOGOUT</a>  
+ <hr>
 </div>
 
 
