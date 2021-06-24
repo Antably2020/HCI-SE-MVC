@@ -94,7 +94,7 @@ return $bc;
     <ul class="navbar-nav mr-auto ">
 
 <div class="box">
-        <form name="search">
+        <form name="search" action="products">
             <input type="text"class="inputsearch"  onmouseout="document.search.txt.value = ''">
         </form>
         <div class="result"></div>

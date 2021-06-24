@@ -162,9 +162,10 @@ class Pages extends Controller
             //process form
             $add_producttModel->setName(trim($_POST['name']));
             $add_producttModel->setDesc(trim($_POST['description']));
+            $add_producttModel->setoldPrice(trim($_POST['oldprice']));
             $add_producttModel->setPrice(trim($_POST['price']));
             $add_producttModel->setimage($path);
-           
+            $add_producttModel->setFeatured(trim($_POST['featured']));
             $add_producttModel->setCategory(trim($_POST['choice']));
 
             if($add_producttModel->contactus()){

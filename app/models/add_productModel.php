@@ -4,6 +4,7 @@ class add_productModel extends model{
     public $title="Add product model";
     protected $name ;
     protected $desc;
+    protected $oldprice;
     protected $price;
     protected $image;
     protected $featured;
@@ -29,12 +30,15 @@ class add_productModel extends model{
         $this->desc=$desc;
 
     }
+    public function setoldPrice($oldprice){
+        $this->oldprice=$oldprice;
+
+    }
 
     public function setPrice($price){
         $this->price=$price;
 
     }
-    
     public function setImage($image){
         $this->image=$image;
 
@@ -49,12 +53,13 @@ class add_productModel extends model{
     }
 
     public function contactus(){
-        $this->dbh->query("INSERT INTO products (name, description, price, img, featured , category) VALUES(:name, :description, :price, :image, :featured , :category)");
+        $this->dbh->query("INSERT INTO products (name, description, oldPrice, price, img, featured , category) VALUES(:name, :description , :oldprice, :price, :image, :featured , :category)");
         $this->dbh->bind(':name',$this->name);
         $this->dbh->bind(':description',$this->desc);
+        $this->dbh->bind(':oldprice', $this->oldprice);
         $this->dbh->bind(':price', $this->price);
         $this->dbh->bind(':image',$this->image);
-        $this->dbh->bind(':featured','0');
+        $this->dbh->bind(':featured',$this->featured);
         $this->dbh->bind(':category',$this->Category);
         return $this->dbh->execute();
     }
