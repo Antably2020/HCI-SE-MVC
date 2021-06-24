@@ -222,6 +222,7 @@ public function productdescription()
 {
     $descModel = $this->getModel();
     if(isset($_POST['addC'])){
+        if(isset($_SESSION['ID'])){
         $quan=$_POST['quantity'];
         $pri;
         $PID=$_POST['addC'];
@@ -235,7 +236,11 @@ public function productdescription()
             alert("ADDED TO CART!");
           </script>';
         }
+    }
+    else{
+                header('location: ' . URLROOT . 'public/users/login');
 
+    }
 
     }
 
