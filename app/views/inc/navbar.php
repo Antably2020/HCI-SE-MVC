@@ -69,7 +69,7 @@ return $bc;
 
  if(isset($_POST['logout'])){
     unset($_SESSION['ID']);
-    header('refresh');
+    header('location: ' . URLROOT . 'public/pages/index');
     
 }
 
@@ -121,12 +121,15 @@ return $bc;
             </li>
             <?php if(!isset($_SESSION['ID'])){ ?>
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo URLROOT . 'public/users/login'; ?>">MY ACCOUNT</a>
+                <a class="nav-link" href="<?php echo URLROOT . 'public/users/login'; ?>">Login/Register</a>
             </li>
             <?php
             }
             else{
                 ?>
+                 <li class="nav-item">
+                <a class="nav-link" href="<?php echo URLROOT . 'public/pages/profile'; ?>">My Account</a>
+            </li>
                    <form  method="post" >    
                 <li class="nav-item">
               
