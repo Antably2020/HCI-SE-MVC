@@ -11,22 +11,21 @@ class categorizedProduct extends view{
     
     <head>
     <style>
-  footer{
-    bottom:0;
-  } 
+ 
   </style>
 </head>
 	
 	</head>
 <body>
 
-
+<div class="container">
+   
 <div class="row">
 		<div class="col-md-12">
 			<h2><b> PRODUCTS</b></h2>
       
       <hr class="hr2">
-      </div>
+</div>
 
 
 
@@ -65,12 +64,11 @@ class categorizedProduct extends view{
   </article>
         </div>
             </div>
-				
-		
+            </div></div>
 	<?php	}
 	?>		
 				
-			
+           
 <?php
   require APPROOT . '/views/inc/footer.php';
   }

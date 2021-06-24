@@ -17,6 +17,8 @@ class A_products extends view{
     
 } );
 
+
+
     </script>
 
 
@@ -82,8 +84,8 @@ class A_products extends view{
     ?>
 
 						<tr>
-             <td><input class="form-check-input"  type="checkbox" value="<?php echo $product->featured; ?>" id="flexCheckDefault"></td>
-            <td><img class="img-fluid" src="<?php echo URLROOT . $product->img; ?>"  width="90" height="90" ></td>
+               <td><b><?php if ($product->featured==1 ) { echo 'YES';}  else{ echo 'NO';}?></b></td>
+             <td><img class="img-fluid" src="<?php echo URLROOT . $product->img; ?>"  width="90" height="90" ></td>
                         
 							<td><?php echo $product->name; ?></td>
 							<td><?php echo  $product->description; ?></td>

@@ -7,9 +7,7 @@ class contact extends view{
 
     <head>
     <style>
-    footer{
-      bottom:0
-    }
+ 
     </style>
     </div>
 
@@ -37,9 +35,12 @@ class contact extends view{
               <input class="form-control center-block" style="width:60% ;border:2px solid #FF7A00;" type="text" required="true" name="description" ></textarea>
             </div>
 
+            <div > <label >Old Price</label></div>
+                <input class=" form-control center-block" style="width:60% ;border:2px solid #FF7A00;" type="number"  required="true"  name="oldprice" placeholder="oldPrice" autofocus="false">
+                
 
-                <div > <label >Price</label></div>
-                <input class=" form-control center-block" style="width:60% ;border:2px solid #FF7A00;" type="text"  required="true"  name="price" placeholder="Price" autofocus="false">
+                <div > <label >New Price</label></div>
+                <input class=" form-control center-block" style="width:60% ;border:2px solid #FF7A00;" type="number"  required="true"  name="price" placeholder="Price" autofocus="false">
                 
                 <div > <label >Image</label></div>
                <div class="d-flex justify-content-center ">
@@ -51,16 +52,24 @@ class contact extends view{
          <div ><label >Category</label></div>
 <select class="btn  dropdown-toggle" name="choice" style="width:60%; border:2px solid #FF7A00;">
   <option value="none" selected disabled hidden>Select</option>
-  <option value="1">Drive & Transmission </option>
-  <option value="2">Exhaust systems</option>
-  <option value="3">Air cleaner</option>
-  <option value="4">HANDLEBARS & CONTROLS</option>
+  <option value="0">Drive & Transmission </option>
+  <option value="1">Exhaust systems</option>
+  <option value="2">Air cleaner</option>
+  <option value="3">HANDLEBARS & CONTROLS</option>
   <option value="4">Bike protection</option>
-  <option value="4">Suspension & Frame</option>
-  <option value="4">Brakes</option>
-  <option value="4">Engine Parts</option>
-</select>
+  <option value="5">Suspension & Frame</option>
+  <option value="6">Brakes</option>
+  <option value="7">Engine Parts</option>
+</select></div>
+<div  style=" padding-bottom: 30px; ">
 
+<div ><label >Featured</label></div>
+<select class="btn  dropdown-toggle" name="featured" style="width:60%; border:2px solid #FF7A00;">
+  <option value="none" selected disabled hidden>Select</option>
+  <option value="1">YES</option>
+  <option value="0">NO</option>
+
+</select>
 
 </div> </div>
 
