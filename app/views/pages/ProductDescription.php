@@ -54,7 +54,7 @@ var quantitiy=0;
 			<h2><?php echo  $product->name; ?></h2>
     </div>
 <div class="card" style="margin-left:5%; width:30%;height:30% ;border:2px solid #FF7A00;">
-  <img src="<?php echo URLROOT . 'images/im.png'; ?>" alt="Denim Jeans" style="width:100% hieght:100%">    
+  <img src="<?php echo URLROOT . $product->img; ?>" alt="Denim Jeans" style="width:100% hieght:100%">    
 </div>
 
 <div class="col-sm" style="margin-top:4%; margin-left:6%; text-align:left; margin-right:10%;">
