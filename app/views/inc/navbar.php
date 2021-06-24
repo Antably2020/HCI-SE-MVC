@@ -12,7 +12,8 @@
 .logout-btn{
 background-color:#fff;
 border-color:#fff;
-
+border:none;
+margin-top:8px;
 color:#000;
 }
 .breadcrumb>.active {
