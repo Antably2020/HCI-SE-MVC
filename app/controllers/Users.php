@@ -40,7 +40,7 @@ class Users extends Controller
                 empty($registerModel->getConfirmPasswordErr())
             ) {
                 //Hash Password
-                $registerModel->setPassword(password_hash($registerModel->getPassword(), PASSWORD_DEFAULT));
+                $registerModel->setPassword($_POST['password']);
 
                 if ($registerModel->signup()) {
                     header('location: ' . URLROOT . 'public/users/login');
@@ -59,6 +59,8 @@ class Users extends Controller
     public function login()
     {
         $userModel = $this->getModel();
+
+        if(!isset($_SESSION['ID'])){
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             //process form
             $userModel->setEmail(trim($_POST['email']));
@@ -100,6 +102,10 @@ class Users extends Controller
                    
             }
         }
+    }
+    else{
+        header('location: ' . URLROOT . 'public/pages/index');
+    }
         // Load form
         //echo 'Load form, Request method: ' . $_SERVER['REQUEST_METHOD'];
         $viewPath = VIEWS_PATH . 'users/Login.php';

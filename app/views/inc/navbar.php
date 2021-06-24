@@ -9,6 +9,12 @@
   background-color: #f5f5f500;
   /* border-radius: 4px; */
 }
+.logout-btn{
+background-color:#fff;
+border-color:#fff;
+
+color:#000;
+}
 .breadcrumb>.active {
   color: #ff7a00;
 }
@@ -61,6 +67,12 @@ return $bc;
 }
 
 
+ if(isset($_POST['logout'])){
+    unset($_SESSION['ID']);
+    header('refresh');
+    
+}
+
 ?>
 
 
@@ -104,16 +116,27 @@ return $bc;
                 <a class="nav-link" href="<?php echo URLROOT . 'public/pages/products'; ?>">PRODUCTS</a>
             </li>
             
-            
+            <li class="nav-item">
+                <a class="nav-link" href="<?php echo URLROOT . 'public/pages/about'; ?>">ABOUT</a>
+            </li>
+            <?php if(!isset($_SESSION['ID'])){ ?>
             <li class="nav-item">
                 <a class="nav-link" href="<?php echo URLROOT . 'public/users/login'; ?>">MY ACCOUNT</a>
             </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="<?php echo URLROOT . 'public/pages/profile'; ?>">PROFILE</a>
-            </li>
-
-
+            <?php
+            }
+            else{
+                ?>
+                   <form  method="post" >    
+                <li class="nav-item">
+              
+                    <button  name="logout"  class="nav-link logout-btn"   ?> Logout</button>
+                                
+                            </li>
+                            </form>
+                            <?php
+            }
+            ?>
             <li class="nav-item">
             <a class="nav-link" href="<?php echo URLROOT . 'public/pages/cart'; ?>">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
@@ -121,6 +144,10 @@ return $bc;
 </svg></a>
 </li>
         </ul>
+        
+
+
+ 
 
 
     </div>
