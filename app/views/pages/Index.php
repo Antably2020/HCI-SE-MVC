@@ -66,7 +66,7 @@ class Index extends view{
     <div class="container">
 	<div class="row">
 		<div class="col-md-12">
-			<h2>TRENDING<b> PRODUCTS</b></h2>
+			<h2>FEATURED<b> PRODUCTS</b></h2>
       
       <hr class="hr2">
 
@@ -88,8 +88,8 @@ class Index extends view{
 		<?php	
 		$count=0;
 			foreach($this->model->readProd() as $product){
-    	
-
+				if ($product->featured==1 ) { 
+    
 		 while($count%4==0){
 		if($count==0){
 			break;
@@ -127,7 +127,8 @@ class Index extends view{
 				<?php
 			$count++;
 				
-				}
+				} 
+			} 
 				?>
 
 		</div>
@@ -155,8 +156,9 @@ class Index extends view{
     
       <h1>Over 3.5 million genuine NEW spare parts</h1>
       <img class="img2" src="<?php echo URLROOT . 'images/im.png'; ?>" alt="Pineapple" width="200" height="200" style="float: right;">
-      <h3 style="padding-top:50px;">Delivered all over Egypt</h3>
-      
+    <br>
+	  <P>When it comes to squeezing every ounce of grin inducing, neck snapping enjoyment out of your two-wheeled thrill machine the first place to stop is the after-market market. Here you will find a plethora of performance parts that are engineered specifically to make your scoot shoot. From exotic exhaust systems to the latest in crash protection, BigBoysToys has a curated selection of premium add-ons to take your ride to the next level. Whether you're strictly street or a track day junkie RevZilla is here to keep kids off stock bikes. </P>
+        <h3 style="padding-top:50px;">Delivered all over Egypt</h3>
     </div>
           
     
