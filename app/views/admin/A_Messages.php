@@ -3,9 +3,19 @@ class A_Messages extends view{
     public function output (){
         $title = $this->model->title;
 ?>
+
+<head>
+  <style>
+    footer{
+      bottom:0
+    }
+    </style>
+    </head>
+
         <div >
         <?php require APPROOT . '/views/inc/adminHeader.php';  ?>
         </div >
+
         <div class="main">
 
 
