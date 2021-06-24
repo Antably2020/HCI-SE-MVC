@@ -10,7 +10,9 @@ class checkout extends view{
 <link rel="stylesheet" href="<?php echo URLROOT; ?>public/css/checkout.css">
 </head>
 <?php
+$count=0;
   foreach($this->model->readcheckoutuser($_SESSION['ID']) as $cart){
+    $count++;
 	foreach($this->model->readcheckoutproduct($cart->productID) as $product){
 		
     ?>
@@ -40,9 +42,9 @@ class checkout extends view{
           <div class="col-50">
             <h3>Address</h3>
             <label for="fname"><i class="fa fa-user"></i> Full Name</label>
-            <input type="text"  id="fname" name="fullname"  placeholder="Full name" required="true" pattern="[A-Za-z\s+]{3,10}" title="Please enter a valid Name.">
+            <input type="text"  id="fname" name="name"  placeholder="Full name" required="true" pattern="[A-Za-z\s+]{3,10}" title="Please enter a valid Name.">
             <label for="email"><i class="fa fa-envelope"></i> Email</label>
-            <input type="text" id="email" name="email" placeholder="Email" required="true" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Please enter a valid email.">
+            <input type="text" id="email" name="email" placeholder="Email" required="true"  title="Please enter a valid email.">
             <label for="phone"><i class="fa fa-phone"></i> Phone</label>
             <input type="text" id="phone" name="phone" placeholder="01*********" required="true" pattern="[0-9]{11}" title="Please enter a valid phone number.">
             <label for="city"><i class="fa fa-institution"></i> City</label>
@@ -62,7 +64,7 @@ class checkout extends view{
           </div>
           
         </div>               
-        <input type="submit" name="order" value="Order" class="btn">
+        <input type="submit" name="order" value="<?php echo $count; ?>" class="btn">
        
 
 

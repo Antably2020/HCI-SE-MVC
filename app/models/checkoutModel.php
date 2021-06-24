@@ -3,7 +3,7 @@ class checkoutModel extends model{
 
   public $title="checkout model";    
   protected $userID;
-  protected $productID;
+  protected $productID=array();
   protected $name;
   protected $email;
   protected $phone;
@@ -17,8 +17,7 @@ class checkoutModel extends model{
   {
       parent::__construct();
       $this->userID   = "";
-      $this->productID= "";
-      $this->productname = "";
+      //$this->productID= ""
       $this->name = "";
       $this->email    = "";
       $this->phone    = "";
@@ -168,11 +167,11 @@ public function readcheckoutproduct($id)
 }
 
 
-public function Checkout()
+public function Checkout($pID)
 {       
-    $this->dbh->query("INSERT INTO `orders` (`productID`, `userID`, `status`, `Fullname`, `Email`, `Phone`, `City`, `address`, `Street`, `Building`, `Floor`, `id`) VALUES ('5', '1', '0', 'kareem', 'anas@gmail.com', '9846', 'cairo', 'cairo', 'x', '5', '5', NULL);");
-    /*$this->dbh->bind(':productID', $this->productID);
-    $this->dbh->bind(':userID', $this->userID);
+    $this->dbh->query("INSERT INTO `orders` (`productID`, `userID`, `status`, `Fullname`, `Email`, `Phone`, `City`, `address`, `Street`, `Building`, `Floor`, `id`) VALUES (:productID, :userID, '0', :name, :email, :phone, :address, :city, :street, :building, :floor, NULL);");
+    $this->dbh->bind(':productID', $pID);
+    $this->dbh->bind(':userID', $_SESSION['ID']);
     $this->dbh->bind(':name', $this->name);
     $this->dbh->bind(':email', $this->email);
     $this->dbh->bind(':phone', $this->phone);
@@ -180,8 +179,9 @@ public function Checkout()
     $this->dbh->bind(':address', $this->address);
     $this->dbh->bind(':street', $this->street);
     $this->dbh->bind(':building', $this->building);
-    $this->dbh->bind(':floor', $this->floor);*/
+    $this->dbh->bind(':floor', $this->floor);
     return $this->dbh->execute(); 
 }
+
 
 }

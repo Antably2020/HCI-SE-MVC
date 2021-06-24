@@ -75,16 +75,20 @@ class Pages extends Controller
         if ($_SERVER['REQUEST_METHOD'] == 'POST')
         {
             //process form
-          /*  $checkoutModel->setname(trim($_POST['name']));
+            if(isset($_POST['order']))
+            {
+                
+            $checkoutModel->setname(trim($_POST['name']));
             $checkoutModel->setemail(trim($_POST['email']));
             $checkoutModel->setphone(trim($_POST['phone']));
             $checkoutModel->setcity(trim($_POST['city']));
             $checkoutModel->setaddress(trim($_POST['address']));
             $checkoutModel->setstreet(trim($_POST['street']));
             $checkoutModel->setbuilding(trim($_POST['building']));
-            $checkoutModel->setfloor(trim($_POST['floor']));*/
+            $checkoutModel->setfloor(trim($_POST['floor']));
 
             $checkoutModel->Checkout();
+            }
         }
 
 
